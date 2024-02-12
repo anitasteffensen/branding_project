@@ -25,11 +25,17 @@ p{
 }
 
 header{
-    .logo_top{
+    .header_image{
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo_image{
         max-height: 3.5rem;
-        display: block;
         padding-top: 0.5rem;
         padding-left:1rem;
+
+       
     }
     
     
