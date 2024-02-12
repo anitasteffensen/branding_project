@@ -1,0 +1,119 @@
+@font-face{
+    font-family:nimbus;
+    src: url("/TAN_Nimbus/Web/TAN-NIMBUS.ttf");
+}
+@font-face{
+    font-family:open sans;
+    src: url("/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+/*standard styling for pages*/
+body{
+    background-color: #EDEBE4;
+    text-align: left;
+    
+}
+
+p{
+    font-family: open sans;
+    font-size: 0.875rem;
+    margin-top:0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header{
+    .header_image{
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo_image{
+        max-height: 3.5rem;
+        padding-top: 0.5rem;
+        padding-left:1rem;
+
+       
+    }
+    
+    
+    
+}
+
+.cases_image{
+  width: 100%;  
+}
+.break-line{
+    background-color: #EDEBE4;
+    height: 2rem;
+}
+
+
+#mads_n{}
+
+#messy_w{}
+
+#hay{}
+
+#superdry{}
+
+#ganni{}
+
+/*washed out white footer*/
+footer{
+    padding-left: 2rem;
+    padding-right:2rem;
+    .logo{
+       margin-top:2rem;
+       margin-bottom:2rem;
+        max-width: 7.5rem; 
+    }
+    .footer_nav{
+        p{
+           font-weight: 600;
+        }
+       
+        li{
+           margin-top:0.5rem;
+       
+        }
+       }
+       
+       ul{
+          list-style: none;
+          padding: 0;
+       }
+       a{
+           text-decoration: none;
+           color: black;
+       }
+       
+       .contact_info{
+           margin-top: 1rem;
+        p{
+           font-weight: 600;
+        }
+        li{
+           margin-top:0.5rem;
+        }
+        .email{
+           margin-top: 1.5rem;
+        }
+       }
+       
+       .grid{
+           display:grid;
+           grid-template-columns: 5% 5% 5% 5% 80%;
+           gap:2rem; 
+           margin-top: 2rem;
+       }
+       
+       .social_media{
+           max-height:2rem;
+       }
+}
+
