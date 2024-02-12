@@ -1,6 +1,8 @@
 @font-face{
     font-family:nimbus;
-    src: url("/TAN_Nimbus/TAN-NIMBUS.otf");
+    src: url("/TAN_Nimbus/Web/TAN-NIMBUS.ttf");
+}
+@font-face{
     font-family:open sans;
     src: url("/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf");
 }
@@ -89,7 +91,7 @@ header{
 
 #portofolio{
     padding-right:2rem;
-    padding-top: 3rem;
+    padding-top: 1rem;
 
     .container{
         position:relative;
@@ -176,17 +178,14 @@ header{
         text-align: right;
         font-family: nimbus;
         font-size: 1.5rem;
+        padding-bottom: 0.5rem;
     }
 
-    /*p {
-        padding-right: 1rem;
-
-    }
-    */
+   
 
     .break{
         padding-top:1rem;
-        padding-bottom: 5rem;
+        padding-bottom: 4rem;
     }
     
 }
@@ -197,7 +196,7 @@ footer{
     padding-left: 2rem;
     padding-right:2rem;
     .logo{
-       margin-top:3rem;
+       margin-top:2rem;
        margin-bottom:2rem;
         max-width: 7.5rem; 
     }
