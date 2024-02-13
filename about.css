@@ -154,62 +154,10 @@ header{
 }
 
 /*washed out black footer*/
-
 footer{
     padding-left: 2rem;
     padding-right:2rem;
     background-color: #222121;
     color: white;
-
-    .logo{
-       margin-top:2rem;
-       margin-bottom:2rem;
-        max-width: 7.5rem; 
-    }
-
-    .footer_nav{
-        p{
-           font-weight: 600;
-        }
-       
-        li{
-           margin-top:0.5rem;
-       
-        }
-       }
-       
-       ul{
-          list-style: none;
-          padding: 0;
-       }
-       a{
-           text-decoration: none;
-           color: white;
-       }
-
-       .contact_info{
-           margin-top: 1rem;
-        p{
-           font-weight: 600;
-        }
-        li{
-           margin-top:0.5rem;
-        }
-        .email{
-           margin-top: 1.5rem;
-        }
-       }
-       
-       .grid{
-           display:grid;
-           grid-template-columns: 5% 5% 5% 5% 80%;
-           gap:2rem; 
-           margin-top: 2rem;
-       }
-       
-       .social_media{
-           max-height:2rem;
-            padding-bottom: 3rem;
-       }
 }
 
