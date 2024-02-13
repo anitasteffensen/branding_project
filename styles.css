@@ -19,6 +19,12 @@ body{
     
 }
 
+h1 {
+    color:#FE4D49;
+    font-size: 1.875rem;
+    font-family: nimbus;
+}
+
 p{
     font-family: open sans;
     font-size: 0.875rem;
@@ -40,9 +46,6 @@ header{
 
        
     }
-    
-    
-    
 }
 
 
