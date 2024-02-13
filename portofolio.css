@@ -20,6 +20,7 @@ header{
 
 .cases_image{
   width: 100%;  
+  margin-bottom: 2rem;
 }
 .break-line{
     background-color: #EDEBE4;
@@ -27,7 +28,9 @@ header{
 }
 
 
-#mads_n{}
+#mads_n{
+    background-color: #222121;
+}
 
 #messy_w{}
 
@@ -37,4 +40,12 @@ header{
 
 #ganni{}
 
+
+.footer{
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+}
 

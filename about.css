@@ -1,48 +1,4 @@
-@font-face{
-    font-family:nimbus;
-    src: url("/TAN_Nimbus/Web/TAN-NIMBUS.ttf");
-}
-@font-face{
-    font-family:open sans;
-    src: url("/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf");
-}
 
-*{
-    margin:0;
-    box-sizing: border-box;
-}
-
-/*standard styling for pages*/
-body{
-    background-color: #EDEBE4;
-    text-align: left;
-    
-}
-
-p{
-    font-family: open sans;
-    font-size: 0.875rem;
-    margin-top:0.5rem;
-    margin-bottom: 0.5rem;
-}
-
-header{
-    .header_image{
-        display: flex;
-        justify-content: center;
-    }
-
-    .logo_image{
-        max-height: 3.5rem;
-        padding-top: 0.5rem;
-        padding-left:1rem;
-
-       
-    }
-    
-    
-    
-}
 
 
 #the_team{
@@ -142,22 +98,62 @@ header{
         font-size: 0.875rem;
         font-weight: bold;
         text-transform: uppercase;
-        margin-bottom: 2rem;
+        
         text-align: center;
     }
+
+    .container{
+        position:relative;
+        text-align: center;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wrapper {
+        position: relative;
+        height: 75px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .rectangle{
+        background-color: rgba(254, 77, 73, 0.85);
+    
+        height:75px;
+        width: 72px;
+        position:absolute;
+        margin:0 auto;
+        display: flex;
+        align-items: center;
+        z-index: -1;
+        left: -1rem;
+    }
+
+    .text_1{
+        
+       margin-top: 1rem;
+        white-space: nowrap;
+        }
+    
 
     p{
         margin-bottom: 4rem;
         text-align: center;
     }
-
 }
+
 
 /*washed out black footer*/
 footer{
-    padding-left: 2rem;
-    padding-right:2rem;
     background-color: #222121;
     color: white;
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
 }
 
