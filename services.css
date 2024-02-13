@@ -1,0 +1,13 @@
+
+
+
+/*washed out black footer*/
+footer{
+    background-color: #222121;
+    color: white;
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
