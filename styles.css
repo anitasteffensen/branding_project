@@ -1,3 +1,19 @@
+/*
+
+1. repeated styling thats used for all pages
+    1.1 font / tan-nimbus and open sans
+    1.2 body, background color
+    1.3 headline / h1
+    1.4 text / p
+2. header 
+    2.1 header image /
+    2.2 logo / .logo_image
+3. footer 
+    3.1 logo / .logo
+    3.2 navigation / .footer_nav
+*/
+
+
 @font-face{
     font-family:nimbus;
     src: url("/TAN_Nimbus/Web/TAN-NIMBUS.ttf");
