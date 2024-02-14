@@ -11,8 +11,24 @@ h2{
 }
 
 
-button{
 
+button{
+    background-color: #FE4D49;
+    box-shadow: none;
+    border:none;
+    color: white;
+    width:auto;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+
+
+   
 }
 
 #services{
@@ -28,6 +44,7 @@ button{
         margin-bottom:1rem;
         margin-top:1rem;
     }
+
     p{
         padding-bottom: 2rem;
     }
@@ -43,18 +60,56 @@ button{
         width: 100%;
         padding-top:3rem;
     }
+
+    .break{
+        padding-bottom: 2rem;
+    }
 }
 
 #webdesign{
+    padding-left:2rem;
+    padding-right:2rem;
+
+    .web_image{
+        padding-left:2rem;
+        padding-right:2rem;
+        width: 100%;
+    }
+
+    .break{
+        padding-bottom: 2rem;
+    }
 
 }
 
 #digital{
+    padding-left:2rem;
+    padding-right:2rem;
 
+    .digital_image{
+        width: 100%;
+        padding-left:2rem;
+        padding-right:2rem;
+    }
+
+    .break{
+        padding-bottom: 2rem;
+    }
 }
 
 #editing{
-    
+    padding-left:2rem;
+    padding-right:2rem;
+
+    .editing_image{
+        width: 100%;
+        padding-left:2rem;
+        padding-right:2rem;
+    }
+
+    p {
+        padding-bottom: 2rem;
+    }
 }
 
 
