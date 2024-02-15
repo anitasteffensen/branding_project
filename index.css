@@ -1,5 +1,5 @@
 /*content
-1. navigation / #nav_buttons
+1. navigation / #nav_images
     1.1 portfolio / #portfolio
 2. about a studio / #about
     2.1 quality / #quality
@@ -9,7 +9,7 @@
 
 
 
-#nav_buttons{
+#nav_images{
     .nav_grid{
         display:grid;
         grid-template-columns: 33.33% 33.33% 33.33%;
@@ -27,17 +27,17 @@
         height:12rem;
     }
     .grid_button_coffee {
-        background-image: url("/forside/kaffe.jpg")
+        background-image: url("kaffe.jpg")
     }
 
     .grid_button_water{
-        background-image: url("/forside/water.jpg");
+        background-image: url("water.jpg");
     }
     .grid_button_pen{
-        background-image: url("/forside/pen.jpg");
+        background-image: url("pen.jpg");
     }
     
-    button{
+    .nav_button{
         background-color: #FE4D49;
         box-shadow: none;
         border:none;
@@ -110,7 +110,7 @@
     }
 
     p{
-        text-align: center;
+        text-align: left;
     }
    .break{
     padding-top:1rem;
@@ -142,7 +142,7 @@
     h3{
         text-align: right;
         font-family: nimbus;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         padding-bottom: 0.5rem;
     }
 
@@ -158,11 +158,6 @@
 
 .footer{
     a{
-        text-decoration: none;
-        color: black;
-    }
-    a:visited{
-     text-decoration: none;
-     color: black;
- }
+    text-decoration: none;
+    color: black;}
 }
