@@ -127,6 +127,9 @@
         padding-top:3rem;
     }
 
+    
+   
+
     .ganni_logo{
         width: 60%;
         margin-top:2rem;
@@ -155,6 +158,13 @@
 
 /*desktop and tablets version*/
 @media only screen and (min-width:600px){
-    
+    .ganni_i{
+        background-image: url("ganni.png");
+        background-size: cover;
+        min-height:25rem;
+        background-position:  center;
+        margin-bottom: 2rem;
+        margin-top:2rem;
+    }
 }
 

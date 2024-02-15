@@ -119,7 +119,7 @@
     .quality_image{
         background-image: url("arkitektur.jpg");
         background-size: cover;
-        min-height:25rem;
+        height:100vw;
         background-position: bottom center;
         margin-bottom: 2rem;
 
