@@ -1,10 +1,9 @@
 /*content
 1. navigation / #nav_buttons
-    1.2 portfolio / #portfolio
-
-3.
-4.
-
+    1.1 portfolio / #portfolio
+2. about a studio / #about
+    2.1 quality / #quality
+3. footer a:
 */
 
 
@@ -162,4 +161,8 @@
         text-decoration: none;
         color: black;
     }
+    a:visited{
+     text-decoration: none;
+     color: black;
+ }
 }
