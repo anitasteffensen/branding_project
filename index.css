@@ -9,56 +9,9 @@
 
 
 /*phone version - made of the reccommendation of smaller screens (phones and smaller tables)*/
-@media only screen and (max-width: 600px){
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-    #nav_images{
-        .nav_grid{
-            display:grid;
-            grid-template-columns: 33.33% 33.33% 33.33%;
-            margin-top: 2rem;
-        }
-        
-    
-        .grid_image{
-            display: flex;
-            flex-direction: column;
-            justify-content: end;
-            padding: 1rem;
-            background-position: center;
-            background-size: cover;
-            height:14rem;
-        }
-        .grid_button_coffee {
-            background-image: url("kaffe.jpg")
-        }
-    
-        .grid_button_water{
-            background-image: url("water.jpg");
-        }
-        .grid_button_pen{
-            background-image: url("pen.jpg");
-        }
-        
-        .nav_button{
-            background-color: #FE4D49;
-            box-shadow: none;
-            border:none;
-            color: white;
-            width:auto;
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
-            font-size: 0.75rem;
-            font-weight: bold;
-            text-transform: uppercase;
-    
-        }
+@media only screen and (max-width: 600px){}
     
     
-=======
-=======
->>>>>>> parent of 3500e42 (everything in one folder)
 #nav_buttons{
     .nav_grid{
         display:grid;
@@ -77,14 +30,14 @@
         height:12rem;
     }
     .grid_button_coffee {
-        background-image: url("/forside/kaffe.jpg")
+        background-image: url("kaffe.jpg")
     }
 
     .grid_button_water{
-        background-image: url("/forside/water.jpg");
+        background-image: url("water.jpg");
     }
     .grid_button_pen{
-        background-image: url("/forside/pen.jpg");
+        background-image: url("pen.jpg");
     }
     
     button{
@@ -99,7 +52,6 @@
         font-weight: bold;
         text-transform: uppercase;
 
->>>>>>> parent of 3500e42 (everything in one folder)
     }
     #portfolio{
         padding-right:2rem;
@@ -115,7 +67,6 @@
         .portfolio_image{
             padding-left: 2rem;
             max-width: 100%;
-            min-height: 15rem;;
         }
     
         .text{
@@ -149,7 +100,7 @@
             text-align: center;
             margin-bottom:1rem;}
 
-<<<<<<< HEAD
+
         p{
             text-align: left;}
         .break{
@@ -157,7 +108,6 @@
             padding-bottom: 4rem;}
         }
     #quality{
-=======
     h1{
         color: #FE4D49;
         font-size: 1.875rem;
@@ -177,7 +127,6 @@
 
 
 #quality{
->>>>>>> parent of 3500e42 (everything in one folder)
     background-color: #222121;
     padding-left: 2rem;
     padding-right:2rem;
