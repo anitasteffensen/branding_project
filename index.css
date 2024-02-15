@@ -1,5 +1,5 @@
 /*content
-1. navigation / #nav_images
+1. navigation / #nav_buttons
     1.1 portfolio / #portfolio
 2. about a studio / #about
     2.1 quality / #quality
@@ -11,6 +11,7 @@
 /*phone version - made of the reccommendation of smaller screens (phones and smaller tables)*/
 @media only screen and (max-width: 600px){
 
+<<<<<<< HEAD
     #nav_images{
         .nav_grid{
             display:grid;
@@ -54,6 +55,48 @@
         }
     
     
+=======
+#nav_buttons{
+    .nav_grid{
+        display:grid;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+        margin-top: 2rem;
+    }
+    
+
+    .grid_image{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding: 1rem;
+        background-position: center;
+        background-size: cover;
+        height:12rem;
+    }
+    .grid_button_coffee {
+        background-image: url("/forside/kaffe.jpg")
+    }
+
+    .grid_button_water{
+        background-image: url("/forside/water.jpg");
+    }
+    .grid_button_pen{
+        background-image: url("/forside/pen.jpg");
+    }
+    
+    button{
+        background-color: #FE4D49;
+        box-shadow: none;
+        border:none;
+        color: white;
+        width:auto;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        font-size: 0.75rem;
+        font-weight: bold;
+        text-transform: uppercase;
+
+>>>>>>> parent of 3500e42 (everything in one folder)
     }
     #portfolio{
         padding-right:2rem;
@@ -103,6 +146,7 @@
             text-align: center;
             margin-bottom:1rem;}
 
+<<<<<<< HEAD
         p{
             text-align: left;}
         .break{
@@ -110,6 +154,27 @@
             padding-bottom: 4rem;}
         }
     #quality{
+=======
+    h1{
+        color: #FE4D49;
+        font-size: 1.875rem;
+        font-family: nimbus;
+        text-align: center;
+        margin-bottom:1rem;
+    }
+
+    p{
+        text-align: center;
+    }
+   .break{
+    padding-top:1rem;
+    padding-bottom: 4rem;
+   }
+}
+
+
+#quality{
+>>>>>>> parent of 3500e42 (everything in one folder)
     background-color: #222121;
     padding-left: 2rem;
     padding-right:2rem;
@@ -135,7 +200,7 @@
     h3{
         text-align: right;
         font-family: nimbus;
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         padding-bottom: 0.5rem;
     }
 
@@ -164,6 +229,11 @@
 
 .footer{
     a{
-    text-decoration: none;
-    color: black;}
+        text-decoration: none;
+        color: black;
+    }
+    a:visited{
+     text-decoration: none;
+     color: black;
+ }
 }
