@@ -1,0 +1,29 @@
+
+#lets_talk{
+    margin-top:4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    .no_b_margin{
+        margin-bottom: 0;
+        }
+    .no_margin{
+        margin:0;
+    }
+}
+
+#contact{
+    background-color: #222121;
+}
+
+
+
+
+/*washed out white footer*/
+footer{
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}

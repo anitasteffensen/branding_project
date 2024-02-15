@@ -1,0 +1,159 @@
+
+
+
+#the_team{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    .the_team_image{
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    h1{
+        color: #FE4D49;
+        font-size: 1.875rem;
+        font-family: nimbus;
+        text-align: center;
+        margin-bottom:1rem;
+    }
+
+    .break{
+        padding-top:1rem;
+        padding-bottom: 4rem;
+       }
+}
+
+#the_studio{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #222121;
+    color:white;
+
+    .office_image{
+        padding-top:3rem;
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    h2{
+        text-align: left;
+        font-family: nimbus;
+        font-size: 1.875rem;
+        color: white;
+    }
+
+    p{
+        padding-bottom: 4rem;
+    }
+    
+}
+
+#girl_code{
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    .girl_code_image{
+        padding-top:3rem;
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+    h2{
+        text-align: center;
+        font-family: nimbus;
+        font-size: 1.875rem;
+        color:#FE4D49;
+        margin-bottom: 1rem;
+    }
+
+    p{
+        padding-bottom: 4rem;
+    }
+}
+
+#break-line{
+    background-color: #222121;
+    height: 2rem;
+
+}
+
+#our_skills{
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    .our_skills_image{
+        padding-top:3rem;
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+    h2{
+        text-align: center;
+        font-family: nimbus;
+        font-size: 1.875rem;
+        color:black;
+        padding-bottom: 2rem;
+    }
+
+    h3{
+        font-family: open sans;
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        
+        text-align: center;
+    }
+
+    .container{
+        position:relative;
+        text-align: center;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wrapper {
+        position: relative;
+        height: 75px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .rectangle{
+        background-color: rgba(254, 77, 73, 0.85);
+    
+        height:75px;
+        width: 72px;
+        position:absolute;
+        margin:0 auto;
+        display: flex;
+        align-items: center;
+        z-index: -1;
+        left: -1rem;
+    }
+
+    .text_1{
+        
+       margin-top: 1rem;
+        white-space: nowrap;
+        }
+    
+
+    p{
+        margin-bottom: 4rem;
+        text-align: center;
+    }
+}
+
+
+/*washed out black footer*/
+footer{
+    background-color: #222121;
+    color: white;
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+
