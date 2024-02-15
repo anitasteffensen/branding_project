@@ -4,10 +4,7 @@
 #the_team{
     padding-left: 2rem;
     padding-right: 2rem;
-    .the_team_image{
-        max-width: 100%;
-        margin-bottom: 2rem;
-    }
+  
 
     h1{
         color: #FE4D49;
@@ -29,12 +26,6 @@
     background-color: #222121;
     color:white;
 
-    .office_image{
-        padding-top:3rem;
-        max-width: 100%;
-        margin-bottom: 2rem;
-    }
-
     h2{
         text-align: left;
         font-family: nimbus;
@@ -52,11 +43,7 @@
     padding-left: 2rem;
     padding-right: 2rem;
 
-    .girl_code_image{
-        padding-top:3rem;
-        max-width: 100%;
-        margin-bottom: 2rem;
-    }
+
     h2{
         text-align: center;
         font-family: nimbus;
@@ -80,11 +67,6 @@
     padding-left: 2rem;
     padding-right: 2rem;
 
-    .our_skills_image{
-        padding-top:3rem;
-        max-width: 100%;
-        margin-bottom: 2rem;
-    }
     h2{
         text-align: center;
         font-family: nimbus;
@@ -120,7 +102,6 @@
 
     .rectangle{
         background-color: rgba(254, 77, 73, 0.85);
-    
         height:50px;
         width: 50px;
         position:absolute;
@@ -144,7 +125,6 @@
     }
 }
 
-
 /*washed out black footer*/
 footer{
     background-color: #222121;
@@ -155,4 +135,91 @@ footer{
         color: white;
     }
 }
+
+/*phone version - made of the reccommendation of smaller screens (phones and smaller tables)*/
+@media only screen and (max-width: 600px){
+    .the_team_image{
+        max-width: 100%;
+        margin-bottom: 2rem;
+        margin-top:2rem;
+    }
+
+    .office_image2{
+        max-width: 100%;
+        margin-bottom: 2rem;
+        margin-top:2rem;
+    }
+
+    .girl_code_image{
+        padding-top:3rem;
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .our_skills_image{
+        padding-top:3rem;
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+/*desktop and tablets version*/
+@media only screen and (min-width:600px){
+
+    .a_team_image{
+        background-image: url("ateam.jpg");
+        background-size: cover;
+        min-height:25rem;
+        background-position:  center;
+        margin-bottom: 2rem;
+        margin-top:2rem;
+    }
+
+    .the_team_image{
+        width: 0;
+    }
+
+    .office_image{
+        background-image: url("office.jpg");
+        background-size: cover;
+        min-height:25rem;
+        background-position: center;
+        margin-bottom: 2rem;
+        margin-top:2rem;
+    }
+
+    .office_image2{
+        width: 0;
+    }
+
+    .g_code_image{
+        background-image: url("girlcode.jpg");
+        background-size: cover;
+        background-position: center;
+        min-height: 25rem;
+        margin-bottom: 2rem;
+        margin-top:2rem;
+    }
+
+    .girl_code_image{
+        width: 0;
+    }
+
+    .skills_image{
+        background-image: url("ourskills.jpg");
+        background-size: cover;
+        background-position: center;
+        min-height: 25rem;
+        margin-bottom: 2rem;
+        margin-top:2rem;
+    }
+
+    .our_skills_image{
+        width: 0;
+    }
+
+
+
+}
+
+
 

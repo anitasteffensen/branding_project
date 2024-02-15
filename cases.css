@@ -148,3 +148,13 @@
 
 }
 
+/*phone version - made of the reccommendation of smaller screens (phones and smaller tables)*/
+@media only screen and (max-width: 600px){
+
+}
+
+/*desktop and tablets version*/
+@media only screen and (min-width:600px){
+    
+}
+
