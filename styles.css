@@ -50,19 +50,48 @@ p{
 }
 
 header{
-    .header_image{
+    .header_content{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        align-items:start;
     }
 
-    .logo_image{
+    .header_logo{
         max-height: 3.5rem;
         padding-top: 0.5rem;
-        padding-left:1rem;
-
-       
+        padding-left:1rem;  
     }
-}
+
+    .nav_bar {
+        overflow: hidden;
+      }
+      
+      .nav_bar a {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 1rem 1rem;
+        text-decoration: underline;
+        font-size: rem;
+        text-underline-offset: 10px;
+        text-decoration-thickness: 0.15rem;
+      }
+      
+      .nav_bar a.active {
+        color: #FE4D49;
+      }
+/*Vil gerne gøre så den er helt i siden uden den lægges under*/
+      .nav_bar .right_top{
+        padding-left: 3rem;
+      }
+    }
+  
+
+    
+
+
+
 
 
 /*standard styling for footer*/
@@ -125,13 +154,11 @@ footer{
 
 
 /*Mobile version - made on behalf of recommendation on smaller screens such as phones and smaller tablets*/
-@media only screen and (max-width: 600px){
-    .nav_bar{
-        display: none;
-    }
+@media only screen and (max-width: 600px)
+    
+
 
     
-}
 
 
 /*Desktop version*/
