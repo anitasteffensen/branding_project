@@ -65,8 +65,7 @@ header{
 }
 
 
-
-/*washed out white footer*/
+/*standard styling for footer*/
 footer{
     padding-left: 2rem;
     padding-right:2rem;
@@ -124,4 +123,21 @@ footer{
        }
 }
 
+
+/*Mobile version - made on behalf of recommendation on smaller screens such as phones and smaller tablets*/
+@media only screen and (max-width: 600px){
+    .nav_bar{
+        display: none;
+    }
+
+    
+}
+
+
+/*Desktop version*/
+@media only screen and (min-width: 600px){
+    .hamburger-menu{
+        display: none;
+    }
+}
 
