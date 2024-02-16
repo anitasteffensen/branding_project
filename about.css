@@ -122,8 +122,8 @@
     .rectangle{
         background-color: rgba(254, 77, 73, 0.85);
     
-        height:75px;
-        width: 72px;
+        height:50px;
+        width: 48px;
         position:absolute;
         margin:0 auto;
         display: flex;

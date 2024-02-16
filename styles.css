@@ -16,11 +16,11 @@
 
 @font-face{
     font-family:nimbus;
-    src: url("/TAN_Nimbus/Web/TAN-NIMBUS.ttf");
+    src: url("TAN-NIMBUS.ttf");
 }
 @font-face{
     font-family:open sans;
-    src: url("/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf");
+    src: url("OpenSans-VariableFont_wdth\,wght.ttf");
 }
 
 *{

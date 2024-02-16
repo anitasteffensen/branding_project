@@ -27,14 +27,14 @@
         height:12rem;
     }
     .grid_button_coffee {
-        background-image: url("/forside/kaffe.jpg")
+        background-image: url("kaffe.jpg")
     }
 
     .grid_button_water{
-        background-image: url("/forside/water.jpg");
+        background-image: url("water.jpg");
     }
     .grid_button_pen{
-        background-image: url("/forside/pen.jpg");
+        background-image: url("pen.jpg");
     }
     
     button{
