@@ -74,10 +74,10 @@ header{
         display: block;
         color: black;
         text-align: center;
-        padding: 1rem 1em;
+        padding: 1rem 1rem;
         text-decoration: underline;
-        font-size: rem;
-        text-underline-offset: 10px;
+        font-size: 1rem;
+        text-underline-offset: 8px;
         text-decoration-thickness: 0.25rem;
       }
       
@@ -245,6 +245,7 @@ footer{
         font-size: 1.25rem;
         font-family: open sans;
         text-decoration: none;
+        color: black;
         
       }
       
