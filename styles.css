@@ -50,6 +50,8 @@ p{
 }
 
 header{
+    margin-top:0.5rem;
+
     .header_content{
         display: flex;
         justify-content: space-between;
@@ -63,6 +65,7 @@ header{
     }
 
     .nav_bar {
+        font-family: open sans;
         overflow: hidden;
       }
       
@@ -71,11 +74,11 @@ header{
         display: block;
         color: black;
         text-align: center;
-        padding: 1rem 1rem;
+        padding: 1rem 1em;
         text-decoration: underline;
         font-size: rem;
         text-underline-offset: 10px;
-        text-decoration-thickness: 0.15rem;
+        text-decoration-thickness: 0.25rem;
       }
       
       .nav_bar a.active {
@@ -83,7 +86,8 @@ header{
       }
 /*Vil gerne gøre så den er helt i siden uden den lægges under*/
       .nav_bar .right_top{
-        padding-left: 3rem;
+        margin-left: 4rem;
+        padding-right:2rem
       }
     }
   
@@ -158,6 +162,99 @@ footer{
     .nav_bar{
         display:none;
     }
+
+    .hamburger1 {
+        margin-top: -3rem;
+        margin-right:2rem;
+        margin-bottom:1rem;
+        display: -ms-grid;
+        display: grid;
+        justify-items: right;
+        z-index: 120;
+      }
+      
+      .hamburger1 div {
+        background-color: black;
+        position: relative;
+        width: 2.75rem;
+        height: 0.25rem;
+        margin-top: 0.5rem;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+      }
+      
+      /*check*/
+      #toggle1 {
+        display: none;
+      }
+      
+      #toggle1:checked + .hamburger1 .top {
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        margin-top: 22.5px;
+      }
+      
+      #toggle1:checked + .hamburger1 .meat {
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+        margin-top: -5px;
+      }
+      
+      #toggle1:checked + .hamburger1 .bottom {
+        -webkit-transform: scale(0);
+                transform: scale(0);
+      }
+      
+      #toggle1:checked ~ .menu1 {
+        height: 20rem;
+      }
+      
+      
+      /* Menu */
+      .menu1 {
+        width: 100%;
+        background-color: #;
+        margin: auto 0;
+        display: -ms-grid;
+        display: grid;
+        grid-template-rows: 1fr repeat(4, 0.5fr);
+        grid-row-gap: 0.25rem;
+        padding: 0;
+        list-style: none;
+        clear: both;
+        width: auto;
+        text-align: center;
+        height: 0px;
+        overflow: hidden;
+        transition: height .4s ease;
+        z-index: 120;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+      }
+      
+      .menu1 a:first-child {
+        margin-top: 3rem;
+      }
+      
+
+      
+      .link1 {
+        width: 100%;
+        margin: 0;
+        padding: 0.5rem 0;
+        font-size: 1.25rem;
+        font-family: open sans;
+        text-decoration: none;
+        
+      }
+      
+      .link1:hover {
+        background-color: rgba(254, 77, 73, 0.75);
+        color: black;
+        text-decoration: none;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+      }
 }
     
 
@@ -167,7 +264,7 @@ footer{
 
 /*Desktop version*/
 @media only screen and (min-width: 700px){
-    .hamburger-menu{
+    #hamburger_menu{
         display: none;
     }
 }
