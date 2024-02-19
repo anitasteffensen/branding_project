@@ -22,9 +22,9 @@
         flex-direction: column;
         justify-content: end;
         padding: 1rem;
-        background-position: center;
+        background-position: center 0%;
         background-size: cover;
-        height:12rem;
+        height:15rem;
     }
     .grid_button_coffee {
         background-image: url("kaffe.jpg")
@@ -167,12 +167,18 @@
 
 
 /*Mobile version - made on behalf of recommendation on smaller screens such as phones and smaller tablets*/
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 700px){
 
     
 }
 
 
 /*Desktop version*/
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 700px){
+   
+    #nav_buttons{
+        .grid_image{
+            height:20rem;
+
+    }
 }

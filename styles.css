@@ -53,43 +53,43 @@ header{
     margin-top:0.5rem;
 
     .header_content{
-        display: flex;
-        justify-content: space-between;
-        align-items:start;
+      display: flex;
+      justify-content: space-between;
+      align-items:start;
     }
 
     .header_logo{
-        max-height: 3.5rem;
-        padding-top: 0.5rem;
-        padding-left:1rem;  
+      max-height: 3.5rem;
+      padding-top: 0.5rem;
+      padding-left:1rem;  
     }
 
     .nav_bar {
-        font-family: open sans;
-        overflow: hidden;
+      font-family: open sans;
+      overflow: hidden;
       }
       
-      .nav_bar a {
-        float: left;
-        display: block;
-        color: black;
-        text-align: center;
-        padding: 1rem 1rem;
-        text-decoration: underline;
-        font-size: 1rem;
-        text-underline-offset: 8px;
-        text-decoration-thickness: 0.25rem;
-      }
-      
-      .nav_bar a.active {
-        color: #FE4D49;
-      }
-/*Vil gerne gøre så den er helt i siden uden den lægges under*/
-      .nav_bar .right_top{
-        margin-left: 4rem;
-        padding-right:2rem
-      }
+    .nav_bar a {
+      float: left;
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 1rem 1rem;
+      text-decoration: underline;
+      font-size: 1rem;
+      text-underline-offset: 8px;
+      text-decoration-thickness: 0.25rem;
     }
+      
+    .nav_bar a.active {
+      color: #FE4D49;
+    }
+/*Vil gerne gøre så den er helt i siden uden den lægges under*/
+    .nav_bar .right_top{
+      margin-left: 4rem;
+      padding-right:2rem
+    }
+  }
   
 
     
@@ -105,55 +105,55 @@ footer{
     padding-bottom: 4rem;
 
     .logo{
-       margin-top:2rem;
-       margin-bottom:2rem;
-        max-width: 7.5rem; 
+      margin-top:2rem;
+      margin-bottom:2rem;
+      max-width: 7.5rem; 
     }
     .footer_nav{
-        p{
-           font-weight: 600;
-        }
+      p{
+        font-weight: 600;
+      }
        
-        li{
-           margin-top:0.5rem;
+      li{
+        margin-top:0.5rem;
        
-        }
-       }
-       
-       ul{
-          list-style: none;
-          padding: 0;
-       }
-       a{
-           text-decoration: none;
-       }
-       a:visited{
-        text-decoration: none;
+      }
     }
        
-       .contact_info{
-           margin-top: 1rem;
-        p{
-           font-weight: 600;
-        }
-        li{
-           margin-top:0.5rem;
-        }
-        .email{
-           margin-top: 1.5rem;
-        }
-       }
+    ul{
+      list-style: none;
+      padding: 0;
+    }
+    a{
+      text-decoration: none;
+      }
+    a:visited{
+      text-decoration: none;
+    }
        
-       .grid{
-           display:grid;
-           grid-template-columns: 5% 5% 5% 5% 80%;
-           gap:2rem; 
-           margin-top: 2rem;
-       }
+    .contact_info{
+      margin-top: 1rem;
+      p{
+        font-weight: 600;
+      }
+      li{
+        margin-top:0.5rem;
+      }
+      .email{
+        margin-top: 1.5rem;
+      }
+    }
        
-       .social_media{
-           max-height:2rem;
-       }
+    .grid{
+      display:grid;
+      grid-template-columns: 5% 5% 5% 5% 80%;
+      gap:2rem; 
+      margin-top: 2rem;
+      }
+       
+    .social_media{
+      max-height:2rem;
+    }
 }
 
 
@@ -251,7 +251,6 @@ footer{
       
       .link1:hover {
         background-color: rgba(254, 77, 73, 0.75);
-        color: black;
         text-decoration: none;
         -webkit-transition: all 0.3s ease;
         transition: all 0.3s ease;
