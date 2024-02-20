@@ -11,25 +11,23 @@ h2{
 }
 
 
-
-button{
+.button{
     background-color: #FE4D49;
     box-shadow: none;
     border:none;
     color: white;
-    width:auto;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding:0.5rem;
     font-size: 0.75rem;
     font-weight: bold;
-    display: flex;
-    margin: 0 auto;
-    margin-bottom: 4rem;
     text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    cursor: pointer;
+    display: flex;
 
-
-   
 }
+
 
 #services{
     padding-left:2rem;
