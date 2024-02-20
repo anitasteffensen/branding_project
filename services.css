@@ -10,6 +10,13 @@ h2{
     
 }
 
+.services_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
 
 .button{
     background-color: #FE4D49;
@@ -24,9 +31,12 @@ h2{
     text-decoration: none;
     justify-content: center;
     cursor: pointer;
-    display: flex;
+    display: inline-block;
+    margin:0 auto;
 
 }
+
+
 
 
 #services{

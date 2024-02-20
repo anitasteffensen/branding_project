@@ -206,18 +206,17 @@ footer{
       }
       
       #toggle1:checked ~ .menu1 {
-        height: 20rem;
+        height: 17rem;
       }
       
       
       /* Menu */
       .menu1 {
         width: 100%;
-        background-color: #;
         margin: auto 0;
         display: -ms-grid;
         display: grid;
-        grid-template-rows: 1fr repeat(4, 0.5fr);
+        grid-template-rows: repeat(5, 0.5fr);
         grid-row-gap: 0.25rem;
         padding: 0;
         list-style: none;
@@ -232,9 +231,7 @@ footer{
         transition: all 0.3s ease;
       }
       
-      .menu1 a:first-child {
-        margin-top: 3rem;
-      }
+      
       
 
       
@@ -246,7 +243,9 @@ footer{
         font-family: open sans;
         text-decoration: none;
         color: black;
-        
+        display: flex;
+        align-items: center;
+        justify-content: center;        
       }
       
       .link1:hover {
