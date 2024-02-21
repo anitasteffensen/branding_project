@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="contact.css">
 </head>
 <body>
+    <video autoplay muted id="background-video">
+        <source src="telefon.mp4" type="video/mp4">
+    </video>
+
     <header>
         <div class="header_content">
             <img class="header_logo" alt="a studios logo" src="Astudio1.png">
@@ -44,20 +48,87 @@
     </header>
     <main>
         <section id="lets_talk">
+            <div class="overskrift-kontakt">
             <h1>let's talk</h1>
             <p class="no_b_margin">We would love to get in touch with you!</p>
             <p class="no_margin">Together we could make magic happen. </p>
-            <p>Contact us on our telephone: <b>+45 60124554</b>
-            or submit your credidential and project case in our embeded form down below. </p>
-
+            <p>Give us a call on <a class="no-style-link" href="tel:+4512345678"><strong>+45 60 12 45 54</strong></a><br> or submit your credentials and project case in our embeded form below.</p>
+            </div>
         </section>
         <section id="contact">
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <img src="kontakt.png" alt="Billede af kontaktperson">
+                    <form action="#" method="post">
+            
+                            <label for="first_name">First Name<span style="color: #FE4D49;"> *</span></label>
+                            <input type="text" id="first_name" name="first_name" required>
+                            
+                        <label for="last_name">Last Name<span style="color: #FE4D49;"> *</span></label>
+                        <input type="text" id="last_name" name="last_name" required>
+                    
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company">
+                    
+                        <label for="phone">Phone<span style="color: #FE4D49;"> *</span></label>
+                        <input type="text" id="phone" name="phone" required> 
+                    
+                        <label for="email">E-mail<span style="color: #FE4D49;"> *</span></label>
+                        <input type="text" id="email" name="email" required>
+                    
+                        <label for="how_help">How can we help?<span style="color: #FE4D49;"> *</span></label>
+                        <textarea id="how_help" name="how_help"></textarea>
+            
+                        <input type="submit" value="Submit">
+                   
+                     <div id="success_message" style="display: none;">Thank you! Your message has been sent successfully.</div>
+            
+                    </form>
+                </div>
+                </div>
             
 
         </section>
 
     </main>
     <footer>
+
+        <!--Footer desktopversion-->
+<img class="logo" src="astudiologo2.png" alt="a studio's logo">
+<div class="footer-container-desk">
+    <div class="column">
+        <h3>Navigation</h3>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="cases.html">Cases</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="column">
+        <h3>Contact</h3>
+        <ul>
+            <li>Stormgade 55, 1555 København V</li>
+            <li>contact@astudio.com</li>
+            <li>+45 60 12 45 54</li>
+        </ul>
+    </div>
+    <div class="newsletter">
+        <h3>Stay in touch</h3>
+        <form>
+            <input type="email" placeholder="Type your email">
+            <button type="submit">Sign up</button>
+        </form>
+    </div>
+</div>
+
+    <div class="social-media">
+        <a href="#"><img src="fb.png" alt="Facebook"></a>
+        <a href="#"><img src="insta.png" alt="Instagram"></a>
+        <a href="#"><img src="tiktok.png" alt="Tiktok"></a>
+        <a href="#"><img src="link.png" alt="LinkedIn"></a>
+    </div>
         <img class="logo" src="a4.png" alt="a studio's logo">
 
         <nav class="footer_nav">
@@ -86,6 +157,8 @@
         <img class="social_media" src="tiktok.png" alt="tiktok logo">
         <img class="social_media" src="link.png" alt="linkedin logo">
     </div>
+
+
     </footer>
     
 </body>

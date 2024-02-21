@@ -1,4 +1,4 @@
-
+/*
 #lets_talk{
     margin-top:4rem;
     padding-left: 2rem;
@@ -19,6 +19,157 @@
 
 
 
+/*washed out white footer
+footer{
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}*/
+
+*/
+
+#contact{
+    background-color: #222121;
+}
+
+.no-style-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*Styling for baggrundsvideo*/ 
+#background-video {
+    position: fixed; 
+    bottom: 0; 
+    min-width: 100%;
+    min-height: 100%;
+    width: auto; 
+    height: auto;
+    z-index: -1;
+    background-size: cover;
+    margin-left: 20px;
+
+}
+
+/*Styling for banner*/
+.overskrift-kontakt {
+margin-top: 4rem; 
+padding-left: 5rem;
+padding-right: 4rem;
+padding-top: 4rem;
+
+}
+
+.overskrift-kontakt h1 {
+    font-size: 60px;
+}
+
+.overskrift-kontakt p {
+margin-bottom: 20px;
+font-size: 20px;
+}
+
+
+/*Styling for kontaktformular*/
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    z-index: 1;
+    margin-top: 13rem; 
+
+}
+
+.contact-form {
+    flex: 1; 
+    background-color: #2A2625;
+    color: white;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    z-index: 1;
+  
+}
+
+.contact-form img {
+    max-width: 30vw;
+    height: auto; 
+}
+
+
+/*Styling for inputfelter*/
+form {
+    width: 50vw;
+    margin: 0 auto;
+    margin-top: 60px;
+    max-width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: Open sans;
+}
+
+input[type="text"] {
+        width: 100%;
+        padding: 2px; 
+        border-bottom: 3px solid white;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        background-color: transparent; 
+        margin-bottom: 16px; 
+        color: white; 
+        font-family: Open sans;
+    }
+
+    input[type="text"]:focus {
+        outline: 3px solid white; 
+    }
+    
+    
+    #how_help {
+        width: 100%;
+        padding: 10px; 
+        border-bottom: 3px solid white; 
+        border-top: none; 
+        border-right: none;
+        border-left: none;
+        background-color: transparent;
+        color: white;
+        font-family: Open sans; 
+        resize: none;
+        margin-bottom: 16px;
+    }
+
+    #how_help:focus {
+        outline: 3px solid white; 
+    }
+
+    input[type="submit"] {
+        background-color: #FE4D49;
+        color: white;
+        cursor: pointer; 
+        border: none;
+        border-radius: 3px;
+        padding: 10px 20px;
+        font-family: Open sans;
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 2rem;
+        text-transform: uppercase;
+    }
+
+
 /*washed out white footer*/
 footer{
 
@@ -30,12 +181,41 @@ footer{
 
 
 /*Mobile version - made on behalf of recommendation on smaller screens such as phones and smaller tablets*/
-@media only screen and (max-width: 600px){
 
+@media only screen and (max-width: 600px){
+   
+    /*Styling for banner*/
+.overskrift-kontakt {
+    margin-top: 4rem; 
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 4rem;
     
+    }
+    
+    .overskrift-kontakt h1 {
+        font-size: 50px;
+    }
+    
+    .overskrift-kontakt p {
+    font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 780px){
+
+    .contact-form img {
+        display: none; 
+    }
 }
 
 
 /*Desktop version*/
 @media only screen and (min-width: 600px){
 }
+  
+
+
+
+
+
