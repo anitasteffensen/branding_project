@@ -11,6 +11,9 @@
 3. footer 
     3.1 logo / .logo
     3.2 navigation / .footer_nav
+
+4. Mobil/smaller screen styling
+5. desktop styling
 */
 
 
@@ -171,6 +174,8 @@ footer{
     }
   }
 }
+
+/*adding the dekstop-version and still having the hamburgermenu*/
 @media only screen and (min-width:600px){
   .footer_nav{
     display: none;
@@ -266,6 +271,7 @@ footer{
 outline: 2px solid black;}
   }
 }
+/*having the hamburgermenu but  having the layout of desktop version*/
 @media only screen and (max-width: 800px){
    
   header{
@@ -365,8 +371,7 @@ outline: 2px solid black;}
  
 }
 
-
-/*Desktop version*/
+/*Desktop version with its navigation in the top*/
 @media only screen and (min-width: 800px){
     #hamburger_menu{
         display: none;
