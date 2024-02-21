@@ -135,7 +135,10 @@ footer{
 
 /*Mobile version - made on behalf of recommendation on smaller screens such as phones and smaller tablets*/
 @media only screen and (max-width:600px){
-
+  section{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
   footer{
     .social_media1{
       display: none;
@@ -273,7 +276,7 @@ outline: 2px solid black;}
 }
 /*having the hamburgermenu but  having the layout of desktop version*/
 @media only screen and (max-width: 800px){
-   
+
   header{
     .nav_bar{
       display:none;

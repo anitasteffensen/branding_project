@@ -69,7 +69,6 @@
         max-width: 100%;
         min-height: 15rem;
         max-height: 55rem;
-        padding-left: 2rem;
         }
     
 
@@ -139,17 +138,20 @@ footer{
 
 /*Mobile version - made on behalf of recommendation on smaller screens such as phones and smaller tablets*/
 @media only screen and (max-width: 600px){
+#nav_buttons{
+    padding:0;
+}
 #portfolio{
         padding-right:2rem;
-       
+    
         .text1{
-            padding-left: 2.25rem;
+            padding-left: .25rem;
             position:absolute;
             bottom: 3.5rem;
         }
         
         .text2{
-            padding-left: 2.25rem;
+            padding-left: .25rem;
             position: absolute;
             bottom: 2rem;
         }
@@ -164,18 +166,16 @@ footer{
     grid-template-columns: 1fr;
     }
 .image{
-        max-width: 100%;
+        width: 100%;
         margin-bottom: 2rem;
     }
     #about{
-        padding-left: 2rem;
-        padding-right:2rem;
         padding-top: 3rem; }
     
     #quality{
-        padding-left: 2rem;
-        padding-right:2rem;
         padding-top: 3rem;
+       
+
     }
 }
  
@@ -227,9 +227,22 @@ footer{
    h2, h3{
     margin: auto 2rem;
    }
-   .main_grid{
-    direction: rtl;
+
+   .image {
+    order: 1;
    }
+
+   .text {
+    order: -1;
+    padding: 2rem 0;
+   }
+
+   .main_grid {
+    grid-template-columns: 6fr 4fr;}
+
+    .break {
+        padding-bottom: 0;
+    }
 }
 }
     
