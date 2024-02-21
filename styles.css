@@ -257,7 +257,8 @@ footer{
     }
 
   .contact_info{
-    margin-top: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom:1rem;
       p{
         font-weight: 600;
       }
