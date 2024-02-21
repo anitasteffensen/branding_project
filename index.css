@@ -20,13 +20,14 @@
         display: flex;
         flex-direction: column;
         justify-content: end;
+        height:30vw;
         padding: 1rem;
-        background-position: center 0%;
         background-size: cover;
-        height:15rem;
+        background-position: center;
     }
     .grid_button_coffee {
-        background-image: url("kaffe.jpg")
+        background-image: url("kaffe.jpg");
+        
     }
 
     .grid_button_water{
@@ -56,32 +57,19 @@
 }
 
 #portfolio{
-    padding-right:2rem;
-    padding-top: 1rem;
-
     .container{
         position:relative;
         text-align: center;
-        margin-bottom: 2rem;
     }
 
-    /*padding-left differ in this because of how we want the 'f' to allign with the text under it. */
     .portfolio_image{
-        padding-left: 2rem;
         max-width: 100%;
-        min-height: 15rem;;
-    }
+        min-height: 15rem;
+        max-height: 55rem;
+        padding-left: 2rem;
+        }
+    
 
-    .text{
-        padding-left: 2.25rem;
-        position:absolute;
-        bottom: 2.8rem;
-    }
-    .text_2{
-        padding-left: 2.25rem;
-        position: absolute;
-        bottom: 1.5rem;
-    }
 }
 
 #break-line{
@@ -91,16 +79,6 @@
 }
 
 #about{
-    padding-left: 2rem;
-    padding-right:2rem;
-    padding-top: 3rem; 
-
-    .about_image{
-        max-width: 100%;
-        margin-bottom: 2rem;
-        
-
-    }
 
     h1{
         color: #FE4D49;
@@ -122,16 +100,8 @@
 
 #quality{
     background-color: #222121;
-    padding-left: 2rem;
-    padding-right:2rem;
-    padding-top: 3rem;
     color: white;
 
-    .quality_image{
-        max-width: 100%;
-       
-        margin-bottom: 2rem;
-    }
 
     h2{
         text-align: right;
@@ -146,9 +116,6 @@
         font-size: 1.5rem;
         padding-bottom: 0.5rem;
     }
-
-
-   
 
     .break{
         padding-top:1rem;
@@ -168,15 +135,101 @@ footer{
 
 
 /*Mobile version - made on behalf of recommendation on smaller screens such as phones and smaller tablets*/
-@media only screen and (max-width: 700px){
-   
-}
+@media only screen and (max-width: 600px){
+#portfolio{
+        padding-right:2rem;
+       
+        .text1{
+            padding-left: 2.25rem;
+            position:absolute;
+            bottom: 3.5rem;
+        }
+        
+        .text2{
+            padding-left: 2.25rem;
+            position: absolute;
+            bottom: 2rem;
+        }
+        .text_1, .text_2{
+            display: none;
+        }
 
+    }
+
+.main_grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    }
+.image{
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+    #about{
+        padding-left: 2rem;
+        padding-right:2rem;
+        padding-top: 3rem; }
+    
+    #quality{
+        padding-left: 2rem;
+        padding-right:2rem;
+        padding-top: 3rem;
+    }
+}
+ 
 
 /*Desktop version*/
-@media only screen and (min-width: 700px) {
-  
+@media only screen and (min-width: 600px) {
+#portfolio{
+    .text_1{
+        padding-left: 2.25rem;
+        position:absolute;
+        bottom: 5rem;
+    }
+    .text_2{
+        padding-left: 2.25rem;
+        position: absolute;
+        bottom: 3.5rem;
+    }
+    .text1, .text2{
+        display: none;
+    }
+}
+
+
+.image{
+    width:100%;
+    margin:2rem 0;
+}
+
+.text{
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    
+}
+
+.main_grid{
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    }
+
+#about, #quality{
+    p{
+        text-align: left;
+        margin:0.5rem 2rem;
+    }
+}
+
+#quality{
+   h2, h3{
+    margin: auto 2rem;
+   }
+   .main_grid{
+    direction: rtl;
+   }
+}
+}
     
 
-}
+
    
