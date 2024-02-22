@@ -11,7 +11,11 @@
 
 
 
-
+.video_banner{
+    max-width: 100%;
+    height:12rem;
+    
+}
 #nav_buttons{
     .nav_grid{
         display:grid;
@@ -23,7 +27,7 @@
         display: flex;
         flex-direction: column;
         justify-content: end;
-        height:30vw;
+        height:12rem;
         padding: 1rem;
         background-size: cover;
         background-position: center;
@@ -76,7 +80,7 @@
 
 #break-line{
     background-color: #222121;
-    height: 2rem;
+    height: 1.5rem;
 
 }
 
@@ -87,16 +91,13 @@
         font-size: 1.875rem;
         font-family: nimbus;
         text-align: center;
-        margin-bottom:1rem;
+        margin-bottom:1.5rem;
     }
 
     p{
-        text-align: center;
+        text-align: left;
     }
-   .break{
-    padding-top:1rem;
-    padding-bottom: 4rem;
-   }
+   
 }
 
 
@@ -138,11 +139,14 @@ footer{
 
 /*Mobile version - made on behalf of recommendation on smaller screens such as phones and smaller tablets*/
 @media only screen and (max-width: 600px){
-#nav_buttons{
-    padding:0;
+section{
+    padding: 0 2rem;
+}
+    #nav_buttons{
+    padding: 0 0;
 }
 #portfolio{
-        padding-right:2rem;
+    margin:1rem 0;
     
         .text1{
             padding-left: .25rem;
@@ -170,10 +174,10 @@ footer{
         margin-bottom: 2rem;
     }
     #about{
-        padding-top: 3rem; }
+        padding-top: 2.5rem; }
     
     #quality{
-        padding-top: 3rem;
+        padding-top: 2.5rem;
        
 
     }
