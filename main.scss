@@ -1,0 +1,9 @@
+$sovs: red;
+.our-skills {
+    color: $sovs;
+    &__container {
+        color:$sovs;
+    }
+}
+
+@import 'scss';

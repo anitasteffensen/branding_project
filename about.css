@@ -198,19 +198,19 @@ section{
 
 #our_skills{
     .image{
-        padding: 2rem 0;
         height:42.5rem;}*
 
     p{
         text-align: left;
     }
-
+    .container{
+        align-items: flex-start;
+    }
     .wrapper{
         position:relative;
         height: 75px;
-        display: flex;
-        align-items: left;
-        
+        display: flex; 
+        margin-left:2rem;       
 
     }
    

@@ -136,5 +136,17 @@ section{
             }
         
     }
+
+    .button{
+        display: flex;
+        margin:0 4rem;
+    
+    }
+
+    #editing{
+        .image{
+            height:30rem;
+        }
+    }
    
 }
