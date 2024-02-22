@@ -39,10 +39,11 @@ body{
 }
 
 h1 {
-    color:#FE4D49;
-    font-size: 1.875rem;
-    font-family: nimbus;
+  color:#FE4D49;
+  font-size: 1.875;
+  font-family: nimbus;
 }
+
 
 p{
     font-family: open sans;
@@ -136,7 +137,6 @@ footer{
 /*Mobile version - made on behalf of recommendation on smaller screens such as phones and smaller tablets*/
 @media only screen and (max-width:650px){
   section{
-    padding: 0 2rem;
   }
   footer{
     .social_media1{
@@ -179,7 +179,7 @@ footer{
 
 /*adding the dekstop-version and still having the hamburgermenu*/
 @media only screen and (min-width:650px){
- 
+
   .footer_nav{
     display: none;
   }
@@ -195,7 +195,6 @@ footer{
     display: none;
   }
 
-  
 
   footer{
 
