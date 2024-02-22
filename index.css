@@ -137,7 +137,7 @@ footer{
 
 
 /*Mobile version - made on behalf of recommendation on smaller screens such as phones and smaller tablets*/
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 650px){
 #nav_buttons{
     padding:0;
 }
@@ -181,8 +181,13 @@ footer{
  
 
 /*Desktop version*/
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 650px) {
 #portfolio{
+
+    .portfolio_image{
+        padding-left: 2rem;
+    
+    }
     .text_1{
         padding-left: 2.25rem;
         position:absolute;
@@ -198,11 +203,17 @@ footer{
     }
 }
 
-
-.image{
-    width:100%;
-    margin:2rem 0;
+#about{
+    h1{
+        padding-top: 1rem;
+    }
+    .image{
+        width:100%;
+        margin:2rem 0;
+    }
 }
+
+
 
 .text{
     align-items: center;
@@ -227,6 +238,11 @@ footer{
    h2, h3{
     margin: auto 2rem;
    }
+
+   .image{
+    width:100%;
+    margin:2rem 0;
+}
 
    .image {
     order: 1;
