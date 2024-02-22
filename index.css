@@ -64,6 +64,7 @@
 }
 
 #portfolio{
+    margin:1rem 0;
     .container{
         position:relative;
         text-align: center;
@@ -73,6 +74,30 @@
         max-width: 100%;
         min-height: 15rem;
         max-height: 55rem;
+        }
+            
+    /*For mobil solution*/        
+    .text1{
+        padding-left: .25rem;
+        position:absolute;
+        bottom: 3.5rem;
+        }
+                
+    .text2{
+        padding-left: .25rem;
+        position: absolute;
+        bottom: 2rem; }
+
+    /*For dekstop solution*/  
+    .text_1{
+        padding-left: 2.25rem;
+        position:absolute;
+        bottom: 5rem;
+        }
+    .text_2{
+        padding-left: 2.25rem;
+        position: absolute;
+        bottom: 3.5rem;
         }
     
 
@@ -84,7 +109,18 @@
 
 }
 
+.main_grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    }
+.image{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    
+
 #about{
+    padding-top:2.5rem;
 
     h1{
         color: #FE4D49;
@@ -97,6 +133,11 @@
     p{
         text-align: left;
     }
+
+    .break{
+        margin-bottom:3rem;
+
+    }
    
 }
 
@@ -104,7 +145,7 @@
 #quality{
     background-color: #222121;
     color: white;
-
+   padding-top: 2.5rem;
 
     h2{
         text-align: right;
@@ -119,11 +160,16 @@
         font-size: 1.5rem;
         padding-bottom: 0.5rem;
     }
+    p{
+        text-align: left;
+    }
 
     .break{
-        padding-top:1rem;
-        padding-bottom: 4rem;
+        margin-bottom:3rem;
+
     }
+
+
     
 }
 
@@ -145,65 +191,31 @@ section{
     #nav_buttons{
     padding: 0 0;
 }
-#portfolio{
-    margin:1rem 0;
-    
-        .text1{
-            padding-left: .25rem;
-            position:absolute;
-            bottom: 3.5rem;
-        }
-        
-        .text2{
-            padding-left: .25rem;
-            position: absolute;
-            bottom: 2rem;
-        }
-        .text_1, .text_2{
-            display: none;
-        }
-
-    }
-
-.main_grid{
-    display: grid;
-    grid-template-columns: 1fr;
-    }
-.image{
-        width: 100%;
-        margin-bottom: 2rem;
-    }
-    #about{
-        padding-top: 2.5rem; }
-    
-    #quality{
-        padding-top: 2.5rem;
-       
-
-    }
 }
+.text_1, .text_2{
+    display: none;
+}
+
  
 
 /*Desktop version*/
 @media only screen and (min-width: 600px) {
-#portfolio{
+section{
+    padding: 0 0;
+}
+    #portfolio{
 
     .portfolio_image{
         padding-left: 2rem;
     
     }
-    .text_1{
-        padding-left: 2.25rem;
-        position:absolute;
-        bottom: 5rem;
-    }
-    .text_2{
-        padding-left: 2.25rem;
-        position: absolute;
-        bottom: 3.5rem;
-    }
+   
     .text1, .text2{
         display: none;
+    }
+
+    .text_1, .text_2{
+        display: flex;
     }
 }
 

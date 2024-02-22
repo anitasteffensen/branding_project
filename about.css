@@ -1,6 +1,11 @@
 
+
+section{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
 #the_team{
-    
+    padding-bottom: 3rem;
     .the_team_image{
         width: 100%;
         margin-bottom: 2rem;
@@ -15,14 +20,15 @@
     }
 
     .break{
-        padding-top:1rem;
-        padding-bottom: 4rem;
-       }
+        padding-top: 0.5rem;
+    }
 }
 
 #the_studio{
     background-color: #222121;
     color:white;
+    padding-bottom: 3rem;
+
 
     .image{
         margin:2rem 0rem;
@@ -35,14 +41,11 @@
         font-size: 1.875rem;
         color: white;
     }
-
-   
     
 }
 
 #girl_code{
-   
-
+    padding-bottom: 3rem;
     .image{
         margin:2rem 0rem;
         max-width: 100%;
@@ -56,17 +59,21 @@
         margin-bottom: 1rem;
     }
 
+    p{
+        padding-bottom: 3rem;
+    }
+
     
 }
 
 #break-line{
     background-color: #222121;
-    height: 2rem;
+    height: 1.5rem;
 
 }
 
 #our_skills{
-
+padding-bottom:3rem;
     .image{
         margin:2rem 0rem;
         width: 100%;
@@ -144,19 +151,6 @@ footer{
 }
 
 
-/*Mobile version - made on behalf of recommendation on smaller screens such as phones and smaller tablets*/
-@media only screen and (max-width: 650px){
-section{
-    padding-left: 2rem;
-    padding-right: 2rem;
-
-    p{
-        padding-bottom: 4rem;
-    }
-}
-
-
-}
 
     
 
@@ -177,17 +171,6 @@ section{
         margin-top:4rem;    
         }
 
-   
-    #the_studio,  #our_skills{
-        .image {
-            order: 1;
-           }
-        
-           .text {
-            order: -1;
-           }
-        
-    }
     #the_studio{
     .image{
         margin: 0 0;
@@ -213,12 +196,22 @@ section{
         margin-left:2rem;       
 
     }
-   
 
     .main_grid {
         grid-template-columns: 5.5fr 4.5fr;
-        margin-bottom:1rem;}
-}
+        margin-bottom:1rem;}}
+
+    #the_studio,  #our_skills{
+        .image {
+            order: 1;
+               }
+            
+        .text {
+            order: -1;
+               }
+            
+        }
+
     
 }
 

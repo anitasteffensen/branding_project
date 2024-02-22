@@ -1,4 +1,14 @@
 
+
+section{
+    padding-left:2rem;
+    padding-right:2rem;
+}
+.image{
+    width: 100%;
+    padding-top:3rem;   
+}
+
 h2{
     text-align: center;
     font-family: nimbus;
@@ -17,23 +27,8 @@ h2{
     margin-bottom: 2rem;
 }
 
-#services{
-  
 
-    .image{
-        width: 100%;
-    }
 
-    h1 {
-        text-align: center;
-        margin-bottom:1rem;
-        margin-top:1rem;
-    }
-
-    p{
-        padding-bottom: 2rem;
-    }
-}
 
 
 .button{
@@ -49,10 +44,11 @@ h2{
     text-decoration: none;
     justify-content: center;
     cursor: pointer;
-    display: inline-block;
-    margin:0 auto;
+    display: flex;
+    margin:0 6rem;
 
 }
+
 
 
 
@@ -61,7 +57,17 @@ h2{
 }
 
 
+#services{
+    h1 {
+        text-align: center;
+        margin-bottom:1rem;
+        margin-top:1rem;
+    }
+}
 
+#editing{
+    margin-bottom: 4rem;
+}
 
 /*washed out black footer*/
 footer{
@@ -75,18 +81,7 @@ footer{
 }
 
 
-/*Mobile version - made on behalf of recommendation on smaller screens such as phones and smaller tablets*/
-@media only screen and (max-width: 600px){
-section{
-    padding-left:2rem;
-    padding-right:2rem;
-}
-.image{
-    width: 100%;
-    padding-top:3rem;
-}
-    
-}
+
 
 
 /*Desktop version*/
@@ -139,13 +134,13 @@ section{
 
     .button{
         display: flex;
-        margin:0 4rem;
+        margin:0 15rem;
     
     }
 
     #editing{
         .image{
-            height:30rem;
+            height:100%;
         }
     }
    

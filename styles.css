@@ -249,6 +249,7 @@ footer{
       display: flex;
       flex-direction: column;
       gap: 1rem;
+      margin-right:1rem;
     }
 
     .newsletter_form {

@@ -1,17 +1,32 @@
 
+section{
+    padding-left:2rem;
+    padding-right:2rem;
+    padding-bottom:4rem;}
 
-
-
-.cases_image{
-  width: 100%;  
-  margin-bottom: 2rem;
-  margin-top:2rem;
-
+#cases{
+    padding:0 0;
+    .cases_image{
+        width: 100%;  
+        margin-bottom: 2rem;
+        margin-top:2rem;
+      
+      }
 }
+
 .break-line{
     background-color: #EDEBE4;
     height: 1.5rem;
 }
+
+/*adding an extra rem padding to the side for this image*/
+.image{
+    padding-left:2rem;
+    padding-right:2rem;
+    width: 100%;
+    padding-top:3rem;
+}
+
 
 
 #mads{
@@ -101,29 +116,16 @@ footer{
 }
 
 
-/*Mobile version - made on behalf of recommendation on smaller screens such as phones and smaller tablets*/
-@media only screen and (max-width: 600px){
-section{
-    padding-left:2rem;
-    padding-right:2rem;
-    padding-bottom:4rem;}
 
-
-/*adding an extra rem padding to the side for this image*/
-    .image{
-        padding-left:2rem;
-        padding-right:2rem;
-        width: 100%;
-        padding-top:3rem;
-    }
-}
     
 
 
 
 /*Desktop version*/
 @media only screen and (min-width: 600px){
-
+    section{
+        padding: 0 0}
+    
     .main_grid{
         display: grid;
         grid-template-columns: 5fr 5fr;
