@@ -17,6 +17,24 @@ h2{
     margin-bottom: 2rem;
 }
 
+#services{
+  
+
+    .image{
+        width: 100%;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom:1rem;
+        margin-top:1rem;
+    }
+
+    p{
+        padding-bottom: 2rem;
+    }
+}
+
 
 .button{
     background-color: #FE4D49;
@@ -38,92 +56,9 @@ h2{
 
 
 
-
-#services{
-    padding-left:2rem;
-    padding-right:2rem;
-
-    .services_image{
-        width: 100%;
-    }
-
-    h1 {
-        text-align: center;
-        margin-bottom:1rem;
-        margin-top:1rem;
-    }
-
-    p{
-        padding-bottom: 2rem;
-    }
+.break{
+    padding-bottom: 2rem;
 }
-
-#consult{
-    padding-left:2rem;
-    padding-right:2rem;
-
-    .consult_image{
-        padding-left:2rem;
-        padding-right:2rem;
-        width: 100%;
-        padding-top:3rem;
-    }
-
-    .break{
-        padding-bottom: 2rem;
-    }
-}
-
-#webdesign{
-    padding-left:2rem;
-    padding-right:2rem;
-
-    .web_image{
-        padding-left:2rem;
-        padding-right:2rem;
-        width: 100%;
-    }
-
-    .break{
-        padding-bottom: 2rem;
-    }
-
-}
-
-#digital{
-    padding-left:2rem;
-    padding-right:2rem;
-
-    .digital_image{
-        width: 100%;
-        padding-left:2rem;
-        padding-right:2rem;
-    }
-
-    .break{
-        padding-bottom: 2rem;
-    }
-}
-
-#editing{
-    padding-left:2rem;
-    padding-right:2rem;
-
-    .editing_image{
-        width: 100%;
-        padding-left:2rem;
-        padding-right:2rem;
-    }
-
-    p {
-        padding-bottom: 2rem;
-    }
-}
-
-
-
-
-
 
 
 
@@ -142,11 +77,64 @@ footer{
 
 /*Mobile version - made on behalf of recommendation on smaller screens such as phones and smaller tablets*/
 @media only screen and (max-width: 600px){
-
+section{
+    padding-left:2rem;
+    padding-right:2rem;
+}
+.image{
+    width: 100%;
+    padding-top:3rem;
+}
     
 }
 
 
 /*Desktop version*/
 @media only screen and (min-width: 600px){
+    section{
+        margin: 0 0;
+        padding: 0 0;
+    }
+    .main_grid{
+        display: grid;
+        grid-template-columns: 4.5fr 5.5fr;
+        margin-bottom: 3rem; }
+        
+    .image{
+        width: 100%;
+    }
+
+    .text{
+        margin-top:2rem;
+        padding: 0 2rem;
+    }
+
+    #services{
+        .image{
+            padding:1rem 4rem;
+        }
+        p{
+            margin:1rem 4rem;
+        }
+    }
+    #webdesign, #editing{
+        .image {
+            order: 1;
+           }
+        
+           .text {
+            order: -1;
+            padding: 0 2rem;
+           }
+
+           .main_grid{
+            display: grid;
+            grid-template-columns: 5.5fr 4.5fr;
+            }
+            .button{
+                margin-top:2rem;**
+            }
+        
+    }
+   
 }

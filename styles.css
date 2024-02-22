@@ -136,8 +136,7 @@ footer{
 
 /*Mobile version - made on behalf of recommendation on smaller screens such as phones and smaller tablets*/
 @media only screen and (max-width:650px){
-  section{
-  }
+  
   footer{
     .social_media1{
       display: none;
