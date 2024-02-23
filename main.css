@@ -1,10 +1,9 @@
-.our-skills {
-  color: red;
+@font-face {
+  font-family: nimbus;
+  src: url("TAN-NIMBUS.ttf");
 }
-.our-skills__container {
-  color: red;
+@font-face {
+  font-family: open sans;
+  src: url("OpenSans-VariableFont_wdth,wght.ttf");
 }
-
-.our-skills {
-  background-color: red;
-}/*# sourceMappingURL=main.css.map */
+/*Variables*//*# sourceMappingURL=main.css.map */
