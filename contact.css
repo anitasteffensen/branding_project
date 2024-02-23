@@ -1,34 +1,4 @@
-/*
-#lets_talk{
-    margin-top:4rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
 
-    .no_b_margin{
-        margin-bottom: 0;
-        }
-    .no_margin{
-        margin:0;
-    }
-}
-
-#contact{
-    background-color: #222121;
-}
-
-
-
-
-/*washed out white footer
-footer{
-
-    a{
-        text-decoration: none;
-        color: black;
-    }
-}*/
-
-*/
 
 #contact{
     background-color: #222121;
@@ -41,24 +11,22 @@ footer{
 
 /*Styling for baggrundsvideo*/ 
 #background-video {
-    position: fixed; 
-    bottom: 0; 
+    position: absolute; 
+    top: -0rem; 
+    right:0;
     min-width: 100%;
     min-height: 100%;
-    width: auto; 
-    height: auto;
+    height: 100%;
     z-index: -1;
-    background-size: cover;
-    margin-left: 20px;
 
 }
-
 /*Styling for banner*/
+
 .overskrift-kontakt {
-margin-top: 4rem; 
-padding-left: 5rem;
-padding-right: 4rem;
-padding-top: 4rem;
+    margin-top: 4em; 
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 4em;
 
 }
 
@@ -80,7 +48,7 @@ font-size: 20px;
     flex-wrap: wrap;
     max-width: 100%;
     z-index: 1;
-    margin-top: 13rem; 
+    margin-top: 13em; 
 
 }
 
@@ -106,8 +74,8 @@ font-size: 20px;
 
 
 /*Styling for inputfelter*/
-form {
-    width: 50vw;
+.contact-form-actual {
+    width: 80vw;
     margin: 0 auto;
     margin-top: 60px;
     max-width: 100%;
@@ -165,7 +133,7 @@ input[type="text"] {
         font-family: Open sans;
         font-size: 18px;
         font-weight: 600;
-        margin-top: 2rem;
+        margin-top: 2em;
         text-transform: uppercase;
     }
 
@@ -183,13 +151,11 @@ footer{
 /*Mobile version - made on behalf of recommendation on smaller screens such as phones and smaller tablets*/
 
 @media only screen and (max-width: 600px){
-   
-    /*Styling for banner*/
-.overskrift-kontakt {
-    margin-top: 4rem; 
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 4rem;
+    #background-video {
+display:none;}
+
+  /*Styling for banner*/
+  
     
     }
     
@@ -200,7 +166,7 @@ footer{
     .overskrift-kontakt p {
     font-size: 18px;
     }
-}
+
 
 @media only screen and (max-width: 780px){
 
@@ -211,8 +177,21 @@ footer{
 
 
 /*Desktop version*/
-@media only screen and (min-width: 600px){
-}
+@media only screen and (min-width: 780px){
+    .contact-form-actual {
+        width: 60vw;
+        margin: 0 auto;
+        margin-top: 60px;
+        max-width: 100%;
+    }
+
+    .overskrift-kontakt {
+        margin-top: 4em; 
+        padding-left: 5em;
+        padding-right: 4em;
+        padding-top: 4em;
+
+}}
   
 
 

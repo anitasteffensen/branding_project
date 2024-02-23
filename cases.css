@@ -1,30 +1,30 @@
 
 section{
-    padding-left:2rem;
-    padding-right:2rem;
-    padding-bottom:4rem;}
+    padding-left:2em;
+    padding-right:2em;
+    padding-bottom:4em;}
 
 #cases{
     padding:0 0;
     .cases_image{
         width: 100%;  
-        margin-bottom: 2rem;
-        margin-top:2rem;
+        margin-bottom: 2em;
+        margin-top:2em;
       
       }
 }
 
 .break-line{
     background-color: #EDEBE4;
-    height: 1.5rem;
+    height: 1.5em;
 }
 
 /*adding an extra rem padding to the side for this image*/
 .image{
-    padding-left:2rem;
-    padding-right:2rem;
+    padding-left:2em;
+    padding-right:2em;
     width: 100%;
-    padding-top:3rem;
+    padding-top:3em;
 }
 
 
@@ -34,11 +34,11 @@ section{
     color:white;
     .mads_logo{
         width: 40%;
-        margin-top:2rem;
+        margin-top:2em;
         margin-left:auto;
         margin-right:auto;
         display: block;
-        margin-bottom: 2rem;
+        margin-bottom: 2em;
     }
 
 }
@@ -48,11 +48,11 @@ section{
     color: white;
     .messyw_logo{
         width: 60%;
-        margin-top:2rem;
+        margin-top:2em;
         margin-left:auto;
         margin-right:auto;
         display: block;
-        margin-bottom: 2rem;
+        margin-bottom: 2em;
     }
 }
 
@@ -63,11 +63,11 @@ section{
    
     .hay_logo{
         width: 25%;
-        margin-top:2rem;
+        margin-top:2em;
         margin-left:auto;
         margin-right:auto;
         display: block;
-        margin-bottom: 2rem
+        margin-bottom: 2em
     }
 }
 
@@ -79,11 +79,11 @@ section{
 
     .superdry_logo{
         width: 50%;
-        margin-top:2rem;
+        margin-top:2em;
         margin-left:auto;
         margin-right:auto;
         display: block;
-        margin-bottom: 2rem
+        margin-bottom: 2em
     }
 }
 
@@ -96,11 +96,11 @@ section{
 
     .ganni_logo{
         width: 60%;
-        margin-top:2rem;
+        margin-top:2em;
         margin-left:auto;
         margin-right:auto;
         display: block;
-        margin-bottom: 2rem
+        margin-bottom: 2em
     }
 
 }
@@ -137,7 +137,7 @@ footer{
     }
 
     .text{
-        margin:2rem 2rem;
+        margin:2em 2em;
     }
 
     #messy, #superdry{
@@ -147,7 +147,7 @@ footer{
         
            .text {
             order: -1;
-            padding: 2rem 0;
+            padding: 2em 0;
            }
     }
 }

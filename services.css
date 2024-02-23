@@ -1,21 +1,20 @@
 
 
 section{
-    padding-left:2rem;
-    padding-right:2rem;
+    padding-left:2em;
+    padding-right:2em;
 }
 .image{
     width: 100%;
-    padding-top:3rem;   
+    padding-top:3em;   
 }
 
 h2{
     text-align: center;
     font-family: nimbus;
-    font-size: 1.5rem;
     color: black;
-    margin-bottom:1rem;
-    margin-top:1rem;
+    margin-bottom:1em;
+    margin-top:1em;
 
     
 }
@@ -24,7 +23,7 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 2em;
 }
 
 
@@ -36,8 +35,8 @@ h2{
     box-shadow: none;
     border:none;
     color: white;
-    padding:0.5rem;
-    font-size: 0.75rem;
+    padding:0.5em;
+    font-size: 0.75em;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -45,7 +44,7 @@ h2{
     justify-content: center;
     cursor: pointer;
     display: flex;
-    margin:0 6rem;
+    margin:0 6em;
 
 }
 
@@ -53,20 +52,20 @@ h2{
 
 
 .break{
-    padding-bottom: 2rem;
+    padding-bottom: 2em;
 }
 
 
 #services{
     h1 {
         text-align: center;
-        margin-bottom:1rem;
-        margin-top:1rem;
+        margin-bottom:1em;
+        margin-top:1em;
     }
 }
 
 #editing{
-    margin-bottom: 4rem;
+    margin-bottom: 4em;
 }
 
 /*washed out black footer*/
@@ -93,23 +92,23 @@ footer{
     .main_grid{
         display: grid;
         grid-template-columns: 4.5fr 5.5fr;
-        margin-bottom: 3rem; }
+        margin-bottom: 3em; }
         
     .image{
         width: 100%;
     }
 
     .text{
-        margin-top:2rem;
-        padding: 0 2rem;
+        margin-top:2em;
+        padding: 0 2em;
     }
 
     #services{
         .image{
-            padding:1rem 4rem;
+            padding:1em 4em;
         }
         p{
-            margin:1rem 4rem;
+            margin:1em 4em;
         }
     }
     #webdesign, #editing{
@@ -119,7 +118,7 @@ footer{
         
            .text {
             order: -1;
-            padding: 0 2rem;
+            padding: 0 2em;
            }
 
            .main_grid{
@@ -127,14 +126,15 @@ footer{
             grid-template-columns: 5.5fr 4.5fr;
             }
             .button{
-                margin-top:2rem;**
+                margin-top:2em;
             }
+        }
         
     }
 
     .button{
         display: flex;
-        margin: 0 2.5rem;
+        margin: 0 2.5em;
 
     
     }
@@ -143,6 +143,4 @@ footer{
         .image{
             height:100%;
         }
-    }
-   
-}
+    }  
