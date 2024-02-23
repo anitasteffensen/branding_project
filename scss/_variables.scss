@@ -14,11 +14,19 @@ $sunset_red: #FE4D49;
 
 $washed_out: #222121;
 
+$hamburger: black;
+
 $text-colour1: black;
 
 $text-colour2: white;
 
 $link-hover:  rgba(254, 77, 73, 0.75);
+
+
+
+$text-font: "open sans";
+
+$header-font: "nimbus";
 
 $text-size: 1em;
 
@@ -28,13 +36,28 @@ $header2-size: 1.625em;
 
 
 
-$text-font: "open sans";
 
-$header-font: "nimbus";
 
-$padding:;
+$m-padding-top:2em;
 
-$margin:;
+$m-padding-sides:2em;
+
+
+
+$m-cases-padding: 0 2em;
+$m-cases-padding-t: 3em;
+
+$m-logo-margin: 2em 0;
+
+/*
+$desk-padding: 1em;
+
+$desk-margin: 2em 0;
+
+$break: 1.5em 6em;
+
+$mobile-margin:;*/
+
 
 
 
