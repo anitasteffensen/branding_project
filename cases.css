@@ -1,156 +1,461 @@
+/*content
 
-section{
-    padding-left:2em;
-    padding-right:2em;
-    padding-bottom:4em;}
+1. navigation / #nav_buttons
+    1.1 portfolio / #portfolio
+2. about a studio / #about
+    2.1 quality / #quality
+3. footer
+4. Mobil styling
+5. Dekstop  styling
+*/
+@font-face {
+  font-family: nimbus;
+  src: url("TAN-NIMBUS.ttf");
+}
+@font-face {
+  font-family: open sans;
+  src: url("OpenSans-VariableFont_wdth,wght.ttf");
+}
+/*Variables*/
+/*
+$m-padding-top:2em;
 
-#cases{
-    padding:0 0;
-    .cases_image{
-        width: 100%;  
-        margin-bottom: 2em;
-        margin-top:2em;
-      
-      }
+
+
+$m-cases-padding: 0 2em;
+$m-cases-padding-t: 3em;
+
+$m-logo-margin: 2em 0;
+
+
+$desk-padding: 1em;
+
+$desk-margin: 2em 0;
+
+$break: 1.5em 6em;
+
+$mobile-margin:;*/
+/*Styling thats repeated on all sites
+
+1. body
+    1.1 background colour
+    1.2 font-size and font
+2. header and content
+    2.1 logo / .header_logo
+3. footer
+    3.1 logo / .logo
+    3.2 navigation in footer / .footer_nav 
+        3.2.1 navigation for desktop
+        3.2.2 navigation for mobile
+*/
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.break-line{
-    background-color: #EDEBE4;
-    height: 1.5em;
+body {
+  background-color: #EDEBE4;
+  text-align: left;
+}
+
+h1 {
+  color: #FE4D49;
+  font-size: 1.875em;
+  font-family: "nimbus";
+}
+
+h2 {
+  font-size: 1.625em; /*golden ratio p * 1.618*/
+}
+
+p {
+  font-family: "open sans";
+  font-size: "open sans";
+  text-wrap: break-word;
+  margin: 0.5em 0;
+}
+
+header {
+  /*Inspiration for hamburger menu found on: https://codepen.io/ngochuynh/pen/yKrvVZ*/
+  /* drop-down menu */
+}
+header .header_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+header .header_logo {
+  max-height: 3em;
+  padding-top: 0.5em;
+  padding-left: 2em;
+  margin-top: 0.5em;
+}
+header .nav_bar {
+  font-family: "open sans";
+  overflow: hidden;
+}
+header .nav_bar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 1.5em 1em;
+  text-decoration: underline;
+  font-size: 1em;
+  text-underline-offset: 0.5em;
+  text-decoration-thickness: 0.25em;
+}
+header .nav_bar a.active {
+  color: #FE4D49;
+}
+header .nav_bar .right_top {
+  margin-left: 4em;
+  padding-right: 2em;
+}
+header .hamburger1 {
+  margin-top: -2.5em;
+  margin-right: 2em;
+  margin-bottom: 1em;
+  display: grid;
+  justify-items: right;
+  z-index: 120;
+}
+header .hamburger1 div {
+  background-color: black;
+  position: relative;
+  width: 2.75em;
+  height: 0.25em;
+  margin-top: 0.5em;
+  transition: all 0.2s ease-in-out;
+}
+header #toggle1 {
+  display: none;
+}
+header #toggle1:checked + .hamburger1 .top {
+  transform: rotate(-45deg);
+  margin-top: 22.5px;
+}
+header #toggle1:checked + .hamburger1 .meat {
+  transform: rotate(45deg);
+  margin-top: -5px;
+}
+header #toggle1:checked + .hamburger1 .bottom {
+  transform: scale(0);
+}
+header #toggle1:checked ~ .menu1 {
+  height: 17em;
+}
+header .menu1 {
+  width: 100%;
+  margin: auto 0;
+  display: grid;
+  grid-template-rows: repeat(5, 0.5fr);
+  grid-row-gap: 0.25em;
+  padding: 0;
+  list-style: none;
+  clear: both;
+  width: auto;
+  text-align: center;
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.4s ease;
+  z-index: 120;
+  transition: all 0.3s ease;
+}
+header .link1 {
+  width: 100%;
+  margin: 0;
+  padding: 0.5em 0;
+  font-size: 1.25em;
+  font-family: open sans;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .link1:hover {
+  background-color: rgba(254, 77, 73, 0.75);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+footer {
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 4em;
+}
+footer .logo {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  max-width: 7.5em;
+}
+footer .footer_nav p {
+  font-weight: 600;
+}
+footer .footer_nav li {
+  margin-top: 0.5em;
+}
+footer .footer_info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+footer .column {
+  max-width: 10em;
+  margin-bottom: 20px;
+  margin-right: 40px;
+}
+footer .column h3 {
+  margin-bottom: 10px;
+  margin-top: 15px;
+  font-family: "open sans";
+  font-weight: 600;
+  font-size: 16px;
+}
+footer ul li {
+  list-style: none;
+  margin-bottom: 8px;
+}
+footer ul {
+  padding: 0;
+}
+footer a {
+  text-decoration: none;
+}
+footer a:visited {
+  text-decoration: none;
+}
+footer .footer-container-desk {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .footer_newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-right: 1em;
+}
+footer .newsletter_form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+footer .footer_newsletter {
+  font-family: "open sans";
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+footer .newsletter_form button {
+  width: 100px;
+  background-color: #FE4D49;
+  color: white;
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 10px;
+}
+footer .newsletter_form input[type=email] {
+  padding: 8px 0;
+  border-bottom: 1px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+}
+footer input[type=email]:focus {
+  outline: 2px solid black;
+}
+
+/*Mobile version - made on behalf of recommendation on smaller screens such as phones and smaller tablets*/
+@media only screen and (max-width: 600px) {
+  footer .social_media1 {
+    display: none;
+  }
+  footer .footer_newsletter {
+    display: none;
+  }
+  footer .column {
+    display: none;
+  }
+  footer .contact_info {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  footer .contact_info p {
+    font-weight: 600;
+  }
+  footer .contact_info li {
+    margin-top: 0.5em;
+  }
+  footer .contact_info .email {
+    margin-top: 1.5em;
+  }
+  footer .grid {
+    display: grid;
+    grid-template-columns: 5% 5% 5% 5% 80%;
+    gap: 2em;
+    margin-top: 4em;
+  }
+  footer .social_media2 {
+    max-height: 2em;
+  }
+}
+/*adding the dekstop-version and still having the hamburgermenu*/
+@media only screen and (min-width: 600px) {
+  .footer_nav {
+    display: none;
+  }
+  .social_media2 {
+    display: none;
+  }
+  .contact_info {
+    display: none;
+  }
+  .address2 {
+    display: none;
+  }
+}
+/*having the hamburgermenu but  having the layout of desktop version*/
+@media only screen and (max-width: 800px) {
+  header .nav_bar {
+    display: none;
+  }
+  .footer_newsletter {
+    display: none !important;
+  }
+}
+/*Desktop version with its navigationbar in the top*/
+@media only screen and (min-width: 800px) {
+  #hamburger_menu {
+    display: none;
+  }
+}
+section {
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 6em;
+}
+
+#cases {
+  padding: 0 0;
+}
+#cases .cases_image {
+  width: 100%;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+.break-line {
+  background-color: #EDEBE4;
+  height: 1.5em;
 }
 
 /*adding an extra rem padding to the side for this image*/
-.image{
-    padding-left:2em;
-    padding-right:2em;
-    width: 100%;
-    padding-top:3em;
+.image {
+  padding-left: 2em;
+  padding-right: 2em;
+  width: 100%;
+  padding-top: 3em;
 }
 
-
-
-#mads{
-    background-color: #222121;
-    color:white;
-    .mads_logo{
-        width: 40%;
-        margin-top:2em;
-        margin-left:auto;
-        margin-right:auto;
-        display: block;
-        margin-bottom: 2em;
-    }
-
+#mads {
+  background-color: #222121;
+  color: white;
+}
+#mads .mads_logo {
+  width: 40%;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 2em;
 }
 
-#messy{
-    background-color: #222121;
-    color: white;
-    .messyw_logo{
-        width: 60%;
-        margin-top:2em;
-        margin-left:auto;
-        margin-right:auto;
-        display: block;
-        margin-bottom: 2em;
-    }
+#messy {
+  background-color: #222121;
+  color: white;
+}
+#messy .messyw_logo {
+  width: 60%;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 2em;
 }
 
-#hay{
-    background-color: #222121;
-    color: white;
-
-   
-    .hay_logo{
-        width: 25%;
-        margin-top:2em;
-        margin-left:auto;
-        margin-right:auto;
-        display: block;
-        margin-bottom: 2em
-    }
+#hay {
+  background-color: #222121;
+  color: white;
+}
+#hay .hay_logo {
+  width: 25%;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 2em;
 }
 
-#superdry{
-    background-color: #222121;
-    color: white;
-
-   
-
-    .superdry_logo{
-        width: 50%;
-        margin-top:2em;
-        margin-left:auto;
-        margin-right:auto;
-        display: block;
-        margin-bottom: 2em
-    }
+#superdry {
+  background-color: #222121;
+  color: white;
+}
+#superdry .superdry_logo {
+  width: 50%;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 2em;
 }
 
-#ganni{
-    background-color: #222121;
-    
-    color: white;
-   
-   
-
-    .ganni_logo{
-        width: 60%;
-        margin-top:2em;
-        margin-left:auto;
-        margin-right:auto;
-        display: block;
-        margin-bottom: 2em
-    }
-
+#ganni {
+  background-color: #222121;
+  color: white;
 }
-  
-
-
-footer{
-    a{
-        text-decoration: none;
-        color: black;
-    }
-
+#ganni .ganni_logo {
+  width: 60%;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 1em;
 }
 
-
-
-    
-
-
+footer a {
+  text-decoration: none;
+  color: black;
+}
 
 /*Desktop version*/
-@media only screen and (min-width: 600px){
-    section{
-        padding: 0 0}
-    
-    .main_grid{
-        display: grid;
-        grid-template-columns: 5fr 5fr;
-        }
-
-    .image{
-        padding: 0 0;
-        width: 100%;
-    }
-
-    .text{
-        margin:2em 2em;
-    }
-
-    #messy, #superdry{
-        .image {
-            order: 1;
-           }
-        
-           .text {
-            order: -1;
-            padding: 2em 0;
-           }
-    }
-}
-
-
-
+@media only screen and (min-width: 600px) {
+  section {
+    padding: 0 0;
+  }
+  .main_grid {
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+  }
+  .image {
+    padding: 0 0;
+    width: 100%;
+  }
+  .text {
+    margin: 2em 2em;
+  }
+  #messy .image, #superdry .image {
+    order: 1;
+  }
+  #messy .text, #superdry .text {
+    order: -1;
+    padding: 2em 0;
+  }
+}/*# sourceMappingURL=cases.css.map */

@@ -8,6 +8,16 @@
 }
 /*Variables*/
 /*
+$m-padding-top:2em;
+
+
+
+$m-cases-padding: 0 2em;
+$m-cases-padding-t: 3em;
+
+$m-logo-margin: 2em 0;
+
+
 $desk-padding: 1em;
 
 $desk-margin: 2em 0;
@@ -15,7 +25,19 @@ $desk-margin: 2em 0;
 $break: 1.5em 6em;
 
 $mobile-margin:;*/
-/*Styling thats repeated on all sites*/
+/*Styling thats repeated on all sites
+
+1. body
+    1.1 background colour
+    1.2 font-size and font
+2. header and content
+    2.1 logo / .header_logo
+3. footer
+    3.1 logo / .logo
+    3.2 navigation in footer / .footer_nav 
+        3.2.1 navigation for desktop
+        3.2.2 navigation for mobile
+*/
 * {
   margin: 0;
   box-sizing: border-box;
@@ -40,8 +62,7 @@ p {
   font-family: "open sans";
   font-size: "open sans";
   text-wrap: break-word;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin: 0.5em 0;
 }
 
 header {
@@ -304,5 +325,840 @@ footer input[type=email]:focus {
 @media only screen and (min-width: 800px) {
   #hamburger_menu {
     display: none;
+  }
+}
+/*content
+
+1. navigation / #nav_buttons
+    1.1 portfolio / #portfolio
+2. about a studio / #about
+    2.1 quality / #quality
+3. footer
+4. Mobil styling
+5. Dekstop  styling
+*/
+.video_banner {
+  max-width: 100%;
+  height: 12em;
+}
+
+#nav_buttons .nav_grid {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+}
+#nav_buttons .grid_image {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 12em;
+  padding: 1em;
+  background-size: cover;
+  background-position: center;
+}
+#nav_buttons .grid_button_coffee {
+  background-image: url("kaffe.jpg");
+}
+#nav_buttons .grid_button_water {
+  background-image: url("water.jpg");
+}
+#nav_buttons .grid_button_pen {
+  background-image: url("pen.jpg");
+}
+#nav_buttons .button {
+  background-color: #FE4D49;
+  box-shadow: none;
+  border: none;
+  color: white;
+  width: auto;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-size: 0.875em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+}
+
+#portfolio {
+  margin: 1em 0;
+  /*For mobil solution*/
+  /*For dekstop solution*/
+}
+#portfolio .container {
+  position: relative;
+  text-align: center;
+}
+#portfolio .portfolio_image {
+  max-width: 100%;
+  min-height: 15em;
+  max-height: 55em;
+}
+#portfolio .text1 {
+  padding-left: 0.25em;
+  position: absolute;
+  bottom: 3.5em;
+}
+#portfolio .text2 {
+  padding-left: 0.25em;
+  position: absolute;
+  bottom: 2em;
+}
+#portfolio .text_1 {
+  padding-left: 2.25em;
+  position: absolute;
+  bottom: 5em;
+}
+#portfolio .text_2 {
+  padding-left: 2.25em;
+  position: absolute;
+  bottom: 3.5em;
+}
+
+#break-line {
+  background-color: #222121;
+  height: 1.5em;
+}
+
+.main_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.image {
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+#about {
+  padding-top: 2em;
+}
+#about h1 {
+  font-family: "nimbus";
+  text-align: center;
+  margin-bottom: 1em;
+}
+#about p {
+  text-align: left;
+}
+#about .break {
+  margin-bottom: 6em;
+}
+
+#quality {
+  background-color: #222121;
+  color: white;
+  padding-top: 2em;
+}
+#quality h2 {
+  text-align: right;
+  font-family: "nimbus";
+  margin-bottom: 0.5em;
+}
+#quality h3 {
+  text-align: right;
+  font-family: "nimbus";
+  font-size: 1.625em;
+  margin-bottom: 1em;
+}
+#quality p {
+  text-align: left;
+}
+#quality .break {
+  margin-bottom: 6em;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+/*Mobile version - made on behalf of recommendation on smaller screens such as phones and smaller tablets*/
+@media only screen and (max-width: 600px) {
+  section {
+    padding: 0 2em;
+  }
+  #nav_buttons {
+    padding: 0 0;
+  }
+}
+.text_1, .text_2 {
+  display: none;
+}
+
+/*Desktop version*/
+@media only screen and (min-width: 600px) {
+  section {
+    padding: 0 0;
+    margin: 0 0;
+  }
+  .grid_image {
+    height: 26vw !important;
+  }
+  #portfolio .portfolio_image {
+    padding-left: 2em;
+  }
+  #portfolio .text1, #portfolio .text2 {
+    display: none;
+  }
+  #portfolio .text_1, #portfolio .text_2 {
+    display: flex;
+  }
+  #about h1 {
+    padding-top: 2eem;
+  }
+  #about .image {
+    width: 100%;
+  }
+  .text {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .main_grid {
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+  }
+  #about p, #quality p {
+    text-align: left;
+    margin: 0.5em 2em;
+  }
+  #quality h2, #quality h3 {
+    margin: auto 2em;
+  }
+  #quality .image {
+    width: 100%;
+    margin: 2 0;
+  }
+  #quality .image {
+    order: 1;
+  }
+  #quality .text {
+    order: -1;
+    padding: 2em 0;
+  }
+  #quality .main_grid {
+    grid-template-columns: 6fr 4fr;
+  }
+  #quality .break {
+    padding-bottom: 0;
+  }
+}
+/*content
+
+1. navigation / #nav_buttons
+    1.1 portfolio / #portfolio
+2. about a studio / #about
+    2.1 quality / #quality
+3. footer
+4. Mobil styling
+5. Dekstop  styling
+*/
+section {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+#the_team {
+  padding-bottom: 3rem;
+}
+#the_team .the_team_image {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+#the_team h1 {
+  color: #FE4D49;
+  font-size: 1.875em;
+  font-family: "nimbus";
+  text-align: center;
+  margin-bottom: 1rem;
+}
+#the_team .break {
+  padding-top: 0.5rem;
+}
+
+#the_studio {
+  background-color: #222121;
+  color: white;
+  padding-bottom: 3rem;
+}
+#the_studio .image {
+  margin: 2rem 0rem;
+  max-width: 100%;
+}
+#the_studio h2 {
+  text-align: left;
+  font-family: "nimbus";
+  font-size: 1.875em;
+  color: white;
+}
+
+#girl_code {
+  padding-bottom: 3rem;
+}
+#girl_code .image {
+  margin: 2rem 0rem;
+  max-width: 100%;
+}
+#girl_code h2 {
+  text-align: center;
+  font-family: "nimbus";
+  font-size: 1.875em;
+  color: #FE4D49;
+  margin-bottom: 1rem;
+}
+#girl_code p {
+  padding-bottom: 3rem;
+}
+
+#break-line {
+  background-color: #222121;
+  height: 1.5em;
+}
+
+#our_skills {
+  padding-bottom: 3rem;
+}
+#our_skills .image {
+  margin: 2rem 0rem;
+  width: 100%;
+}
+#our_skills h2 {
+  text-align: center;
+  font-family: "nimbus";
+  font-size: 1.875em;
+  color: black;
+  padding-bottom: 2rem;
+}
+#our_skills h3 {
+  font-family: "open sans";
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+#our_skills .container {
+  position: relative;
+  text-align: center;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#our_skills .wrapper {
+  position: relative;
+  height: 75px;
+  display: flex;
+  align-items: center;
+}
+#our_skills .rectangle {
+  background-color: rgba(254, 77, 73, 0.85);
+  height: 50px;
+  width: 48px;
+  position: absolute;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  z-index: -1;
+  left: -1rem;
+}
+#our_skills .text_1 {
+  margin-top: 1rem;
+  white-space: nowrap;
+}
+#our_skills p {
+  text-align: center;
+}
+
+/*washed out black footer*/
+footer {
+  background-color: #222121;
+  color: white;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+/*Desktop version*/
+@media only screen and (min-width: 650px) {
+  section p, h2 {
+    padding: 0 2rem;
+  }
+  .main_grid {
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+  }
+  .text {
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+  }
+  #the_studio .image {
+    margin: 0 0;
+  }
+  #the_studio .main_grid {
+    grid-template-columns: 5fr 5fr;
+  }
+  #our_skills .image {
+    height: 42.5rem;
+  }
+  #our_skills * p {
+    text-align: left;
+  }
+  #our_skills .container {
+    align-items: flex-start;
+  }
+  #our_skills .wrapper {
+    position: relative;
+    height: 75px;
+    display: flex;
+    margin-left: 2rem;
+  }
+  #our_skills .main_grid {
+    grid-template-columns: 5.5fr 4.5fr;
+    margin-bottom: 1rem;
+  }
+  #the_studio .image, #our_skills .image {
+    order: 1;
+  }
+  #the_studio .text, #our_skills .text {
+    order: -1;
+  }
+}
+/*content
+
+1. navigation / #nav_buttons
+    1.1 portfolio / #portfolio
+2. about a studio / #about
+    2.1 quality / #quality
+3. footer
+4. Mobil styling
+5. Dekstop  styling
+*/
+section {
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 4em;
+}
+
+#cases {
+  padding: 0 0;
+}
+#cases .cases_image {
+  width: 100%;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+.break-line {
+  background-color: #EDEBE4;
+  height: 1.5em;
+}
+
+/*adding an extra rem padding to the side for this image*/
+.image {
+  padding-left: 2em;
+  padding-right: 2em;
+  width: 100%;
+  padding-top: 3em;
+}
+
+#mads {
+  background-color: #222121;
+  color: white;
+}
+#mads .mads_logo {
+  width: 40%;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 2em;
+}
+
+#messy {
+  background-color: #222121;
+  color: white;
+}
+#messy .messyw_logo {
+  width: 60%;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 2em;
+}
+
+#hay {
+  background-color: #222121;
+  color: white;
+}
+#hay .hay_logo {
+  width: 25%;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 2em;
+}
+
+#superdry {
+  background-color: #222121;
+  color: white;
+}
+#superdry .superdry_logo {
+  width: 50%;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 2em;
+}
+
+#ganni {
+  background-color: #222121;
+  color: white;
+}
+#ganni .ganni_logo {
+  width: 60%;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 2em;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+/*Desktop version*/
+@media only screen and (min-width: 600px) {
+  section {
+    padding: 0 0;
+  }
+  .main_grid {
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+  }
+  .image {
+    padding: 0 0;
+    width: 100%;
+  }
+  .text {
+    margin: 2em 2em;
+  }
+  #messy .image, #superdry .image {
+    order: 1;
+  }
+  #messy .text, #superdry .text {
+    order: -1;
+    padding: 2em 0;
+  }
+}
+/*content
+
+1. navigation / #nav_buttons
+    1.1 portfolio / #portfolio
+2. about a studio / #about
+    2.1 quality / #quality
+3. footer
+4. Mobil styling
+5. Dekstop  styling
+*/
+section {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.image {
+  width: 100%;
+  padding-top: 3em;
+}
+
+h2 {
+  text-align: center;
+  font-family: "nimbus";
+  color: black;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.services_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.button {
+  background-color: #FE4D49;
+  box-shadow: none;
+  border: none;
+  color: white;
+  padding: 0.5em;
+  font-size: 0.875em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  justify-content: center;
+  cursor: pointer;
+  display: flex;
+  margin: 0 6em;
+}
+
+.break {
+  padding-bottom: 2em;
+}
+
+#services h1 {
+  text-align: center;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+#editing {
+  margin-bottom: 4em;
+}
+
+/*washed out black footer*/
+footer {
+  background-color: #222121;
+  color: white;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+/*Desktop version*/
+@media only screen and (min-width: 600px) {
+  section {
+    margin: 0 0;
+    padding: 0 0;
+  }
+  .main_grid {
+    display: grid;
+    grid-template-columns: 4.5fr 5.5fr;
+    margin-bottom: 3em;
+  }
+  .image {
+    width: 100%;
+  }
+  .text {
+    margin-top: 2em;
+    padding: 0 2em;
+  }
+  #services .image {
+    padding: 1em 4em;
+  }
+  #services p {
+    margin: 1em 4em;
+  }
+  #webdesign .image, #editing .image {
+    order: 1;
+  }
+  #webdesign .text, #editing .text {
+    order: -1;
+    padding: 0 2em;
+  }
+  #webdesign .main_grid, #editing .main_grid {
+    display: grid;
+    grid-template-columns: 5.5fr 4.5fr;
+  }
+  #webdesign .button, #editing .button {
+    margin-top: 2em;
+  }
+}
+.button {
+  display: flex;
+  margin: 0 2.5em;
+}
+
+#editing .image {
+  height: 100%;
+}
+
+/*content
+
+1. navigation / #nav_buttons
+    1.1 portfolio / #portfolio
+2. about a studio / #about
+    2.1 quality / #quality
+3. footer
+4. Mobil styling
+5. Dekstop  styling
+*/
+#contact {
+  background-color: #222121;
+}
+
+.no-style-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*Styling for baggrundsvideo*/
+#background-video {
+  position: absolute;
+  top: 0rem;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/*Styling for banner*/
+.overskrift-kontakt {
+  margin-top: 4em;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 4em;
+}
+
+.overskrift-kontakt h1 {
+  font-size: 60px;
+}
+
+.overskrift-kontakt p {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+/*Styling for kontaktformular*/
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  z-index: 1;
+  margin-top: 13em;
+}
+
+.contact-form {
+  flex: 1;
+  background-color: #222121;
+  color: white;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  z-index: 1;
+}
+
+.contact-form img {
+  max-width: 30vw;
+  height: auto;
+}
+
+/*Styling for inputfelter*/
+.contact-form-actual {
+  width: 80vw;
+  margin: 0 auto;
+  margin-top: 60px;
+  max-width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-family: "open sans";
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 2px;
+  border-bottom: 3px solid white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+  margin-bottom: 16px;
+  color: white;
+  font-family: "open sans";
+}
+
+input[type=text]:focus {
+  outline: 3px solid white;
+}
+
+#how_help {
+  width: 100%;
+  padding: 10px;
+  border-bottom: 3px solid white;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  background-color: transparent;
+  color: white;
+  font-family: "open sans";
+  resize: none;
+  margin-bottom: 16px;
+}
+
+#how_help:focus {
+  outline: 3px solid white;
+}
+
+input[type=submit] {
+  background-color: #FE4D49;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-family: white;
+  font-size: 1em;
+  font-weight: 600;
+  margin-top: 2em;
+  text-transform: uppercase;
+}
+
+/*washed out white footer*/
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+/*Mobile version - made on behalf of recommendation on smaller screens such as phones and smaller tablets*/
+@media only screen and (max-width: 600px) {
+  #background-video {
+    display: none;
+  }
+  /*Styling for banner*/
+}
+.overskrift-kontakt h1 {
+  font-size: 50px;
+}
+
+.overskrift-kontakt p {
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 780px) {
+  .contact-form img {
+    display: none;
+  }
+}
+/*Desktop version*/
+@media only screen and (min-width: 780px) {
+  .contact-form-actual {
+    width: 60vw;
+    margin: 0 auto;
+    margin-top: 60px;
+    max-width: 100%;
+  }
+  .overskrift-kontakt {
+    margin-top: 4em;
+    padding-left: 5em;
+    padding-right: 4em;
+    padding-top: 4em;
   }
 }/*# sourceMappingURL=main.css.map */

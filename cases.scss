@@ -1,0 +1,163 @@
+/*content
+
+1. navigation / #nav_buttons
+    1.1 portfolio / #portfolio
+2. about a studio / #about
+    2.1 quality / #quality
+3. footer
+4. Mobil styling
+5. Dekstop  styling
+*/
+
+@import 'scss/variables';
+@import 'scss/standard';
+
+section{
+    padding-left:2em;
+    padding-right:2em;
+    padding-bottom:6em;}
+
+#cases{
+    padding:0 0;
+    .cases_image{
+        width: 100%;  
+        margin-bottom: 2em;
+        margin-top:2em;
+      
+      }
+}
+
+.break-line{
+    background-color: $background;
+    height: $break-line;
+}
+
+/*adding an extra rem padding to the side for this image*/
+.image{
+    padding-left:2em;
+    padding-right:2em;
+    width: 100%;
+    padding-top:3em;
+}
+
+
+
+#mads{
+    background-color: $washed_out;
+    color:$text-colour2;
+    .mads_logo{
+        width: 40%;
+        margin-top:2em;
+        margin-left:auto;
+        margin-right:auto;
+        display: block;
+        margin-bottom: 2em;
+    }
+
+}
+
+#messy{
+    background-color: $washed_out;
+    color: $text-colour2;
+    .messyw_logo{
+        width: 60%;
+        margin-top:2em;
+        margin-left:auto;
+        margin-right:auto;
+        display: block;
+        margin-bottom: 2em;
+    }
+}
+
+#hay{
+    background-color: $washed_out;
+    color: $text-colour2;
+
+   
+    .hay_logo{
+        width: 25%;
+        margin-top:2em;
+        margin-left:auto;
+        margin-right:auto;
+        display: block;
+        margin-bottom: 2em
+    }
+}
+
+#superdry{
+    background-color: $washed_out;
+    color: $text-colour2;
+
+   
+
+    .superdry_logo{
+        width: 50%;
+        margin-top:2em;
+        margin-left:auto;
+        margin-right:auto;
+        display: block;
+        margin-bottom: 2em
+    }
+}
+
+#ganni{
+    background-color: $washed_out;
+    color: $text-colour2;
+   
+    .ganni_logo{
+        width: 60%;
+        margin-top:1em;
+        margin-left:auto;
+        margin-right:auto;
+        display: block;
+        margin-bottom: 1em
+    }
+
+}
+  
+
+
+footer{
+    a{
+        text-decoration: none;
+        color: $text-colour1;
+    }
+
+}
+
+
+
+    
+
+
+
+/*Desktop version*/
+@media only screen and (min-width: 600px){
+    section{
+        padding: 0 0}
+    
+    .main_grid{
+        display: grid;
+        grid-template-columns: 5fr 5fr;
+        }
+
+    .image{
+        padding: 0 0;
+        width: 100%;
+    }
+
+    .text{
+        margin:2em 2em;
+    }
+
+    #messy, #superdry{
+        .image {
+            order: 1;
+           }
+        
+           .text {
+            order: -1;
+            padding: 2em 0;
+           }
+    }
+}

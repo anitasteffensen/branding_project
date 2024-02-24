@@ -22,11 +22,14 @@ $text-colour2: white;
 
 $link-hover:  rgba(254, 77, 73, 0.75);
 
+$rectangle:rgba(254, 77, 73, 0.85);
 
 
 $text-font: "open sans";
 
 $header-font: "nimbus";
+
+$button-size: 0.875em;
 
 $text-size: 1em;
 
@@ -35,12 +38,12 @@ $header-size: 1.875em;
 $header2-size: 1.625em;
 
 
-
-
-
-$m-padding-top:2em;
+$break-line:1.5em;
 
 $m-padding-sides:2em;
+
+/*
+$m-padding-top:2em;
 
 
 
@@ -49,7 +52,7 @@ $m-cases-padding-t: 3em;
 
 $m-logo-margin: 2em 0;
 
-/*
+
 $desk-padding: 1em;
 
 $desk-margin: 2em 0;

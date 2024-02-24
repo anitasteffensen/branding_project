@@ -1,0 +1,203 @@
+/*content
+
+1. navigation / #nav_buttons
+    1.1 portfolio / #portfolio
+2. about a studio / #about
+    2.1 quality / #quality
+3. footer
+4. Mobil styling
+5. Dekstop  styling
+*/
+
+@import 'scss/variables';
+@import 'scss/standard';
+
+
+#contact{
+    background-color: $washed_out;
+}
+
+.no-style-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*Styling for baggrundsvideo*/ 
+#background-video {
+    position: absolute; 
+    top: -0rem; 
+    right:0;
+    min-width: 100%;
+    min-height: 100%;
+    height: 100%;
+    z-index: -1;
+
+}
+/*Styling for banner*/
+
+.overskrift-kontakt {
+    margin-top: 4em; 
+    padding-left: 2em;
+    padding-right: 2em;
+
+}
+
+.overskrift-kontakt h1 {
+    font-size: 60px;
+}
+
+.overskrift-kontakt p {
+font-size: 20px;
+}
+
+.space_p{
+    padding-top:1em;
+}
+
+
+/*Styling for kontaktformular*/
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    z-index: 1;
+    margin-top: 6em; 
+
+}
+
+.contact-form {
+    flex: 1; 
+    background-color: $washed_out;
+    color: $text-colour2;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:2em ;
+    padding-bottom: 6em;
+    z-index: 1;
+  
+}
+
+.contact-form img {
+    max-width: 35vw;
+    height: auto; 
+}
+
+
+/*Styling for inputfelter*/
+.contact-form-actual {
+    width: 85vw;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: $text-font;
+}
+
+input[type="text"] {
+        width: 100%;
+        padding: 2px; 
+        border-bottom: 3px solid white;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        background-color: transparent; 
+        margin-bottom: 16px; 
+        color: $text-colour2; 
+        font-family: $text-font;
+    }
+
+    input[type="text"]:focus {
+        outline: 3px solid $text-colour2; 
+    }
+    
+    
+    #how_help {
+        width: 100%;
+        padding: 10px; 
+        border-bottom: 3px solid white; 
+        border-top: none; 
+        border-right: none;
+        border-left: none;
+        background-color: transparent;
+        color: $text-colour2;
+        font-family: $text-font; 
+        resize: none;
+        margin-bottom: 16px;
+    }
+
+    #how_help:focus {
+        outline: 3px solid white; 
+    }
+
+    input[type="submit"] {
+        background-color: $sunset_red;
+        color: $text-colour2;
+        cursor: pointer; 
+        border: none;
+        border-radius: 3px;
+        padding: 10px 20px;
+        font-family: $text-colour2;
+        font-size: $text-size;
+        font-weight: 600;
+        margin-top: 2em;
+        text-transform: uppercase;
+    }
+
+
+/*washed out white footer*/
+footer{
+
+    a{
+        text-decoration: none;
+        color: $text-colour1;
+    }
+}
+
+
+/*Mobile version - made on behalf of recommendation on smaller screens such as phones and smaller tablets*/
+
+@media only screen and (max-width: 600px){
+    #background-video {
+display:none;}
+
+  /*Styling for banner*/
+  
+    
+    }
+    
+    .overskrift-kontakt h1 {
+        font-size: 50px;
+    }
+    
+    .overskrift-kontakt p {
+    font-size: 18px;
+    }
+
+
+@media only screen and (max-width: 700px){
+
+    .contact-form img {
+        display: none; 
+    }
+}
+
+
+/*Desktop version*/
+@media only screen and (min-width: 700px){
+    .contact-form-actual {
+        width: 55vw !important; 
+        margin: 2em 2em;
+        margin-top: 60px;
+        max-width: 100%;
+    }
+
+
+}

@@ -1,0 +1,224 @@
+/*content
+
+1. navigation / #nav_buttons
+    1.1 portfolio / #portfolio
+2. about a studio / #about
+    2.1 quality / #quality
+3. footer
+4. Mobil styling
+5. Dekstop  styling
+*/
+
+@import 'scss/variables';
+@import 'scss/standard';
+
+
+section{
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 6em;
+
+}
+
+
+#the_team{
+    
+    .the_team_image{
+        width: 100%;
+        margin-bottom: 2em;
+        margin-top:1em
+    }
+
+    h1{
+        color: $sunset_red;
+        font-size: $header-size;
+        font-family: $header-font;
+        text-align: center;
+        margin-bottom:1em;
+    }
+
+}
+
+#the_studio{
+    background-color: $washed_out;
+    color: $text-colour2;
+
+    .image{
+        margin:2em 0;
+        max-width: 100%;
+    }
+
+    h2{
+        text-align: left;
+        font-family: $header-font;
+        font-size: $header-size;
+        color: $text-colour2;
+    }
+    
+}
+
+#girl_code{
+    
+    .image{
+        margin:2em 0em;
+        max-width: 100%;
+        
+    }
+    h2{
+        text-align: center;
+        font-family: $header-font;
+        font-size: $header-size;
+        color:$sunset_red;
+        margin-bottom: 1em;
+    }
+
+    
+}
+
+.break-line{
+    background-color: $washed_out;
+    height: $break-line;
+
+}
+
+#our_skills{
+padding-bottom:6em;
+    .image{
+        margin:2em 0em;
+        width: 100%;
+        
+    }
+    h2{
+        text-align: center;
+        font-family: $header-font;
+        font-size: $header-size;
+        color:$text-colour1;
+        padding-bottom: 1em;
+    }
+
+    h3{
+        font-family: $text-font;
+        font-size: $text-size;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .container{
+        position:relative;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wrapper {
+        position: relative;
+        height: 75px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .rectangle{
+        background-color: $rectangle;
+    
+        height:50px;
+        width: 48px;
+        position:absolute;
+        margin:0 auto;
+        display: flex;
+        align-items: center;
+        z-index: -1;
+        left: -1em;
+    }
+
+    .text_1{
+        
+       margin-top: 1em;
+        white-space: nowrap;
+        }
+    
+
+    p{
+        text-align: center;
+    }
+}
+
+
+/*washed out black footer*/
+footer{
+    background-color: $washed_out;
+    color: $text-colour2;
+
+    a{
+        text-decoration: none;
+        color: $text-colour2;
+    }
+}
+
+
+
+    
+
+
+
+/*Desktop version*/
+@media only screen and (min-width: 650px){
+    section p, h2{
+        padding: 0 2rem;
+    }
+    .main_grid{
+        display: grid;
+        grid-template-columns: 4fr 6fr;
+        }
+    .text{
+        align-items: center;
+        justify-content: center;
+        margin-top:4rem;    
+        }
+
+    #the_studio{
+    .image{
+        margin: 0 0;
+    }
+    .main_grid {
+        grid-template-columns: 5fr 5fr;}
+}
+
+#our_skills{
+    .image{
+        height:42.5rem;}*
+
+    p{
+        text-align: left;
+    }
+    .container{
+        align-items: flex-start;
+    }
+    .wrapper{
+        position:relative;
+        height: 75px;
+        display: flex; 
+        margin-left:2rem;       
+
+    }
+
+    .main_grid {
+        grid-template-columns: 5.5fr 4.5fr;
+        margin-bottom:1rem;}}
+
+    #the_studio,  #our_skills{
+        .image {
+            order: 1;
+               }
+            
+        .text {
+            order: -1;
+               }
+            
+        }
+
+    
+}
+

@@ -1,0 +1,155 @@
+/*content
+
+1. navigation / #nav_buttons
+    1.1 portfolio / #portfolio
+2. about a studio / #about
+    2.1 quality / #quality
+3. footer
+4. Mobil styling
+5. Dekstop  styling
+*/
+
+@import 'scss/variables';
+@import 'scss/standard';
+
+section{
+    padding-left:2em;
+    padding-right:2em;
+    padding-bottom: 6em;
+}
+.image{
+    width: 100%;
+    padding-top:1em;   
+}
+
+h2{
+    text-align: center;
+    font-family: $header-font;
+    color: $text-colour1;
+    margin-bottom:1em;
+    margin-top:1em;
+
+    
+}
+
+.services_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+.button{
+    background-color: $sunset_red;
+    box-shadow: none;
+    border:none;
+    color: $text-colour2;
+    padding:0.5em;
+    font-size: $button-size;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    cursor: pointer;
+    display: flex;
+    margin:0 6em;
+    margin-top:3em;
+
+}
+
+
+
+
+
+
+#services{
+    h1 {
+        text-align: center;
+        margin-bottom:1em;
+        margin-top:1em;
+    }
+}
+
+
+
+/*washed out black footer*/
+footer{
+    background-color: $washed_out;
+    color: $text-colour2;
+
+    a{
+        text-decoration: none;
+        color: $text-colour2;
+    }
+}
+
+
+
+
+
+/*Desktop version*/
+@media only screen and (min-width: 600px){
+    section{
+        margin: 0 0;
+        padding: 0 0;
+    }
+    .main_grid{
+        display: grid;
+        grid-template-columns: 4.5fr 5.5fr;
+        margin-bottom: 3em; }
+        
+    .image{
+        width: 100%;
+    }
+
+    .text{
+        margin-top:2em;
+        padding: 0 2em;
+    }
+
+    #services{
+        .image{
+            padding:1em 4em;
+        }
+        p{
+            margin:1em 4em;
+        }
+    }
+    #webdesign, #editing{
+        .image {
+            order: 1;
+           }
+        
+           .text {
+            order: -1;
+            padding: 0 2em;
+           }
+
+           .main_grid{
+            display: grid;
+            grid-template-columns: 5.5fr 4.5fr;
+            }
+            .button{
+                margin-top:2em;
+            }
+        }
+        
+    
+
+    .button{
+        display: flex;
+        margin: 0 2.5em;
+
+    
+    }
+
+    #editing{
+        .image{
+            height:100%;
+        }
+    }  
+}
