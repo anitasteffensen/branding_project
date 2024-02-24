@@ -35,11 +35,12 @@
 }
 /*Styling for banner*/
 
+section{
+    padding: 0 $padding-sides;
+    padding-bottom: $padding-bot-section;
+}
 .overskrift-kontakt {
-    margin-top: 4em; 
-    padding-left: 2em;
-    padding-right: 2em;
-
+    margin-top: 4rem; 
 }
 
 .overskrift-kontakt h1 {
@@ -51,7 +52,7 @@ font-size: 20px;
 }
 
 .space_p{
-    padding-top:1em;
+    padding-top:1rem;
 }
 
 
@@ -62,8 +63,7 @@ font-size: 20px;
     align-items: center;
     flex-wrap: wrap;
     max-width: 100%;
-    z-index: 1;
-    margin-top: 6em; 
+    z-index: 1; 
 
 }
 
@@ -76,8 +76,7 @@ font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top:2em ;
-    padding-bottom: 6em;
+    padding-top:2rem ;
     z-index: 1;
   
 }
@@ -138,7 +137,7 @@ input[type="text"] {
     }
 
     input[type="submit"] {
-        background-color: $sunset_red;
+        background-color: $contast-colour;
         color: $text-colour2;
         cursor: pointer; 
         border: none;
@@ -194,7 +193,7 @@ display:none;}
 @media only screen and (min-width: 700px){
     .contact-form-actual {
         width: 55vw !important; 
-        margin: 2em 2em;
+        margin: 2rem 2rem;
         margin-top: 60px;
         max-width: 100%;
     }

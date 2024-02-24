@@ -14,9 +14,8 @@
 
 
 section{
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-bottom: 6em;
+    padding: 0 $padding-sides;
+    padding-bottom: $padding-bot-section;
 
 }
 
@@ -25,16 +24,16 @@ section{
     
     .the_team_image{
         width: 100%;
-        margin-bottom: 2em;
-        margin-top:1em
+        margin-bottom: $margin-bot-image;
+        margin-top:1rem;
     }
 
     h1{
-        color: $sunset_red;
+        color: $contast-colour;
         font-size: $header-size;
         font-family: $header-font;
         text-align: center;
-        margin-bottom:1em;
+        margin-bottom:$margin-bot-header;
     }
 
 }
@@ -44,7 +43,7 @@ section{
     color: $text-colour2;
 
     .image{
-        margin:2em 0;
+        margin: $margin-image-tb 0;
         max-width: 100%;
     }
 
@@ -60,7 +59,7 @@ section{
 #girl_code{
     
     .image{
-        margin:2em 0em;
+        margin:$margin-image-tb 0;
         max-width: 100%;
         
     }
@@ -68,8 +67,8 @@ section{
         text-align: center;
         font-family: $header-font;
         font-size: $header-size;
-        color:$sunset_red;
-        margin-bottom: 1em;
+        color:$contast-colour;
+        margin-bottom: $margin-bot-header;
     }
 
     
@@ -82,9 +81,9 @@ section{
 }
 
 #our_skills{
-padding-bottom:6em;
+padding-bottom:$padding-bot-section;
     .image{
-        margin:2em 0em;
+        margin:$margin-image-tb 0;
         width: 100%;
         
     }
@@ -93,7 +92,7 @@ padding-bottom:6em;
         font-family: $header-font;
         font-size: $header-size;
         color:$text-colour1;
-        padding-bottom: 1em;
+        padding-bottom: $margin-bot-header;
     }
 
     h3{
@@ -130,12 +129,12 @@ padding-bottom:6em;
         display: flex;
         align-items: center;
         z-index: -1;
-        left: -1em;
+        left: -1rem;
     }
 
     .text_1{
         
-       margin-top: 1em;
+       margin-top: 1rem;
         white-space: nowrap;
         }
     
@@ -164,7 +163,7 @@ footer{
 
 
 /*Desktop version*/
-@media only screen and (min-width: 650px){
+@media only screen and (min-width: 600px){
     section p, h2{
         padding: 0 2rem;
     }
@@ -206,7 +205,7 @@ footer{
 
     .main_grid {
         grid-template-columns: 5.5fr 4.5fr;
-        margin-bottom:1rem;}}
+        margin-bottom:1rem;}
 
     #the_studio,  #our_skills{
         .image {
@@ -220,5 +219,5 @@ footer{
         }
 
     
-}
+}}
 

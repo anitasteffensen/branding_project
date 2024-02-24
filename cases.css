@@ -17,24 +17,10 @@
   src: url("OpenSans-VariableFont_wdth,wght.ttf");
 }
 /*Variables*/
-/*
-$m-padding-top:2em;
-
-
-
-$m-cases-padding: 0 2em;
-$m-cases-padding-t: 3em;
-
-$m-logo-margin: 2em 0;
-
-
-$desk-padding: 1em;
-
-$desk-margin: 2em 0;
-
-$break: 1.5em 6em;
-
-$mobile-margin:;*/
+/*mobile variables*/
+/*cases-section extra padding*/
+/*ganni logo is slightly bigger, so the margin will be smaller*/
+/*desktop variables*/
 /*Styling thats repeated on all sites
 
 1. body
@@ -60,19 +46,19 @@ body {
 
 h1 {
   color: #FE4D49;
-  font-size: 1.875em;
+  font-size: 1.875rem;
   font-family: "nimbus";
 }
 
 h2 {
-  font-size: 1.625em; /*golden ratio p * 1.618*/
+  font-size: 1.625rem; /*golden ratio p * 1.618*/
 }
 
 p {
   font-family: "open sans";
   font-size: "open sans";
   text-wrap: break-word;
-  margin: 0.5em 0;
+  margin: 0.5rem 0;
 }
 
 header {
@@ -85,10 +71,10 @@ header .header_content {
   align-items: start;
 }
 header .header_logo {
-  max-height: 3em;
-  padding-top: 0.5em;
-  padding-left: 2em;
-  margin-top: 0.5em;
+  max-height: 3rem;
+  padding-top: 0.5rem;
+  padding-left: 2rem;
+  margin-top: 0.5rem;
 }
 header .nav_bar {
   font-family: "open sans";
@@ -99,23 +85,23 @@ header .nav_bar a {
   display: block;
   color: black;
   text-align: center;
-  padding: 1.5em 1em;
+  padding: 1.5rem 1rem;
   text-decoration: underline;
-  font-size: 1em;
-  text-underline-offset: 0.5em;
-  text-decoration-thickness: 0.25em;
+  font-size: 1rem;
+  text-underline-offset: 0.5rem;
+  text-decoration-thickness: 0.25rem;
 }
 header .nav_bar a.active {
   color: #FE4D49;
 }
 header .nav_bar .right_top {
-  margin-left: 4em;
-  padding-right: 2em;
+  margin-left: 4rem;
+  padding-right: 2rem;
 }
 header .hamburger1 {
-  margin-top: -2.5em;
-  margin-right: 2em;
-  margin-bottom: 1em;
+  margin-top: -2.5rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
   display: grid;
   justify-items: right;
   z-index: 120;
@@ -123,9 +109,9 @@ header .hamburger1 {
 header .hamburger1 div {
   background-color: black;
   position: relative;
-  width: 2.75em;
-  height: 0.25em;
-  margin-top: 0.5em;
+  width: 2.75rem;
+  height: 0.25rem;
+  margin-top: 0.5rem;
   transition: all 0.2s ease-in-out;
 }
 header #toggle1 {
@@ -143,14 +129,14 @@ header #toggle1:checked + .hamburger1 .bottom {
   transform: scale(0);
 }
 header #toggle1:checked ~ .menu1 {
-  height: 17em;
+  height: 17rem;
 }
 header .menu1 {
   width: 100%;
   margin: auto 0;
   display: grid;
   grid-template-rows: repeat(5, 0.5fr);
-  grid-row-gap: 0.25em;
+  grid-row-gap: 0.25rem;
   padding: 0;
   list-style: none;
   clear: both;
@@ -165,8 +151,8 @@ header .menu1 {
 header .link1 {
   width: 100%;
   margin: 0;
-  padding: 0.5em 0;
-  font-size: 1.25em;
+  padding: 0.5rem 0;
+  font-size: 1.25rem;
   font-family: open sans;
   text-decoration: none;
   color: black;
@@ -181,20 +167,20 @@ header .link1:hover {
 }
 
 footer {
-  padding-left: 2em;
-  padding-right: 2em;
-  padding-bottom: 4em;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 4rem;
 }
 footer .logo {
-  margin-top: 2em;
-  margin-bottom: 2em;
-  max-width: 7.5em;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  max-width: 7.5rem;
 }
 footer .footer_nav p {
   font-weight: 600;
 }
 footer .footer_nav li {
-  margin-top: 0.5em;
+  margin-top: 0.5rem;
 }
 footer .footer_info {
   display: flex;
@@ -202,7 +188,7 @@ footer .footer_info {
   justify-content: space-between;
 }
 footer .column {
-  max-width: 10em;
+  max-width: 10rem;
   margin-bottom: 20px;
   margin-right: 40px;
 }
@@ -234,13 +220,13 @@ footer .footer-container-desk {
 footer .footer_newsletter {
   display: flex;
   flex-direction: column;
-  gap: 1em;
-  margin-right: 1em;
+  gap: 1rem;
+  margin-right: 1rem;
 }
 footer .newsletter_form {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 1rem;
 }
 footer .footer_newsletter {
   font-family: "open sans";
@@ -285,26 +271,26 @@ footer input[type=email]:focus {
     display: none;
   }
   footer .contact_info {
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
   footer .contact_info p {
     font-weight: 600;
   }
   footer .contact_info li {
-    margin-top: 0.5em;
+    margin-top: 0.5rem;
   }
   footer .contact_info .email {
-    margin-top: 1.5em;
+    margin-top: 1.5rem;
   }
   footer .grid {
     display: grid;
     grid-template-columns: 5% 5% 5% 5% 80%;
-    gap: 2em;
-    margin-top: 4em;
+    gap: 2rem;
+    margin-top: 4rem;
   }
   footer .social_media2 {
-    max-height: 2em;
+    max-height: 2rem;
   }
 }
 /*adding the dekstop-version and still having the hamburgermenu*/
@@ -338,9 +324,8 @@ footer input[type=email]:focus {
   }
 }
 section {
-  padding-left: 2em;
-  padding-right: 2em;
-  padding-bottom: 6em;
+  padding: 0 2rem;
+  padding-bottom: 6rem;
 }
 
 #cases {
@@ -348,21 +333,33 @@ section {
 }
 #cases .cases_image {
   width: 100%;
-  margin-bottom: 2em;
-  margin-top: 2em;
+  margin: 2rem 0;
 }
 
 .break-line {
   background-color: #EDEBE4;
-  height: 1.5em;
+  height: 1.5rem;
 }
 
 /*adding an extra rem padding to the side for this image*/
 .image {
-  padding-left: 2em;
-  padding-right: 2em;
+  padding: 0 2rem;
   width: 100%;
-  padding-top: 3em;
+  padding-top: 4rem;
+}
+
+.logo1 {
+  margin: 2rem 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.logo2 {
+  margin-bottom: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 #mads {
@@ -371,11 +368,6 @@ section {
 }
 #mads .mads_logo {
   width: 40%;
-  margin-top: 2em;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  margin-bottom: 2em;
 }
 
 #messy {
@@ -384,11 +376,6 @@ section {
 }
 #messy .messyw_logo {
   width: 60%;
-  margin-top: 2em;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  margin-bottom: 2em;
 }
 
 #hay {
@@ -397,11 +384,6 @@ section {
 }
 #hay .hay_logo {
   width: 25%;
-  margin-top: 2em;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  margin-bottom: 2em;
 }
 
 #superdry {
@@ -410,11 +392,6 @@ section {
 }
 #superdry .superdry_logo {
   width: 50%;
-  margin-top: 2em;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  margin-bottom: 2em;
 }
 
 #ganni {
@@ -422,12 +399,7 @@ section {
   color: white;
 }
 #ganni .ganni_logo {
-  width: 60%;
-  margin-top: 1em;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  margin-bottom: 1em;
+  width: 30%;
 }
 
 footer a {
@@ -449,13 +421,13 @@ footer a {
     width: 100%;
   }
   .text {
-    margin: 2em 2em;
+    margin: 2rem 2rem;
   }
   #messy .image, #superdry .image {
     order: 1;
   }
   #messy .text, #superdry .text {
     order: -1;
-    padding: 2em 0;
+    padding: 2rem 0;
   }
 }/*# sourceMappingURL=cases.css.map */

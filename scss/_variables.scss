@@ -10,7 +10,7 @@
 /*Variables*/
 $background: #EDEBE4;
 
-$sunset_red: #FE4D49;
+$contast-colour: #FE4D49;
 
 $washed_out: #222121;
 
@@ -29,37 +29,35 @@ $text-font: "open sans";
 
 $header-font: "nimbus";
 
-$button-size: 0.875em;
+$button-size: 0.875rem;
 
-$text-size: 1em;
+$text-size: 1rem;
 
-$header-size: 1.875em;
+$header-size: 1.875rem;
 
-$header2-size: 1.625em;
-
-
-$break-line:1.5em;
-
-$m-padding-sides:2em;
-
-/*
-$m-padding-top:2em;
+$header2-size: 1.625rem;
 
 
+$break-line:1.5rem;
 
-$m-cases-padding: 0 2em;
-$m-cases-padding-t: 3em;
+/*mobile variables*/
+$padding-sides:2rem;
+$padding-top-image:2rem; 
+$margin-bot-header:1rem;
+$margin-header-services: 1rem;
+$margin-image-tb: 2rem;
+$margin-bot-image:2rem;
+$padding-bot-section:6rem; 
 
-$m-logo-margin: 2em 0;
+/*cases-section extra padding*/
+$extra-padding-s:2rem;
+$extra-padding-t:4rem;
+/*ganni logo is slightly bigger, so the margin will be smaller*/
+$ganni-margin:1.5rem;
 
 
-$desk-padding: 1em;
 
-$desk-margin: 2em 0;
-
-$break: 1.5em 6em;
-
-$mobile-margin:;*/
+/*desktop variables*/
 
 
 

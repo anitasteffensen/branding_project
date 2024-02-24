@@ -28,7 +28,7 @@ body{
 }
 
 h1 {
-    color:$sunset_red;
+    color:$contast-colour;
     font-size: $header-size;
     font-family: $header-font;
   }
@@ -40,7 +40,7 @@ p{
       font-family: $text-font;
       font-size: $text-font;
       text-wrap: break-word;
-      margin: 0.5em 0;
+      margin: 0.5rem 0;
       
   }
   
@@ -53,10 +53,10 @@ header{
       }
   
       .header_logo{
-        max-height: 3em;
-        padding-top: 0.5em;
-        padding-left:2em;
-        margin-top:0.5em;  
+        max-height: 3rem;
+        padding-top: 0.5rem;
+        padding-left:2rem;
+        margin-top:0.5rem;  
       }
   
       .nav_bar {
@@ -70,27 +70,27 @@ header{
         display: block;
         color: black;
         text-align: center;
-        padding: 1.5em 1em;
+        padding: 1.5rem 1rem;
         text-decoration: underline;
         font-size: $text-size;
-        text-underline-offset: 0.5em;
-        text-decoration-thickness: 0.25em;
+        text-underline-offset: 0.5rem;
+        text-decoration-thickness: 0.25rem;
       }
         
       .nav_bar a.active {
-        color: $sunset_red;
+        color: $contast-colour;
       }
   
       .nav_bar .right_top{
-        margin-left: 4em;
-        padding-right:2em;
+        margin-left: 4rem;
+        padding-right:2rem;
       }
   
       /*Inspiration for hamburger menu found on: https://codepen.io/ngochuynh/pen/yKrvVZ*/
       .hamburger1 {
-        margin-top: -2.5em;
-        margin-right:2em;
-        margin-bottom:1em;
+        margin-top: -2.5rem;
+        margin-right:2rem;
+        margin-bottom:1rem;
         display: -ms-grid;
         display: grid;
         justify-items: right;
@@ -100,9 +100,9 @@ header{
       .hamburger1 div {
         background-color: $hamburger;
         position: relative;
-        width: 2.75em;
-        height: 0.25em;
-        margin-top: 0.5em;
+        width: 2.75rem;
+        height: 0.25rem;
+        margin-top: 0.5rem;
         -webkit-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
       }
@@ -129,7 +129,7 @@ header{
       }
       
       #toggle1:checked ~ .menu1 {
-        height: 17em;
+        height: 17rem;
       }
       
       
@@ -140,7 +140,7 @@ header{
         display: -ms-grid;
         display: grid;
         grid-template-rows: repeat(5, 0.5fr);
-        grid-row-gap: 0.25em;
+        grid-row-gap: 0.25rem;
         padding: 0;
         list-style: none;
         clear: both;
@@ -157,8 +157,8 @@ header{
       .link1 {
         width: 100%;
         margin: 0;
-        padding: 0.5em 0;
-        font-size: 1.25em;
+        padding: 0.5rem 0;
+        font-size: 1.25rem;
         font-family: open sans;
         text-decoration: none;
         color: $text-colour1;
@@ -177,14 +177,14 @@ header{
   
   
   footer{
-      padding-left: $m-padding-sides;
-      padding-right: $m-padding-sides;
-      padding-bottom: 4em;
+      padding-left: $padding-sides;
+      padding-right: $padding-sides;
+      padding-bottom: 4rem;
   
       .logo{
-        margin-top:2em;
-        margin-bottom:2em;
-        max-width: 7.5em; 
+        margin-top:2rem;
+        margin-bottom:2rem;
+        max-width: 7.5rem; 
       }
       .footer_nav{
         p{
@@ -192,7 +192,7 @@ header{
         }
          
         li{
-          margin-top:0.5em;
+          margin-top:0.5rem;
          
         }
       }
@@ -203,7 +203,7 @@ header{
         justify-content: space-between;
       }
       .column {
-        max-width: 10em;
+        max-width: 10rem;
         margin-bottom: 20px; 
         margin-right: 40px;
       }
@@ -241,14 +241,14 @@ header{
       .footer_newsletter {
         display: flex;
         flex-direction: column;
-        gap: 1em;
-        margin-right:1em;
+        gap: 1rem;
+        margin-right:1rem;
       }
   
       .newsletter_form {
         display: flex;
         flex-direction: column;
-        gap: 1em;
+        gap: 1rem;
       }
       .footer_newsletter {
         font-family: $text-font;
@@ -258,7 +258,7 @@ header{
       }
       .newsletter_form button {
         width: 100px;
-       background-color:$sunset_red;
+       background-color:$contast-colour;
        color: $text-colour2; 
         padding: 5px; 
        border: none; 
@@ -302,28 +302,28 @@ header{
       }
   
     .contact_info{
-      margin-top: 1em;
-      margin-bottom:1em;
+      margin-top: 1rem;
+      margin-bottom:1rem;
         p{
           font-weight: 600;
         }
         li{
-          margin-top:0.5em;
+          margin-top:0.5rem;
         }
         .email{
-          margin-top: 1.5em;
+          margin-top: 1.5rem;
         }
       }
   
       .grid{
         display:grid;
         grid-template-columns: 5% 5% 5% 5% 80%;
-        gap:2em; 
-        margin-top: 4em;
+        gap:2rem; 
+        margin-top: 4rem;
         }
          
       .social_media2{
-        max-height:2em;
+        max-height:2rem;
       }
     }
   }

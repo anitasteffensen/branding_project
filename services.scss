@@ -13,21 +13,20 @@
 @import 'scss/standard';
 
 section{
-    padding-left:2em;
-    padding-right:2em;
-    padding-bottom: 6em;
+    padding: 0 $padding-sides;
+    padding-bottom: $padding-bot-section;
 }
 .image{
     width: 100%;
-    padding-top:1em;   
+    /*only 1em because of the top image and navigation-bar/hamburger*/
+    margin-bottom: $margin-image-tb;
 }
 
 h2{
     text-align: center;
     font-family: $header-font;
     color: $text-colour1;
-    margin-bottom:1em;
-    margin-top:1em;
+    margin: $margin-header-services 0;
 
     
 }
@@ -43,11 +42,11 @@ h2{
 
 
 .button{
-    background-color: $sunset_red;
+    background-color: $contast-colour;
     box-shadow: none;
     border:none;
     color: $text-colour2;
-    padding:0.5em;
+    padding:0.5rem;
     font-size: $button-size;
     font-weight: bold;
     text-transform: uppercase;
@@ -56,8 +55,8 @@ h2{
     justify-content: center;
     cursor: pointer;
     display: flex;
-    margin:0 6em;
-    margin-top:3em;
+    margin:0 5rem;
+    margin-top:3rem;
 
 }
 
@@ -69,8 +68,7 @@ h2{
 #services{
     h1 {
         text-align: center;
-        margin-bottom:1em;
-        margin-top:1em;
+        margin: $margin-header-services 0;
     }
 }
 
@@ -100,23 +98,23 @@ footer{
     .main_grid{
         display: grid;
         grid-template-columns: 4.5fr 5.5fr;
-        margin-bottom: 3em; }
+        margin-bottom: 3rem; }
         
     .image{
         width: 100%;
     }
 
     .text{
-        margin-top:2em;
-        padding: 0 2em;
+        margin-top:2rem;
+        padding: 0 2rem;
     }
 
     #services{
         .image{
-            padding:1em 4em;
+            padding:1rem 4rem;
         }
         p{
-            margin:1em 4em;
+            margin:1rem 4rem;
         }
     }
     #webdesign, #editing{
@@ -126,7 +124,7 @@ footer{
         
            .text {
             order: -1;
-            padding: 0 2em;
+            padding: 0 2rem;
            }
 
            .main_grid{
@@ -134,7 +132,7 @@ footer{
             grid-template-columns: 5.5fr 4.5fr;
             }
             .button{
-                margin-top:2em;
+                margin-top:2rem;
             }
         }
         
@@ -142,7 +140,7 @@ footer{
 
     .button{
         display: flex;
-        margin: 0 2.5em;
+        margin: 0 2.5rem;
 
     
     }
