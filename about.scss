@@ -24,8 +24,7 @@ section{
     
     .the_team_image{
         width: 100%;
-        margin-bottom: $margin-bot-image;
-        margin-top:1rem;
+        margin-top:0.5rem;
     }
 
     h1{
@@ -33,7 +32,8 @@ section{
         font-size: $header-size;
         font-family: $header-font;
         text-align: center;
-        margin-bottom:$margin-bot-header;
+        margin-top: $margin-header-top;
+        margin-bottom: $margin-header-bot
     }
 
 }
@@ -43,7 +43,7 @@ section{
     color: $text-colour2;
 
     .image{
-        margin: $margin-image-tb 0;
+        margin-top: $margin-image-tb;
         max-width: 100%;
     }
 
@@ -52,6 +52,8 @@ section{
         font-family: $header-font;
         font-size: $header-size;
         color: $text-colour2;
+        margin-top: $margin-header-top;
+        margin-bottom: $margin-header-bot;
     }
     
 }
@@ -68,7 +70,7 @@ section{
         font-family: $header-font;
         font-size: $header-size;
         color:$contast-colour;
-        margin-bottom: $margin-bot-header;
+        margin-bottom: $margin-header-bot;
     }
 
     
@@ -92,12 +94,12 @@ padding-bottom:$padding-bot-section;
         font-family: $header-font;
         font-size: $header-size;
         color:$text-colour1;
-        padding-bottom: $margin-bot-header;
+        padding-bottom: 1rem;
     }
 
     h3{
         font-family: $text-font;
-        font-size: $text-size;
+        font-size: $m-text-size;
         font-weight: bold;
         text-transform: uppercase;
         text-align: center;

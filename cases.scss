@@ -13,7 +13,7 @@
 @import 'scss/standard';
 
 section{
-    padding: 0 $padding-sides;
+    padding: 1.5rem $padding-sides;
     padding-bottom: $padding-bot-section
     ;}
 
@@ -21,7 +21,7 @@ section{
     padding:0 0;
     .cases_image{
         width: 100%;  
-        margin: $margin-image-tb 0;
+        margin: 0.5rem 0;
       
       }
 }
@@ -33,9 +33,7 @@ section{
 
 /*adding an extra rem padding to the side for this image*/
 .image{
-    padding: 0 $extra-padding-s;
     width: 100%;
-    padding-top:$extra-padding-t;
 }
 
 .logo1{

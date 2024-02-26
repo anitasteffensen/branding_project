@@ -51,10 +51,10 @@
         box-shadow: none;
         border:none; 
         color: $text-colour2;
-        width:auto;
+        width: auto;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
-        font-size: $button-size;
+        font-size: $m-button-size;
         font-weight: bold;
         text-transform: uppercase;
         text-align: center;
@@ -66,7 +66,7 @@
 }
 
 #portfolio{
-    margin:1rem 0;
+    margin:0 0;
     .container{
         position:relative;
         text-align: center;
@@ -80,15 +80,17 @@
             
     /*For mobil solution*/        
     .text1{
+        font-size: $m-image-text;
         padding-left: .25rem;
         position:absolute;
-        bottom: 3.5rem;
+        bottom: 3rem;
         }
                 
     .text2{
+        font-size: $m-image-text;
         padding-left: .25rem;
         position: absolute;
-        bottom: 2rem; }
+        bottom: 1.5rem; }
 
     /*For dekstop solution*/  
     .text_1{
@@ -131,7 +133,8 @@
     h1{
         font-family: $header-font;
         text-align: center;
-        margin-bottom:$margin-bot-header;
+        margin-top:$margin-header-top;
+        margin-bottom: $margin-header-bot;
     }
 
     p{
@@ -153,7 +156,7 @@
     h2{
         text-align: right;
         font-family: $header-font;
-        margin-bottom:0.5rem;
+        margin-top: 2rem !important;
 
 
 
@@ -162,7 +165,7 @@
         text-align: right;
         font-family: $header-font;
         font-size: $header2-size;
-        margin-bottom: $margin-bot-header;    }
+        margin-bottom: 2rem;    }
     p{
         text-align: left;
     }

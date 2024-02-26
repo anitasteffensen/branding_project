@@ -22,17 +22,90 @@
     color: inherit;
 }
 
-/*Styling for baggrundsvideo*/ 
+/*Styling for baggrundsvideo 
 #background-video {
     position: absolute; 
     top: -0rem; 
-    right:0;
+    right:-7rem; 
     min-width: 100%;
     min-height: 100%;
     height: 100%;
     z-index: -1;
 
-}
+}*/
+.animated {  
+    background-image: url(/telephone.png);
+    background-repeat: no-repeat;
+    background-position-y: -2rem;
+    background-position-x:right 50px;
+    background-size: contain;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s; 
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; 
+    position:absolute;
+    width: 100%;
+    height: 300px;
+    animation-timing-function: ease;
+    top: 0;
+    right: 0;
+ }
+
+ 
+ @-webkit-keyframes bounceIn {
+    0% {
+        opacity: 0;
+        background-position-y: -10rem;
+     }
+     25% {
+        opacity: 1;
+        background-position-y: -2rem;
+     }
+     50% {
+         background-position-y: 0;
+     }
+     70% {
+         background-position-y: -2rem;
+     }
+     90% {
+        background-position-y: 0;
+    }
+    100% {
+        background-position-y: -2rem;
+    } 
+ }
+ 
+ @keyframes bounceIn {
+    0% {
+        opacity: 0;
+        background-position-y: -10rem;
+     }
+     25% {
+        opacity: 1;
+        background-position-y: -2rem;
+     }
+     50% {
+         background-position-y: 0;
+     }
+     70% {
+         background-position-y: -2rem;
+     }
+     90% {
+        background-position-y: 0;
+    }
+    100% {
+        background-position-y: -2rem;
+    }
+ }
+ 
+ .bounceIn {
+    -webkit-animation-name: bounceIn; 
+    animation-name: bounceIn;
+ }
+
+
+
+
 /*Styling for banner*/
 
 section{
@@ -44,11 +117,11 @@ section{
 }
 
 .overskrift-kontakt h1 {
-    font-size: 60px;
+    font-size: 35px;
 }
 
 .overskrift-kontakt p {
-font-size: 20px;
+font-size: $m-text-size
 }
 
 .space_p{
@@ -90,7 +163,7 @@ font-size: 20px;
 /*Styling for inputfelter*/
 .contact-form-actual {
     width: 85vw;
-    margin: 0 auto;
+    margin: 0 0;
     margin-top: 60px;
 }
 
@@ -144,7 +217,7 @@ input[type="text"] {
         border-radius: 3px;
         padding: 10px 20px;
         font-family: $text-colour2;
-        font-size: $text-size;
+        font-size: $m-text-size;
         font-weight: 600;
         margin-top: 2em;
         text-transform: uppercase;
@@ -164,27 +237,27 @@ footer{
 /*Mobile version - made on behalf of recommendation on smaller screens such as phones and smaller tablets*/
 
 @media only screen and (max-width: 600px){
-    #background-video {
-display:none;}
 
-  /*Styling for banner*/
+    .animated {  
+    
+     }
+}
   
-    
-    }
-    
-    .overskrift-kontakt h1 {
-        font-size: 50px;
-    }
-    
-    .overskrift-kontakt p {
-    font-size: 18px;
-    }
+
 
 
 @media only screen and (max-width: 700px){
 
+
+
+     .contact-form-actual {
+        margin-top: 60px;
+        width: 100%;
+        max-width: 100%;
+    }
+
     .contact-form img {
-        display: none; 
+        display: none;  
     }
 }
 

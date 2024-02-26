@@ -46,18 +46,19 @@ body {
 
 h1 {
   color: #FE4D49;
-  font-size: 1.875rem;
+  font-size: 28px;
   font-family: "nimbus";
 }
 
 h2 {
-  font-size: 1.625rem; /*golden ratio p * 1.618*/
+  font-size: 24.2px;
+  /*golden ratio p * 1.618*/
 }
 
 p {
   font-family: "open sans";
-  font-size: "open sans";
-  text-wrap: break-word;
+  font-size: 15px;
+  text-wrap: balance;
   margin: 0.5rem 0;
 }
 
@@ -73,7 +74,6 @@ header .header_content {
 header .header_logo {
   max-height: 3rem;
   padding-top: 0.5rem;
-  padding-left: 2rem;
   margin-top: 0.5rem;
 }
 header .nav_bar {
@@ -87,7 +87,7 @@ header .nav_bar a {
   text-align: center;
   padding: 1.5rem 1rem;
   text-decoration: underline;
-  font-size: 1rem;
+  font-size: 15px;
   text-underline-offset: 0.5rem;
   text-decoration-thickness: 0.25rem;
 }
@@ -100,7 +100,7 @@ header .nav_bar .right_top {
 }
 header .hamburger1 {
   margin-top: -2.5rem;
-  margin-right: 2rem;
+  margin-right: 1.5rem;
   margin-bottom: 1rem;
   display: grid;
   justify-items: right;
@@ -167,8 +167,8 @@ header .link1:hover {
 }
 
 footer {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   padding-bottom: 4rem;
 }
 footer .logo {
@@ -261,6 +261,9 @@ footer input[type=email]:focus {
 
 /*Mobile version - made on behalf of recommendation on smaller screens such as phones and smaller tablets*/
 @media only screen and (max-width: 600px) {
+  .header_logo {
+    padding-left: 1.5rem !important;
+  }
   footer .social_media1 {
     display: none;
   }
@@ -295,7 +298,10 @@ footer input[type=email]:focus {
 }
 /*adding the dekstop-version and still having the hamburgermenu*/
 @media only screen and (min-width: 600px) {
-  .footer_nav {
+  .hamburger1 {
+    margin-right: 2rem !important;
+  }
+  .footer_info {
     display: none;
   }
   .social_media2 {
@@ -313,6 +319,12 @@ footer input[type=email]:focus {
   header .nav_bar {
     display: none;
   }
+  header .header_logo {
+    padding-left: 2rem;
+  }
+  header .hamburger1 {
+    margin-right: 1.5rem;
+  }
   .footer_newsletter {
     display: none !important;
   }
@@ -321,6 +333,9 @@ footer input[type=email]:focus {
 @media only screen and (min-width: 800px) {
   #hamburger_menu {
     display: none;
+  }
+  .header_logo {
+    padding-left: 2rem !important;
   }
 }
 .video_banner {
@@ -358,7 +373,7 @@ footer input[type=email]:focus {
   width: auto;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  font-size: 0.875rem;
+  font-size: 13px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
@@ -366,7 +381,7 @@ footer input[type=email]:focus {
 }
 
 #portfolio {
-  margin: 1rem 0;
+  margin: 0 0;
   /*For mobil solution*/
   /*For dekstop solution*/
 }
@@ -380,14 +395,16 @@ footer input[type=email]:focus {
   max-height: 55rem;
 }
 #portfolio .text1 {
+  font-size: 13px;
   padding-left: 0.25rem;
   position: absolute;
-  bottom: 3.5rem;
+  bottom: 3rem;
 }
 #portfolio .text2 {
+  font-size: 13px;
   padding-left: 0.25rem;
   position: absolute;
-  bottom: 2rem;
+  bottom: 1.5rem;
 }
 #portfolio .text_1 {
   padding-left: 2.25rem;
@@ -402,7 +419,7 @@ footer input[type=email]:focus {
 
 #break-line {
   background-color: #222121;
-  height: 1.5rem;
+  height: 1rem;
 }
 
 .main_grid {
@@ -415,12 +432,13 @@ footer input[type=email]:focus {
 }
 
 #about {
-  padding-top: 2rem;
+  padding-top: 1.5rem;
   padding-bottom: 6rem;
 }
 #about h1 {
   font-family: "nimbus";
   text-align: center;
+  margin-top: 2rem;
   margin-bottom: 1rem;
 }
 #about p {
@@ -430,19 +448,19 @@ footer input[type=email]:focus {
 #quality {
   background-color: #222121;
   color: white;
-  padding-top: 2rem;
+  padding-top: 1.5rem;
   padding-bottom: 6rem;
 }
 #quality h2 {
   text-align: right;
   font-family: "nimbus";
-  margin-bottom: 0.5rem;
+  margin-top: 2rem !important;
 }
 #quality h3 {
   text-align: right;
   font-family: "nimbus";
-  font-size: 1.625rem;
-  margin-bottom: 1rem;
+  font-size: 24.2px;
+  margin-bottom: 2rem;
 }
 #quality p {
   text-align: left;
@@ -456,7 +474,7 @@ footer a {
 /*Mobile version - made on behalf of recommendation on smaller screens such as phones and smaller tablets*/
 @media only screen and (max-width: 600px) {
   section {
-    padding: 0 2rem;
+    padding: 0 1.5rem;
   }
   #nav_buttons {
     padding: 0 0;

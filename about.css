@@ -46,18 +46,19 @@ body {
 
 h1 {
   color: #FE4D49;
-  font-size: 1.875rem;
+  font-size: 28px;
   font-family: "nimbus";
 }
 
 h2 {
-  font-size: 1.625rem; /*golden ratio p * 1.618*/
+  font-size: 24.2px;
+  /*golden ratio p * 1.618*/
 }
 
 p {
   font-family: "open sans";
-  font-size: "open sans";
-  text-wrap: break-word;
+  font-size: 15px;
+  text-wrap: balance;
   margin: 0.5rem 0;
 }
 
@@ -73,7 +74,6 @@ header .header_content {
 header .header_logo {
   max-height: 3rem;
   padding-top: 0.5rem;
-  padding-left: 2rem;
   margin-top: 0.5rem;
 }
 header .nav_bar {
@@ -87,7 +87,7 @@ header .nav_bar a {
   text-align: center;
   padding: 1.5rem 1rem;
   text-decoration: underline;
-  font-size: 1rem;
+  font-size: 15px;
   text-underline-offset: 0.5rem;
   text-decoration-thickness: 0.25rem;
 }
@@ -100,7 +100,7 @@ header .nav_bar .right_top {
 }
 header .hamburger1 {
   margin-top: -2.5rem;
-  margin-right: 2rem;
+  margin-right: 1.5rem;
   margin-bottom: 1rem;
   display: grid;
   justify-items: right;
@@ -167,8 +167,8 @@ header .link1:hover {
 }
 
 footer {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   padding-bottom: 4rem;
 }
 footer .logo {
@@ -261,6 +261,9 @@ footer input[type=email]:focus {
 
 /*Mobile version - made on behalf of recommendation on smaller screens such as phones and smaller tablets*/
 @media only screen and (max-width: 600px) {
+  .header_logo {
+    padding-left: 1.5rem !important;
+  }
   footer .social_media1 {
     display: none;
   }
@@ -295,7 +298,10 @@ footer input[type=email]:focus {
 }
 /*adding the dekstop-version and still having the hamburgermenu*/
 @media only screen and (min-width: 600px) {
-  .footer_nav {
+  .hamburger1 {
+    margin-right: 2rem !important;
+  }
+  .footer_info {
     display: none;
   }
   .social_media2 {
@@ -313,6 +319,12 @@ footer input[type=email]:focus {
   header .nav_bar {
     display: none;
   }
+  header .header_logo {
+    padding-left: 2rem;
+  }
+  header .hamburger1 {
+    margin-right: 1.5rem;
+  }
   .footer_newsletter {
     display: none !important;
   }
@@ -322,22 +334,25 @@ footer input[type=email]:focus {
   #hamburger_menu {
     display: none;
   }
+  .header_logo {
+    padding-left: 2rem !important;
+  }
 }
 section {
-  padding: 0 2rem;
+  padding: 0 1.5rem;
   padding-bottom: 6rem;
 }
 
 #the_team .the_team_image {
   width: 100%;
-  margin-bottom: 2rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 #the_team h1 {
   color: #FE4D49;
-  font-size: 1.875rem;
+  font-size: 28px;
   font-family: "nimbus";
   text-align: center;
+  margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
@@ -346,50 +361,52 @@ section {
   color: white;
 }
 #the_studio .image {
-  margin: 2rem 0;
+  margin-top: 1.5rem;
   max-width: 100%;
 }
 #the_studio h2 {
   text-align: left;
   font-family: "nimbus";
-  font-size: 1.875rem;
+  font-size: 28px;
   color: white;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 #girl_code .image {
-  margin: 2rem 0;
+  margin: 1.5rem 0;
   max-width: 100%;
 }
 #girl_code h2 {
   text-align: center;
   font-family: "nimbus";
-  font-size: 1.875rem;
+  font-size: 28px;
   color: #FE4D49;
   margin-bottom: 1rem;
 }
 
 .break-line {
   background-color: #222121;
-  height: 1.5rem;
+  height: 1rem;
 }
 
 #our_skills {
   padding-bottom: 6rem;
 }
 #our_skills .image {
-  margin: 2rem 0;
+  margin: 1.5rem 0;
   width: 100%;
 }
 #our_skills h2 {
   text-align: center;
   font-family: "nimbus";
-  font-size: 1.875rem;
+  font-size: 28px;
   color: black;
   padding-bottom: 1rem;
 }
 #our_skills h3 {
   font-family: "open sans";
-  font-size: 1rem;
+  font-size: 15px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
