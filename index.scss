@@ -120,7 +120,6 @@
 
 .image{
         width: 100%;
-        margin-bottom: $margin-bot-image;
 }
 
 
@@ -185,6 +184,7 @@ footer{
 @media only screen and (max-width: 600px){
 section{
     padding: 0 $padding-sides;
+    
 }
     #nav_buttons{
     padding: 0 0;
@@ -199,8 +199,9 @@ section{
 /*Desktop version*/
 @media only screen and (min-width: 600px) {
 section{
-    padding: 0 0;
-    margin: 0 0;
+    margin: 0 0 !important;
+    padding: 0 0 !important;
+
 }
 
 .grid_image{
@@ -222,13 +223,8 @@ section{
     }
 }
 
-#about{
-    h1{
-        padding-top: 2rem;
-    }
-    .image{
-        width:100%;
-    }
+.image{
+    padding: 2rem 0;
 }
 
 
@@ -236,7 +232,7 @@ section{
 .text{
     align-items: center;
     justify-content: center;
-    margin: auto;
+    margin: auto 0;
     
 }
 
@@ -252,6 +248,7 @@ section{
     }
 }
 
+
 #quality{
    h2, h3{
     margin: auto 2rem;
@@ -259,7 +256,6 @@ section{
 
    .image{
     width:100%;
-    margin:2rem 0;
 }
 
    .image {

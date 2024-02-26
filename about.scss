@@ -164,9 +164,23 @@ footer{
 
 /*Desktop version*/
 @media only screen and (min-width: 600px){
-    section p, h2{
+   section{
+    padding: 0 0;
+   }
+
+    .the_team_image{
         padding: 0 2rem;
     }
+
+    #the_team{
+        margin-bottom:6rem;
+    }
+
+    p, h1, h2{
+        padding: 0 2rem;
+    }
+
+
     .main_grid{
         display: grid;
         grid-template-columns: 4fr 6fr;
@@ -174,7 +188,7 @@ footer{
     .text{
         align-items: center;
         justify-content: center;
-        margin-top:4rem;    
+        margin: auto 0;   
         }
 
     #the_studio{
@@ -185,7 +199,15 @@ footer{
         grid-template-columns: 5fr 5fr;}
 }
 
+#girl_code, #our_skills{
+    margin: 4rem 0;
+    .image{
+        margin: 0 0;
+    }
+}
+
 #our_skills{
+    padding-bottom: 0;
     .image{
         height:42.5rem;}*
 
@@ -205,8 +227,8 @@ footer{
 
     .main_grid {
         grid-template-columns: 5.5fr 4.5fr;
-        margin-bottom:1rem;}
-
+        }
+    }
     #the_studio,  #our_skills{
         .image {
             order: 1;
@@ -219,5 +241,5 @@ footer{
         }
 
     
-}}
+}
 

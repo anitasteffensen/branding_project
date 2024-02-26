@@ -412,7 +412,6 @@ footer input[type=email]:focus {
 
 .image {
   width: 100%;
-  margin-bottom: 2rem;
 }
 
 #about {
@@ -470,8 +469,8 @@ footer a {
 /*Desktop version*/
 @media only screen and (min-width: 600px) {
   section {
-    padding: 0 0;
-    margin: 0 0;
+    margin: 0 0 !important;
+    padding: 0 0 !important;
   }
   .grid_image {
     height: 26vw !important;
@@ -485,16 +484,13 @@ footer a {
   #portfolio .text_1, #portfolio .text_2 {
     display: flex;
   }
-  #about h1 {
-    padding-top: 2rem;
-  }
-  #about .image {
-    width: 100%;
+  .image {
+    padding: 2rem 0;
   }
   .text {
     align-items: center;
     justify-content: center;
-    margin: auto;
+    margin: auto 0;
   }
   .main_grid {
     display: grid;
@@ -509,7 +505,6 @@ footer a {
   }
   #quality .image {
     width: 100%;
-    margin: 2rem 0;
   }
   #quality .image {
     order: 1;

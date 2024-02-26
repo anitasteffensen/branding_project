@@ -355,13 +355,6 @@ section {
   display: block;
 }
 
-.logo2 {
-  margin-bottom: 1.5rem;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
 #mads {
   background-color: #222121;
   color: white;
@@ -407,8 +400,8 @@ footer a {
   color: black;
 }
 
-/*Desktop version*/
-@media only screen and (min-width: 600px) {
+/*Desktop version need to be larger than the other sides because of the grid and pictures*/
+@media only screen and (min-width: 700px) {
   section {
     padding: 0 0;
   }
@@ -428,6 +421,6 @@ footer a {
   }
   #messy .text, #superdry .text {
     order: -1;
-    padding: 2rem 0;
+    padding: 0 0;
   }
 }/*# sourceMappingURL=cases.css.map */
