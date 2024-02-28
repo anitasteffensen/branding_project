@@ -531,8 +531,15 @@ footer a {
     justify-content: center;
     margin: auto 0;
   }
-  #the_studio .image {
+  #the_studio {
+    padding: 0;
+  }
+  #the_studio .desktop_office_image {
     margin: 0 0;
+    height: 100%;
+  }
+  #the_studio .text {
+    padding-top: 1.5rem;
   }
   #the_studio .main_grid {
     grid-template-columns: 5fr 5fr;
@@ -588,13 +595,13 @@ footer a {
     background-size: cover;
   }
   #the_studio .desktop_office_image {
-    height: 80vh;
+    height: 100%;
   }
   #the_studio .text {
     padding-bottom: 6rem;
   }
   #girl_code .girl_code_image {
-    height: 80vh;
+    height: 100%;
   }
   #our_skills .skills_image {
     height: 80vh;

@@ -169,10 +169,6 @@ footer{
 /*Smaller screen version*/   
 @media only screen and (max-width: 800px){
 
-    #the_studio, #girl_code, #our_skills{
-        padding-top:1.5rem;
-
-    }
 #the_team {
     .dekstop_team_image {
         display: none;
@@ -200,6 +196,9 @@ footer{
     }
     #the_studio,  #girl_code,  #our_skills {
         .text{
+                padding-top:1.5rem;
+        
+         
             padding-bottom: $section-bottom;
         }
     }
@@ -300,7 +299,7 @@ footer{
 #the_studio{
 
     .desktop_office_image{
-        height:80vh;
+        height:100%;
     }
     .text{
         padding-bottom: $section-bottom;
@@ -311,7 +310,7 @@ footer{
 #girl_code{
 
     .girl_code_image{
-        height: 80vh;
+        height: 100%;
     }
 }
 #our_skills{
