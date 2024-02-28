@@ -8,6 +8,7 @@
 }
 
 /*Variables*/
+
 $background: #EDEBE4;
 
 $contast-colour: #FE4D49;
@@ -20,53 +21,76 @@ $text-colour1: black;
 
 $text-colour2: white;
 
+$text-font: "open sans";
+
+$text-size: 16px;
+
 $link-hover:  rgba(254, 77, 73, 0.75);
 
 $rectangle:rgba(254, 77, 73, 0.85);
 
 
-$text-font: "open sans";
+@mixin light-page{
+    background-color: #EDEBE4;
+    color:black;
+    
+}
+@mixin dark-page{
+    background-color: #222121;
+    color:white;
+}
+@mixin light-footer{
+    background-color: #EDEBE4;
+    color: black;
+    font-size: 15px;
+}
+@mixin dark-footer{
+    background-color: #222121;
+    color: white;
+    font-size: 15px;
+}
 
-$header-font: "nimbus";
 
-$header-size: 28px;
-
-$header2-size: 24.2px;
-
-$m-text-size: 15px;
-
-$d-text-size: 16px;
-
-$d-button-size: 14px;
-
-$d-image-text: 15px;
-
-$m-button-size: 13px;
-
-$m-image-text: 13px;
+$page-break:1rem;
 
 
-$break-line:1rem;
+@mixin header1{
+    font-family: "nimbus";
+    font-size: 28px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+@mixin header2{
+    font-family: "nimbus";
+    font-size: 24.3px;
+    /*golden ratio p * 1.618*/
+
+}
+
+@mixin text{
+    font-family: "open sans";
+    font-size: 15px;
+}
+
+$section-bottom:6rem;
 
 /*mobile variables*/
-$padding-sides:1.5rem;
-$padding-top-image:1.5rem; 
+$section-sides:1.5rem;
 
-$margin-header-top: 2rem ;
-$margin-header-bot: 1rem;
-$margin-image-tb: 1.5rem;
-$margin-bot-image:1.5rem;
-$padding-bot-section:6rem; 
+$portfolio-image-text:13px;
 
-/*cases-section extra padding*/
-$extra-padding-s:1.5rem;
-$extra-padding-t:3rem;
-/*ganni logo is slightly bigger, so the margin will be smaller*/
-$ganni-margin:1.5rem;
-
-
+$button-size:13px;
 
 /*desktop variables*/
+$desktop-section-sides: 2rem;
+
+$desktop-portfolio-image-text: 15px;
+
+$desktop-button-size: 14px;
+
+
+
 
 
 

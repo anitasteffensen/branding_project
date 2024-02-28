@@ -14,8 +14,8 @@
 
 
 section{
-    padding: 0 $padding-sides;
-    padding-bottom: $padding-bot-section;
+    padding: 0 $section-sides;
+    padding-bottom: $section-bottom;
 
 }
 
@@ -24,82 +24,90 @@ section{
     
     .the_team_image{
         width: 100%;
-        margin-top:0.5rem;
     }
 
     h1{
+        @include header1;
         color: $contast-colour;
-        font-size: $header-size;
-        font-family: $header-font;
         text-align: center;
-        margin-top: $margin-header-top;
-        margin-bottom: $margin-header-bot
     }
 
 }
 
 #the_studio{
-    background-color: $washed_out;
-    color: $text-colour2;
-
-    .image{
-        margin-top: $margin-image-tb;
-        max-width: 100%;
-    }
+    @include dark-page;
 
     h2{
+        @include header2;
         text-align: left;
-        font-family: $header-font;
-        font-size: $header-size;
         color: $text-colour2;
-        margin-top: $margin-header-top;
-        margin-bottom: $margin-header-bot;
+        /*margin are the same as h1*/
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+
+    }
+
+    .desktop_office_image {
+        width: 100%;
+        height:60vh;
+        background-image: url("office.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     
 }
 
 #girl_code{
-    
-    .image{
-        margin:$margin-image-tb 0;
-        max-width: 100%;
-        
-    }
-    h2{
-        text-align: center;
-        font-family: $header-font;
-        font-size: $header-size;
-        color:$contast-colour;
-        margin-bottom: $margin-header-bot;
+    .girl_code_image{
+        width:100%;
+        height:60vh;
+        background-image:url("girlcode.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
-    
+    h2{
+        @include header2;
+        text-align: center;
+        color:$contast-colour;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+   
 }
 
 .break-line{
     background-color: $washed_out;
-    height: $break-line;
+    height: $page-break;
 
 }
 
 #our_skills{
-padding-bottom:$padding-bot-section;
-    .image{
-        margin:$margin-image-tb 0;
-        width: 100%;
-        
+padding-bottom: $section-bottom;
+    
+    .skills_image{
+    width:100%;
+    height:70vh;
+    background-image:url("ourskills.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     }
+
+
     h2{
+        @include header2;
+        color: black;
         text-align: center;
-        font-family: $header-font;
-        font-size: $header-size;
-        color:$text-colour1;
+        padding-top:2rem;
         padding-bottom: 1rem;
     }
 
     h3{
-        font-family: $text-font;
-        font-size: $m-text-size;
+        @include text;
         font-weight: bold;
         text-transform: uppercase;
         text-align: center;
@@ -123,7 +131,6 @@ padding-bottom:$padding-bot-section;
 
     .rectangle{
         background-color: $rectangle;
-    
         height:50px;
         width: 48px;
         position:absolute;
@@ -144,13 +151,12 @@ padding-bottom:$padding-bot-section;
     p{
         text-align: center;
     }
-}
 
+}
 
 /*washed out black footer*/
 footer{
-    background-color: $washed_out;
-    color: $text-colour2;
+    @include dark-footer;
 
     a{
         text-decoration: none;
@@ -160,26 +166,54 @@ footer{
 
 
 
-    
+/*Smaller screen version*/   
+@media only screen and (max-width: 800px){
+
+    #the_studio, #girl_code, #our_skills{
+        padding-top:1.5rem;
+
+    }
+#the_team {
+    .dekstop_team_image {
+        display: none;
+
+    }
+}
+
+
+
+}
 
 
 
 /*Desktop version*/
 @media only screen and (min-width: 600px){
    section{
-    padding: 0 0;
-   }
-
-    .the_team_image{
-        padding: 0 2rem;
-    }
+    padding: 0 0;}
 
     #the_team{
-        margin-bottom:6rem;
+        padding-bottom: $section-bottom;
     }
 
+    p{
+        margin: 0 2rem;
+    }
+    #the_studio,  #girl_code,  #our_skills {
+        .text{
+            padding-bottom: $section-bottom;
+        }
+    }
+    
+ 
+
+    .the_team_image{
+        padding: 0 $desktop-section-sides;
+        height: 60vh;
+    }
+
+
     p, h1, h2{
-        padding: 0 2rem;
+        padding: 0 $desktop-section-sides
     }
 
 
@@ -243,5 +277,48 @@ footer{
         }
 
     
+}
+
+@media screen and (min-width: 800px){
+   
+#the_team{
+    padding-bottom: $section-bottom;
+}
+    .the_team_image{
+        display: none;
+    }
+
+    .desktop_team_image {
+        height: 60vh;
+        width: calc(100% - 8rem);
+        margin: 0 auto;
+        background-image: url("ateam.jpg");
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+#the_studio{
+
+    .desktop_office_image{
+        height:80vh;
+    }
+    .text{
+        padding-bottom: $section-bottom;
+    }
+
+}
+
+#girl_code{
+
+    .girl_code_image{
+        height: 80vh;
+    }
+}
+#our_skills{
+    .skills_image{
+        height: 80vh;
+    }
+}
+
 }
 

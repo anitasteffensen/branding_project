@@ -54,7 +54,7 @@
         width: auto;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
-        font-size: $m-button-size;
+        font-size: $button-size;
         font-weight: bold;
         text-transform: uppercase;
         text-align: center;
@@ -72,44 +72,50 @@
         text-align: center;
     }
 
+
+ /*For mobil solution*/
     .portfolio_image{
-        max-width: 100%;
+        width: 100%;
         min-height: 15rem;
-        max-height: 55rem;
+        max-height: 40rem;
         }
             
-    /*For mobil solution*/        
+           
     .text1{
-        font-size: $m-image-text;
+        font-size: $portfolio-image-text;
         padding-left: .25rem;
         position:absolute;
         bottom: 3rem;
         }
                 
     .text2{
-        font-size: $m-image-text;
+        font-size: $portfolio-image-text;
         padding-left: .25rem;
         position: absolute;
         bottom: 1.5rem; }
 
-    /*For dekstop solution*/  
+    
+
+/*Dekstop solution*/
     .text_1{
+        font-size:$desktop-portfolio-image-text;
         padding-left: 2.25rem;
         position:absolute;
         bottom: 5rem;
         }
     .text_2{
+        font-size: $desktop-portfolio-image-text;
         padding-left: 2.25rem;
         position: absolute;
         bottom: 3.5rem;
         }
     
+    }
 
-}
 
 #break-line{
     background-color: $washed_out;
-    height: $break-line;
+    height: $page-break;
 
 }
 
@@ -120,24 +126,28 @@
 
     
 
-.image{
-        width: 100%;
-}
 
 
 #about{
-    padding-top:$padding-top-image;
-    padding-bottom:$padding-bot-section;
+    padding-top:1.5rem;
+    padding-bottom:$section-bottom;
     
-
+  .about_image{
+    height: 55vh;
+    width: calc(100%);
+    margin: 0 auto;
+    background-image: url("trio.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
     h1{
-        font-family: $header-font;
+        @include header1;
         text-align: center;
-        margin-top:$margin-header-top;
-        margin-bottom: $margin-header-bot;
     }
 
     p{
+        @include text;
         text-align: left;
     }
 
@@ -147,25 +157,35 @@
 
 
 #quality{
-    background-color: $washed_out;
-    color: $text-colour2;
-    padding-top: $padding-top-image;
-    padding-bottom:$padding-bot-section;
+    @include dark-page;
+    padding-top: 1.5rem;
+    padding-bottom:$section-bottom;
+
+    .quality_image{
+        height: 60vh;
+        width: calc(100%);
+        margin: 0 auto;
+        background-image: url("arkitektur.jpg");
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
     
 
     h2{
+        @include header2;
         text-align: right;
-        font-family: $header-font;
         margin-top: 2rem !important;
 
 
 
     }
     h3{
+        @include header2;
+        font-size: 20px;
         text-align: right;
-        font-family: $header-font;
-        font-size: $header2-size;
-        margin-bottom: 2rem;    }
+        margin-bottom: 1rem;    }
+        
     p{
         text-align: left;
     }
@@ -174,7 +194,8 @@
 }
 
 footer{
-    
+    @include light-footer;
+
     a{
         text-decoration: none;
         color: $text-colour1;
@@ -186,15 +207,16 @@ footer{
 /*Mobile version - made on behalf of recommendation on smaller screens such as phones and smaller tablets*/
 @media only screen and (max-width: 600px){
 section{
-    padding: 0 $padding-sides;
+    padding: 0 $section-sides;
     
 }
     #nav_buttons{
     padding: 0 0;
 }
-}
+
 .text_1, .text_2{
     display: none;
+}
 }
 
  
@@ -208,12 +230,16 @@ section{
 }
 
 .grid_image{
-    height: 26vw!important;
+    height: 27vw!important;
 }
-    #portfolio{
+
+.button{
+    font-size: $desktop-button-size;
+}
+#portfolio{
 
     .portfolio_image{
-        padding-left: 2rem;
+        padding-left: $desktop-section-sides;
     
     }
    
@@ -224,10 +250,6 @@ section{
     .text_1, .text_2{
         display: flex;
     }
-}
-
-.image{
-    padding: 2rem 0;
 }
 
 
@@ -241,44 +263,70 @@ section{
 
 .main_grid{
     display: grid;
-    grid-template-columns: 4fr 6fr;
+    grid-template-columns: 4.8fr 5.2fr;
     }
 
-#about, #quality{
-    p{
-        text-align: left;
-        margin:0.5rem 2rem;
-    }
-}
 
+
+#about{
+    .about_image{
+        height: 60vh;
+        margin: 2rem 0;
+        }
+    }
 
 #quality{
-   h2, h3{
-    margin: auto 2rem;
+   h2{
+    margin: auto $desktop-section-sides;
+   }
+   h3{ 
+    margin: auto $desktop-section-sides;
+    margin-bottom: 1rem;
    }
 
-   .image{
-    width:100%;
-}
+   .quality_image{
+    height: 60vh;
+    margin: 2rem 0;
+   }
 
-   .image {
+   .quality_image {
     order: 1;
    }
 
    .text {
     order: -1;
-    padding: 2rem 0;
+    
    }
 
    .main_grid {
-    grid-template-columns: 6fr 4fr;}
+    grid-template-columns: 5.2fr 4.8fr;}
 
     .break {
         padding-bottom: 0;
     }
 }
+
+#about, #quality{
+    p{
+        text-align: left;
+        margin:0.5rem $desktop-section-sides;
+    }
+}
 }
     
 
-
+@media only screen and (min-width: 800px){
+    .text_1{
+        font-size: $desktop-portfolio-image-text;
+        padding-left: 2.25rem;
+        position:absolute;
+        bottom: 8rem;
+        }
+    .text_2{
+        font-size: $desktop-portfolio-image-text;
+        padding-left: 2.25rem;
+        position: absolute;
+        bottom: 5.5rem;
+        }
+}
    

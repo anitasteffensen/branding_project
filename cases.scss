@@ -13,14 +13,15 @@
 @import 'scss/standard';
 
 section{
-    padding: 1.5rem $padding-sides;
-    padding-bottom: $padding-bot-section
+    padding: 1.5rem $section-sides;
+    padding-bottom: $section-bottom
     ;}
 
 #cases{
     padding:0 0;
     .cases_image{
-        width: 100%;  
+        width: 100%; 
+        height:40vh; 
         margin: 0.5rem 0;
       
       }
@@ -28,12 +29,7 @@ section{
 
 .break-line{
     background-color: $background;
-    height: $break-line;
-}
-
-/*adding an extra rem padding to the side for this image*/
-.image{
-    width: 100%;
+    height: $page-break;
 }
 
 .logo1{
@@ -46,17 +42,33 @@ section{
 
 
 #mads{
-    background-color: $washed_out;
-    color:$text-colour2;
+    @include dark-page;
+    .mads_image{
+        width:100%;
+        height:60vh;
+        background-image:url("mads.png");
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+    
     .mads_logo{
         width: 40%;
-    }
-
-}
+    }}
 
 #messy{
-    background-color: $washed_out;
-    color: $text-colour2;
+    @include dark-page;
+
+    .messy_image{
+        width:100%;
+        height:60vh;
+        background-image:url("messy.jpg");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+   
     .messyw_logo{
         width: 60%;
 
@@ -64,10 +76,16 @@ section{
 }
 
 #hay{
-    background-color: $washed_out;
-    color: $text-colour2;
+    @include dark-page;
 
-   
+    .hay_image{ 
+        width:100%;
+        height:60vh;
+        background-image:url("hay.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
     .hay_logo{
         width: 25%;
       
@@ -75,10 +93,16 @@ section{
 }
 
 #superdry{
-    background-color: $washed_out;
-    color: $text-colour2;
+    @include dark-page;
 
-   
+   .superdry_image{ 
+    width:100%;
+    height:65vh;
+    background-image:url("superdry.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
 
     .superdry_logo{
         width: 50%;
@@ -87,9 +111,18 @@ section{
 }
 
 #ganni{
-    background-color: $washed_out;
-    color: $text-colour2;
-   
+    @include dark-page;
+
+    .ganni_image{
+        width:100%;
+        height:60vh;
+        background-image:url("ganni.png");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    
     .ganni_logo{
         width: 30%;
     }
@@ -111,32 +144,54 @@ footer{
     
 
 
-
 /*Desktop version need to be larger than the other sides because of the grid and pictures*/
 @media only screen and (min-width: 700px){
     section{
         padding: 0 0}
     
+    .cases_image{
+        height:60vh!important;
+    }
     .main_grid{
         display: grid;
         grid-template-columns: 5fr 5fr;
         }
 
-    .image{
-        padding: 0 0;
-        width: 100%;
-    }
-
     .text{
-        margin:2rem 2rem;
+        margin:2rem $desktop-section-sides;
     }
 
+    #mads{
+        .mads_image{
+            height: 80vh;
+        }
+    }
+    #messy{
+        .messy_image{
+            height: 80vh;
+        }
+    }
+    #hay{
+        .hay_image{
+            height:80vh;
+        }
+    }
+    #superdry{
+        .superdry_image{
+            height:85vh;
+        }
+    }
+    #ganni{
+        .ganni_image{
+            height:80vh;
+        }
+    }
     #messy, #superdry{
-        .image {
+        .messy_image, .superdry_image {
             order: 1;
            }
         
-           .text {
+        .text {
             order: -1;
             padding: 0 0;
            }

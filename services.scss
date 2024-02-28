@@ -13,21 +13,19 @@
 @import 'scss/standard';
 
 section{
-    padding: 0 $padding-sides;
-    padding-bottom: $padding-bot-section;
+    padding: 0 $section-sides;
+    padding-bottom: $section-bottom;
 }
-.image{
+.service_image{
     width: 100%;
-    /*only 1em because of the top image and navigation-bar/hamburger*/
-    margin-bottom: $margin-image-tb;
+    padding: 0 0;
+    
 }
 
 h2{
+    @include header1;
     text-align: center;
-    font-family: $header-font;
     color: $text-colour1;
-    margin-top: $margin-header-top;
-    margin-bottom: $margin-header-bot;
 
     
 }
@@ -37,18 +35,13 @@ h2{
     flex-direction: column;
     align-items: center;
 }
-
-
-
-
-
 .button{
     background-color: $contast-colour;
     box-shadow: none;
     border:none;
     color: $text-colour2;
     padding:0.5rem;
-    font-size: $m-button-size;
+    font-size: $button-size;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -63,23 +56,65 @@ h2{
 
 
 
-
-
-
 #services{
     h1 {
+        @include header1;
         text-align: center;
-        margin-top: $margin-header-top;
-        margin-bottom: $margin-header-bot;
+    }
+
+    .service_image{
+        width:100%;
+        height:40vh;
+    }
+}
+
+#consult{
+    .consult_image{
+        width:100%;
+        height:70vh;
+        background-image:url("branding consult.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+#webdesign{
+    .webdesign_image{
+        width:100%;
+        height:60vh;
+        background-image:url("webdesign.png");
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+#digital{
+    .digital_image{
+        width:100%;
+        height:60vh;
+        background-image:url("digital design.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+#editing{
+    .editing_image{
+        width:100%;
+        height:60vh;
+        background-image:url("video.jpeg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 
 
-
 /*washed out black footer*/
 footer{
-    background-color: $washed_out;
-    color: $text-colour2;
+    @include dark-footer;
 
     a{
         text-decoration: none;
@@ -88,6 +123,28 @@ footer{
 }
 
 
+@media only screen and (max-width: 600px){
+    #consult{
+        .image{
+            height:70vh;
+    }}
+
+    #webdesign{
+        .image{
+            height: 70vh;
+        }
+    }
+    #digital{
+        .image{
+            height: 70vh;
+        }
+    }
+    #editing{
+        .image{
+            height:70vh;
+        }
+    }
+}
 
 
 
@@ -97,6 +154,10 @@ footer{
         margin: 0 0;
         padding: 0 0;
     }
+    .service_image{
+        padding: 0 $desktop-section-sides;
+    }
+
     .main_grid{
         display: grid;
         grid-template-columns: 4.5fr 5.5fr;
@@ -108,17 +169,30 @@ footer{
 
     .text{
         margin-top:2rem;
-        padding: 0 2rem;
+        padding: 0 $desktop-section-sides;
+    }
+
+    .button{
+        font-size: $desktop-button-size;
+        display: flex;
+        margin: 3rem 2.5rem;
+
+    
     }
 
     #services{
-        .image{
-            padding:1rem 4rem;
+        padding-bottom: $section-bottom;
+      
         }
         p{
-            margin:1rem 4rem;
+            margin:0 4rem;
         }
+    
+
+    .consult_image, .webdesign_image, .digital_image, .editing_image{
+        height: 75vh!important;
     }
+
     #webdesign, #editing{
         .image {
             order: 1;
@@ -126,30 +200,38 @@ footer{
         
            .text {
             order: -1;
-            padding: 0 2rem;
+            padding: 0 $desktop-section-sides;
            }
 
            .main_grid{
             display: grid;
             grid-template-columns: 5.5fr 4.5fr;
             }
-            .button{
-                margin-top:2rem;
-            }
+            
         }
         
     
 
-    .button{
-        display: flex;
-        margin: 0 2.5rem;
 
-    
-    }
 
     #editing{
         .image{
             height:100%;
         }
     }  
+}
+
+@media only screen and (min-width:800px){
+    .service_image{
+        display: none;
+    }
+
+    .desktop_service_image{
+        width:calc(100% - 8rem);
+        height:65vh;
+        background-image:url("services.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }

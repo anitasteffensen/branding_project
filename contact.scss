@@ -22,22 +22,11 @@
     color: inherit;
 }
 
-/*Styling for baggrundsvideo 
-#background-video {
-    position: absolute; 
-    top: -0rem; 
-    right:-7rem; 
-    min-width: 100%;
-    min-height: 100%;
-    height: 100%;
-    z-index: -1;
 
-}*/
 .animated {  
     background-image: url(/telephone.png);
     background-repeat: no-repeat;
-    background-position-y: -2rem;
-    background-position-x:right 50px;
+    background-position-y: -10rem;
     background-size: contain;
     -webkit-animation-duration: 1s;
     animation-duration: 1s; 
@@ -45,10 +34,10 @@
     animation-fill-mode: both; 
     position:absolute;
     width: 100%;
-    height: 300px;
     animation-timing-function: ease;
     top: 0;
     right: 0;
+    z-index:-1;
  }
 
  
@@ -106,11 +95,10 @@
 
 
 
-/*Styling for banner*/
 
 section{
-    padding: 0 $padding-sides;
-    padding-bottom: $padding-bot-section;
+    padding: 0 $section-sides;
+    padding-bottom: $section-bottom;
 }
 .overskrift-kontakt {
     margin-top: 4rem; 
@@ -121,7 +109,7 @@ section{
 }
 
 .overskrift-kontakt p {
-font-size: $m-text-size
+font-size: $text-size
 }
 
 .space_p{
@@ -141,14 +129,13 @@ font-size: $m-text-size
 }
 
 .contact-form {
+    @include dark-page;
     flex: 1; 
-    background-color: $washed_out;
-    color: $text-colour2;
     box-sizing: border-box;
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding-top:2rem ;
     z-index: 1;
   
@@ -156,7 +143,10 @@ font-size: $m-text-size
 
 .contact-form img {
     max-width: 35vw;
+    width:100%;
     height: auto; 
+    padding-bottom: 2rem;
+   
 }
 
 
@@ -165,6 +155,8 @@ font-size: $m-text-size
     width: 85vw;
     margin: 0 0;
     margin-top: 60px;
+    display: flex;
+    flex-direction: column;
 }
 
 label {
@@ -217,10 +209,11 @@ input[type="text"] {
         border-radius: 3px;
         padding: 10px 20px;
         font-family: $text-colour2;
-        font-size: $m-text-size;
+        font-size: $text-size;
         font-weight: 600;
         margin-top: 2em;
         text-transform: uppercase;
+        align-self: flex-end;
     }
 
 
@@ -234,23 +227,18 @@ footer{
 }
 
 
-/*Mobile version - made on behalf of recommendation on smaller screens such as phones and smaller tablets*/
-
-@media only screen and (max-width: 600px){
-
-    .animated {  
-    
-     }
-}
-  
-
-
 
 @media only screen and (max-width: 700px){
-
-
-
-     .contact-form-actual {
+    section{
+       padding: 0 $desktop-section-sides;
+       padding-bottom: $section-bottom; 
+    }
+    .animated {  
+        background-position-x:right -10px;
+        height: 280px;}
+    
+    
+    .contact-form-actual {
         margin-top: 60px;
         width: 100%;
         max-width: 100%;
@@ -264,12 +252,37 @@ footer{
 
 /*Desktop version*/
 @media only screen and (min-width: 700px){
+    #lets_talk{
+        padding: 0 $desktop-section-sides;
+        padding-bottom: $section-bottom; 
+     }
+    .animated {   
+        background-position-x:right 70px;
+        height: 420px;
+    }
+
+    #contact{
+        padding: 0 0;
+    }
     .contact-form-actual {
-        width: 55vw !important; 
+        width: 60vw !important; 
         margin: 2rem 2rem;
         margin-top: 60px;
         max-width: 100%;
     }
-
-
 }
+
+@media only screen and (min-width: 800px){
+    .animated {   
+        background-position-x:right 40px;
+        height: 400px
+    }
+
+    #lets_talk{
+        padding: 0 $desktop-section-sides;
+        padding-bottom: $section-bottom; 
+     }
+
+    }
+
+

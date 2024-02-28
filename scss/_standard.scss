@@ -22,26 +22,25 @@
 
 
 body {
-  background-color: $background;
+  @include light-page;
   text-align: left;
 }
 
 h1 {
+  @include header1;
   color: $contast-colour;
-  font-size: $header-size;
-  font-family: $header-font;
+  
 }
 
 h2 {
-  font-size: $header2-size;
-  /*golden ratio p * 1.618*/
+@include header2;
 }
 
 p {
-  font-family: $text-font;
-  font-size: $m-text-size;
+  @include text;
   text-wrap: balance;
   margin: 0.5rem 0;
+  line-height: 1.8rem;
 
 }
 
@@ -54,7 +53,7 @@ header {
   }
 
   .header_logo {
-    max-height: 3rem;
+    max-height: 2.5rem;
     padding-top: 0.5rem;
     margin-top: 0.5rem;
   }
@@ -70,9 +69,9 @@ header {
     display: block;
     color: black;
     text-align: center;
-    padding: 1.5rem 1rem;
+    padding: 2rem 1rem;
     text-decoration: underline;
-    font-size: $m-text-size;
+    font-size: $text-size;
     text-underline-offset: 0.5rem;
     text-decoration-thickness: 0.25rem;
   }
@@ -155,11 +154,10 @@ header {
   }
 
   .link1 {
+    @include text;
     width: 100%;
     margin: 0;
     padding: 0.5rem 0;
-    font-size: 1.25rem;
-    font-family: open sans;
     text-decoration: none;
     color: $text-colour1;
     display: flex;
@@ -177,14 +175,13 @@ header {
 
 
 footer {
-  padding-left: $padding-sides;
-  padding-right: $padding-sides;
+  padding: 0 $section-sides;
   padding-bottom: 4rem;
 
   .logo {
     margin-top: 2rem;
     margin-bottom: 2rem;
-    max-width: 7.5rem;
+    max-width: 8rem;
   }
 
   .footer_nav {
@@ -257,8 +254,7 @@ footer {
   }
 
   .footer_newsletter {
-    font-family: $text-font;
-    font-size: 16px;
+    @include text;
     font-weight: 600;
     text-transform: uppercase;
   }
@@ -299,7 +295,14 @@ footer {
 /*Mobile version - made on behalf of recommendation on smaller screens such as phones and smaller tablets*/
 @media only screen and (max-width:600px) {
   .header_logo {
-    padding-left: 1.5rem !important;}
+    padding-left: $section-sides !important;
+  
+  }
+   
+    .hamburger1 {
+      margin-top: -2.5rem;
+      margin-right: 1.5rem!important;}
+
 
     footer {
       .social_media1 {
@@ -316,7 +319,7 @@ footer {
 
       .contact_info {
         margin-top: 1rem;
-        margin-bottom: 1rem;
+        margin-bottom: 1rem;}
 
         p {
           font-weight: 600;
@@ -342,13 +345,14 @@ footer {
         max-height: 2rem;
       }
     }
-  }
-
+  
 
 /*adding the dekstop-version and still having the hamburgermenu*/
 @media only screen and (min-width:600px) {
+  
+  
   .hamburger1 {
-    margin-right: 2rem !important;
+    margin-right: $desktop-section-sides !important;
   }
 
   .footer_info {
@@ -366,27 +370,30 @@ footer {
   .address2 {
     display: none;
   }
-
+  .footer_nav{
+    display: none;
+  }
 
 
 
 
 }
 
+
 /*having the hamburgermenu but  having the layout of desktop version*/
 @media only screen and (max-width: 800px) {
-
+  
   header {
     .nav_bar {
       display: none;
     }
 
     .header_logo {
-      padding-left: 2rem;
+      padding-left: $desktop-section-sides;
     }
 
     .hamburger1 {
-      margin-right: $padding-sides;
+      margin-right: $desktop-section-sides;
     }
 
   }
@@ -399,13 +406,27 @@ footer {
 
 /*Desktop version with its navigationbar in the top*/
 @media only screen and (min-width: 800px) {
+  section{
+    padding: 0 $desktop-section-sides;
+  }
+  
+  .header_logo {
+    max-height: 3.25rem!important;
+  }
   #hamburger_menu {
     display: none;
   }
 
-  .header_logo{
-    padding-left:2rem!important;
+  .footer_nav{
+    display: none;
   }
 
+  .header_logo{
+    padding-left:$desktop-section-sides!important;
+  }
+
+  footer{
+    padding: 0 2rem;
+  }
 
 }

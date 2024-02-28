@@ -18,8 +18,6 @@
 }
 /*Variables*/
 /*mobile variables*/
-/*cases-section extra padding*/
-/*ganni logo is slightly bigger, so the margin will be smaller*/
 /*desktop variables*/
 /*Styling thats repeated on all sites
 
@@ -41,17 +39,21 @@
 
 body {
   background-color: #EDEBE4;
+  color: black;
   text-align: left;
 }
 
 h1 {
-  color: #FE4D49;
-  font-size: 28px;
   font-family: "nimbus";
+  font-size: 28px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #FE4D49;
 }
 
 h2 {
-  font-size: 24.2px;
+  font-family: "nimbus";
+  font-size: 24.3px;
   /*golden ratio p * 1.618*/
 }
 
@@ -60,6 +62,7 @@ p {
   font-size: 15px;
   text-wrap: balance;
   margin: 0.5rem 0;
+  line-height: 1.8rem;
 }
 
 header {
@@ -72,7 +75,7 @@ header .header_content {
   align-items: start;
 }
 header .header_logo {
-  max-height: 3rem;
+  max-height: 2.5rem;
   padding-top: 0.5rem;
   margin-top: 0.5rem;
 }
@@ -85,9 +88,9 @@ header .nav_bar a {
   display: block;
   color: black;
   text-align: center;
-  padding: 1.5rem 1rem;
+  padding: 2rem 1rem;
   text-decoration: underline;
-  font-size: 15px;
+  font-size: 16px;
   text-underline-offset: 0.5rem;
   text-decoration-thickness: 0.25rem;
 }
@@ -149,11 +152,11 @@ header .menu1 {
   transition: all 0.3s ease;
 }
 header .link1 {
+  font-family: "open sans";
+  font-size: 15px;
   width: 100%;
   margin: 0;
   padding: 0.5rem 0;
-  font-size: 1.25rem;
-  font-family: open sans;
   text-decoration: none;
   color: black;
   display: flex;
@@ -167,14 +170,13 @@ header .link1:hover {
 }
 
 footer {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding: 0 1.5rem;
   padding-bottom: 4rem;
 }
 footer .logo {
   margin-top: 2rem;
   margin-bottom: 2rem;
-  max-width: 7.5rem;
+  max-width: 8rem;
 }
 footer .footer_nav p {
   font-weight: 600;
@@ -230,7 +232,7 @@ footer .newsletter_form {
 }
 footer .footer_newsletter {
   font-family: "open sans";
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -264,6 +266,10 @@ footer input[type=email]:focus {
   .header_logo {
     padding-left: 1.5rem !important;
   }
+  .hamburger1 {
+    margin-top: -2.5rem;
+    margin-right: 1.5rem !important;
+  }
   footer .social_media1 {
     display: none;
   }
@@ -277,22 +283,22 @@ footer input[type=email]:focus {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
-  footer .contact_info p {
+  footer p {
     font-weight: 600;
   }
-  footer .contact_info li {
+  footer li {
     margin-top: 0.5rem;
   }
-  footer .contact_info .email {
+  footer .email {
     margin-top: 1.5rem;
   }
-  footer .grid {
+  .grid {
     display: grid;
     grid-template-columns: 5% 5% 5% 5% 80%;
     gap: 2rem;
     margin-top: 4rem;
   }
-  footer .social_media2 {
+  .social_media2 {
     max-height: 2rem;
   }
 }
@@ -313,6 +319,9 @@ footer input[type=email]:focus {
   .address2 {
     display: none;
   }
+  .footer_nav {
+    display: none;
+  }
 }
 /*having the hamburgermenu but  having the layout of desktop version*/
 @media only screen and (max-width: 800px) {
@@ -323,7 +332,7 @@ footer input[type=email]:focus {
     padding-left: 2rem;
   }
   header .hamburger1 {
-    margin-right: 1.5rem;
+    margin-right: 2rem;
   }
   .footer_newsletter {
     display: none !important;
@@ -331,11 +340,23 @@ footer input[type=email]:focus {
 }
 /*Desktop version with its navigationbar in the top*/
 @media only screen and (min-width: 800px) {
+  section {
+    padding: 0 2rem;
+  }
+  .header_logo {
+    max-height: 3.25rem !important;
+  }
   #hamburger_menu {
+    display: none;
+  }
+  .footer_nav {
     display: none;
   }
   .header_logo {
     padding-left: 2rem !important;
+  }
+  footer {
+    padding: 0 2rem;
   }
 }
 #contact {
@@ -347,31 +368,19 @@ footer input[type=email]:focus {
   color: inherit;
 }
 
-/*Styling for baggrundsvideo 
-#background-video {
-    position: absolute; 
-    top: -0rem; 
-    right:-7rem; 
-    min-width: 100%;
-    min-height: 100%;
-    height: 100%;
-    z-index: -1;
-
-}*/
 .animated {
   background-image: url(/telephone.png);
   background-repeat: no-repeat;
-  background-position-y: -2rem;
-  background-position-x: right 50px;
+  background-position-y: -10rem;
   background-size: contain;
   animation-duration: 1s;
   animation-fill-mode: both;
   position: absolute;
   width: 100%;
-  height: 300px;
   animation-timing-function: ease;
   top: 0;
   right: 0;
+  z-index: -1;
 }
 @keyframes bounceIn {
   0% {
@@ -399,7 +408,6 @@ footer input[type=email]:focus {
   animation-name: bounceIn;
 }
 
-/*Styling for banner*/
 section {
   padding: 0 1.5rem;
   padding-bottom: 6rem;
@@ -414,7 +422,7 @@ section {
 }
 
 .overskrift-kontakt p {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .space_p {
@@ -432,21 +440,23 @@ section {
 }
 
 .contact-form {
-  flex: 1;
   background-color: #222121;
   color: white;
+  flex: 1;
   box-sizing: border-box;
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding-top: 2rem;
   z-index: 1;
 }
 
 .contact-form img {
   max-width: 35vw;
+  width: 100%;
   height: auto;
+  padding-bottom: 2rem;
 }
 
 /*Styling for inputfelter*/
@@ -454,6 +464,8 @@ section {
   width: 85vw;
   margin: 0 0;
   margin-top: 60px;
+  display: flex;
+  flex-direction: column;
 }
 
 label {
@@ -505,10 +517,11 @@ input[type=submit] {
   border-radius: 3px;
   padding: 10px 20px;
   font-family: white;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
   margin-top: 2em;
   text-transform: uppercase;
+  align-self: flex-end;
 }
 
 /*washed out white footer*/
@@ -517,8 +530,15 @@ footer a {
   color: black;
 }
 
-/*Mobile version - made on behalf of recommendation on smaller screens such as phones and smaller tablets*/
 @media only screen and (max-width: 700px) {
+  section {
+    padding: 0 2rem;
+    padding-bottom: 6rem;
+  }
+  .animated {
+    background-position-x: right -10px;
+    height: 280px;
+  }
   .contact-form-actual {
     margin-top: 60px;
     width: 100%;
@@ -530,10 +550,31 @@ footer a {
 }
 /*Desktop version*/
 @media only screen and (min-width: 700px) {
+  #lets_talk {
+    padding: 0 2rem;
+    padding-bottom: 6rem;
+  }
+  .animated {
+    background-position-x: right 70px;
+    height: 420px;
+  }
+  #contact {
+    padding: 0 0;
+  }
   .contact-form-actual {
-    width: 55vw !important;
+    width: 60vw !important;
     margin: 2rem 2rem;
     margin-top: 60px;
     max-width: 100%;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .animated {
+    background-position-x: right 40px;
+    height: 400px;
+  }
+  #lets_talk {
+    padding: 0 2rem;
+    padding-bottom: 6rem;
   }
 }/*# sourceMappingURL=contact.css.map */
