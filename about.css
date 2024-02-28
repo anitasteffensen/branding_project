@@ -88,7 +88,7 @@ header .nav_bar a {
   display: block;
   color: black;
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 1.75rem 1rem;
   text-decoration: underline;
   font-size: 16px;
   text-underline-offset: 0.5rem;
@@ -344,7 +344,7 @@ footer input[type=email]:focus {
     padding: 0 2rem;
   }
   .header_logo {
-    max-height: 3.25rem !important;
+    max-height: 3rem !important;
   }
   #hamburger_menu {
     display: none;
@@ -379,6 +379,7 @@ section {
 #the_studio {
   background-color: #222121;
   color: white;
+  padding-top: 1.5rem;
 }
 #the_studio h2 {
   font-family: "nimbus";
@@ -399,6 +400,9 @@ section {
   background-size: cover;
 }
 
+#girl_code {
+  padding-top: 1.5rem;
+}
 #girl_code .girl_code_image {
   width: 100%;
   height: 60vh;
@@ -423,6 +427,7 @@ section {
 }
 
 #our_skills {
+  padding-top: 1.5rem;
   padding-bottom: 6rem;
 }
 #our_skills .skills_image {
@@ -493,10 +498,13 @@ footer a {
 }
 
 /*Smaller screen version*/
-@media only screen and (max-width: 800px) {
-  #the_studio, #girl_code, #our_skills {
-    padding-top: 1.5rem;
+@media only screen and (min-width: 600px) {
+  #the_team .the_team_image {
+    padding: 0 2rem;
+    height: 60vh;
   }
+}
+@media only screen and (max-width: 800px) {
   #the_team .dekstop_team_image {
     display: none;
   }
@@ -506,57 +514,65 @@ footer a {
   section {
     padding: 0 0;
   }
-  #the_team {
-    padding-bottom: 6rem;
-  }
-  p {
-    margin: 0 2rem;
-  }
-  #the_studio .text, #girl_code .text, #our_skills .text {
-    padding-bottom: 6rem;
-  }
-  .the_team_image {
-    padding: 0 2rem;
-    height: 60vh;
-  }
   p, h1, h2 {
     padding: 0 2rem;
+  }
+  #the_team {
+    padding-top: 0;
+    padding-bottom: 6rem;
+  }
+  #the_team .the_team_image {
+    display: none;
+  }
+  #the_team .desktop_team_image {
+    height: 60vh;
+    width: calc(100% - 8rem);
+    margin: 0 auto;
+    background-image: url("ateam.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #the_team p {
+    padding: 0 4rem;
   }
   .main_grid {
     display: grid;
     grid-template-columns: 4fr 6fr;
   }
   .text {
+    padding-top: 1.5rem;
+    padding-bottom: 6rem;
     align-items: center;
     justify-content: center;
     margin: auto 0;
   }
   #the_studio {
-    padding: 0;
-  }
-  #the_studio .desktop_office_image {
-    margin: 0 0;
-    height: 100%;
-  }
-  #the_studio .text {
-    padding-top: 1.5rem;
+    padding-top: 0;
   }
   #the_studio .main_grid {
     grid-template-columns: 5fr 5fr;
   }
-  #girl_code, #our_skills {
-    margin: 4rem 0;
-  }
-  #girl_code .image, #our_skills .image {
+  #the_studio .desktop_office_image {
+    height: 100%;
     margin: 0 0;
   }
+  #girl_code {
+    padding-top: 0;
+    margin: 4rem 0;
+  }
+  #girl_code .girl_code_image {
+    height: 100%;
+  }
   #our_skills {
+    padding-top: 0;
     padding-bottom: 0;
+    margin: 4rem 0;
   }
-  #our_skills .image {
-    height: 42.5rem;
+  #our_skills .skills_image {
+    height: 100%;
   }
-  #our_skills * p {
+  #our_skills p {
     text-align: left;
   }
   #our_skills .container {
@@ -569,41 +585,12 @@ footer a {
     margin-left: 2rem;
   }
   #our_skills .main_grid {
-    grid-template-columns: 5.5fr 4.5fr;
+    grid-template-columns: 5fr 5fr;
   }
   #the_studio .image, #our_skills .image {
     order: 1;
   }
   #the_studio .text, #our_skills .text {
     order: -1;
-  }
-}
-@media screen and (min-width: 800px) {
-  #the_team {
-    padding-bottom: 6rem;
-  }
-  .the_team_image {
-    display: none;
-  }
-  .desktop_team_image {
-    height: 60vh;
-    width: calc(100% - 8rem);
-    margin: 0 auto;
-    background-image: url("ateam.jpg");
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  #the_studio .desktop_office_image {
-    height: 100%;
-  }
-  #the_studio .text {
-    padding-bottom: 6rem;
-  }
-  #girl_code .girl_code_image {
-    height: 100%;
-  }
-  #our_skills .skills_image {
-    height: 80vh;
   }
 }/*# sourceMappingURL=about.css.map */

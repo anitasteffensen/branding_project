@@ -88,7 +88,7 @@ header .nav_bar a {
   display: block;
   color: black;
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 1.75rem 1rem;
   text-decoration: underline;
   font-size: 16px;
   text-underline-offset: 0.5rem;
@@ -344,7 +344,7 @@ footer input[type=email]:focus {
     padding: 0 2rem;
   }
   .header_logo {
-    max-height: 3.25rem !important;
+    max-height: 3rem !important;
   }
   #hamburger_menu {
     display: none;

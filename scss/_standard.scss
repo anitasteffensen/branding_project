@@ -69,7 +69,7 @@ header {
     display: block;
     color: black;
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 1.75rem 1rem;
     text-decoration: underline;
     font-size: $text-size;
     text-underline-offset: 0.5rem;
@@ -411,7 +411,7 @@ footer {
   }
   
   .header_logo {
-    max-height: 3.25rem!important;
+    max-height: 3rem!important;
   }
   #hamburger_menu {
     display: none;
