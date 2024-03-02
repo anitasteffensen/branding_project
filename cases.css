@@ -41,6 +41,7 @@ body {
   background-color: #EDEBE4;
   color: black;
   text-align: left;
+  font-family: "open sans";
 }
 
 h1 {
@@ -66,9 +67,8 @@ p {
 }
 
 header {
-  /*language button*/
-  /*Inspiration for hamburger menu found on: https://codepen.io/ngochuynh/pen/yKrvVZ*/
-  /* drop-down menu */
+  /*language button 
+  Language switch found inspiration from: https://codepen.io/anitasteffensen/pen/rNbNGJN*/
 }
 header .header_content {
   display: flex;
@@ -84,7 +84,7 @@ header .nav_bar {
   font-family: "open sans";
   overflow: hidden;
 }
-header .nav_bar a {
+header .nav_bar-link {
   float: left;
   display: block;
   color: black;
@@ -95,14 +95,79 @@ header .nav_bar a {
   text-underline-offset: 0.5rem;
   text-decoration-thickness: 0.25rem;
 }
-header .nav_bar a.active {
+header .nav_bar-link--contact {
+  margin-left: 4rem;
+}
+header .active {
   color: #FE4D49;
 }
 header .nav_bar .right_top {
   margin-left: 4rem;
-  padding-right: 2rem;
+  padding-right: 1rem;
 }
-header .hamburger1 {
+header .lang {
+  margin-left: 1rem;
+  margin-top: 1.5rem;
+  display: inline-block;
+  text-align: left;
+}
+header .lang a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+header .lang_list,
+header .lang_option {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+header .lang_chevron {
+  display: none;
+}
+header .lang {
+  border: none;
+  min-width: 2.5rem;
+  position: relative;
+  z-index: 10;
+}
+header .lang_list,
+header .lang_option {
+  display: block;
+}
+header .lang_chevron {
+  display: inline-flex;
+  float: right;
+  transform: rotate(90deg);
+}
+header .lang_option {
+  padding: 0.25rem;
+  background-color: #EDEBE4;
+}
+header .lang_option:hover, header .lang_option:focus {
+  background-color: white;
+}
+header .lang_list {
+  display: none;
+  list-style-type: none;
+}
+header .is-open {
+  border-bottom: none;
+}
+header .is-open .lang_list {
+  border: none;
+  border-top: none;
+  display: block;
+  position: absolute;
+  left: -1px;
+  width: 100%;
+}
+header .is-open .lang_chevron {
+  transform: rotate(270deg);
+}
+
+/*Inspiration for hamburger menu found on: https://codepen.io/ngochuynh/pen/yKrvVZ*/
+.hamburger1 {
   margin-top: -2.5rem;
   margin-right: 1.5rem;
   margin-bottom: 1rem;
@@ -110,7 +175,8 @@ header .hamburger1 {
   justify-items: right;
   z-index: 120;
 }
-header .hamburger1 div {
+
+.hamburger1 div {
   background-color: black;
   position: relative;
   width: 2.75rem;
@@ -118,24 +184,31 @@ header .hamburger1 div {
   margin-top: 0.5rem;
   transition: all 0.2s ease-in-out;
 }
-header #toggle1 {
+
+#toggle1 {
   display: none;
 }
-header #toggle1:checked + .hamburger1 .top {
+
+#toggle1:checked + .hamburger1 .top {
   transform: rotate(-45deg);
   margin-top: 22.5px;
 }
-header #toggle1:checked + .hamburger1 .meat {
+
+#toggle1:checked + .hamburger1 .meat {
   transform: rotate(45deg);
   margin-top: -5px;
 }
-header #toggle1:checked + .hamburger1 .bottom {
+
+#toggle1:checked + .hamburger1 .bottom {
   transform: scale(0);
 }
-header #toggle1:checked ~ .menu1 {
+
+#toggle1:checked ~ .menu1 {
   height: 17rem;
 }
-header .menu1 {
+
+/* drop-down menu */
+.menu1 {
   width: 100%;
   margin: auto 0;
   display: grid;
@@ -152,7 +225,8 @@ header .menu1 {
   z-index: 120;
   transition: all 0.3s ease;
 }
-header .link1 {
+
+.link1 {
   font-family: "open sans";
   font-size: 15px;
   width: 100%;
@@ -164,10 +238,17 @@ header .link1 {
   align-items: center;
   justify-content: center;
 }
-header .link1:hover {
+
+.link1:hover {
   background-color: rgba(254, 77, 73, 0.75);
   text-decoration: none;
   transition: all 0.3s ease;
+}
+
+.globe {
+  background-image: url("globus_icon.png");
+  height: 2rem;
+  width: 100%;
 }
 
 footer {
@@ -271,6 +352,9 @@ footer input[type=email]:focus {
     margin-top: -2.5rem;
     margin-right: 1.5rem !important;
   }
+  .lang {
+    display: none;
+  }
   footer .social_media1 {
     display: none;
   }
@@ -327,6 +411,9 @@ footer input[type=email]:focus {
 /*having the hamburgermenu but  having the layout of desktop version*/
 @media only screen and (max-width: 800px) {
   header .nav_bar {
+    display: none;
+  }
+  header .lang {
     display: none;
   }
   header .header_logo {

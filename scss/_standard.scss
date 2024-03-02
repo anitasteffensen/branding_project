@@ -24,6 +24,7 @@
 body {
   @include light-page;
   text-align: left;
+  font-family: $text-font;
 }
 
 h1 {
@@ -64,7 +65,7 @@ header {
 
   }
 
-  .nav_bar a {
+  .nav_bar-link {
     float: left;
     display: block;
     color: black;
@@ -74,105 +75,190 @@ header {
     font-size: $text-size;
     text-underline-offset: 0.5rem;
     text-decoration-thickness: 0.25rem;
+    &--contact {
+      margin-left: 4rem;
+    }
   }
 
-  .nav_bar a.active {
+  .active {
     color: $contast-colour;
   }
 
   .nav_bar .right_top {
     margin-left: 4rem;
-    padding-right: 2rem;
-  }
-/*language button*/
-
-  /*Inspiration for hamburger menu found on: https://codepen.io/ngochuynh/pen/yKrvVZ*/
-  .hamburger1 {
-    margin-top: -2.5rem;
-    margin-right: 1.5rem;
-    margin-bottom: 1rem;
-    display: -ms-grid;
-    display: grid;
-    justify-items: right;
-    z-index: 120;
+    padding-right: 1rem;
   }
 
-  .hamburger1 div {
-    background-color: $hamburger;
-    position: relative;
-    width: 2.75rem;
-    height: 0.25rem;
-    margin-top: 0.5rem;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-  }
+  /*language button 
+  Language switch found inspiration from: https://codepen.io/anitasteffensen/pen/rNbNGJN*/
 
-  #toggle1 {
-    display: none;
-  }
-
-  #toggle1:checked+.hamburger1 .top {
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    margin-top: 22.5px;
-  }
-
-  #toggle1:checked+.hamburger1 .meat {
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-    margin-top: -5px;
-  }
-
-  #toggle1:checked+.hamburger1 .bottom {
-    -webkit-transform: scale(0);
-    transform: scale(0);
-  }
-
-  #toggle1:checked~.menu1 {
-    height: 17rem;
-  }
-
-
-  /* drop-down menu */
-  .menu1 {
-    width: 100%;
-    margin: auto 0;
-    display: -ms-grid;
-    display: grid;
-    grid-template-rows: repeat(5, 0.5fr);
-    grid-row-gap: 0.25rem;
-    padding: 0;
-    list-style: none;
-    clear: both;
-    width: auto;
-    text-align: center;
-    height: 0px;
-    overflow: hidden;
-    transition: height .4s ease;
-    z-index: 120;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-  }
-
-  .link1 {
-    @include text;
-    width: 100%;
-    margin: 0;
-    padding: 0.5rem 0;
-    text-decoration: none;
+    // Without Javascript, the toggle is just a line of inline links:
+.lang {
+  margin-left:1rem;
+  margin-top:1.5rem;
+  display: inline-block;
+  text-align: left;
+    a {
     color: $text-colour1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .link1:hover {
-    background-color: $link-hover;
     text-decoration: none;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    text-transform: uppercase;
   }
 }
+.lang_list,
+.lang_option {
+  margin:  0;
+  padding: 0;
+  display: inline;
+
+}
+.lang_chevron {
+  display: none;
+}
+// With Javascript, it becomes a pseudo select dropdown:
+
+  .lang {
+    border: none;
+    min-width: 2.5rem;
+    position: relative;
+    z-index: 10;
+
+  }
+  .lang_list,
+  .lang_option {
+    display: block;
+  }
+  .lang_chevron {
+    display: inline-flex;
+    float: right;
+    transform: rotate(90deg);
+    // transition: transform 0.2s;
+  }
+  .lang_option {
+    padding: 0.25rem;
+    background-color: $background;
+    
+    // Hover/focus state for language options:
+    &:hover,
+    &:focus {
+      background-color: white;
+    }}
+ 
+  
+  .lang_list {
+    display: none;
+    list-style-type: none;
+  }
+  .is-open {
+    border-bottom: none;
+    .lang_list {
+      border: none;
+      border-top: none;
+      display: block;
+      position: absolute;
+      left: -1px;
+      width: 100%;
+    }
+    .lang_chevron {
+      transform: rotate(270deg);
+    }
+  }
+}
+
+
+/*Inspiration for hamburger menu found on: https://codepen.io/ngochuynh/pen/yKrvVZ*/
+.hamburger1 {
+  margin-top: -2.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 1rem;
+  display: -ms-grid;
+  display: grid;
+  justify-items: right;
+  z-index: 120;
+}
+
+.hamburger1 div {
+  background-color: $hamburger;
+  position: relative;
+  width: 2.75rem;
+  height: 0.25rem;
+  margin-top: 0.5rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#toggle1 {
+  display: none;
+}
+
+#toggle1:checked+.hamburger1 .top {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin-top: 22.5px;
+}
+
+#toggle1:checked+.hamburger1 .meat {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-top: -5px;
+}
+
+#toggle1:checked+.hamburger1 .bottom {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+#toggle1:checked~.menu1 {
+  height: 17rem;
+}
+
+
+/* drop-down menu */
+.menu1 {
+  width: 100%;
+  margin: auto 0;
+  display: -ms-grid;
+  display: grid;
+  grid-template-rows: repeat(5, 0.5fr);
+  grid-row-gap: 0.25rem;
+  padding: 0;
+  list-style: none;
+  clear: both;
+  width: auto;
+  text-align: center;
+  height: 0px;
+  overflow: hidden;
+  transition: height .4s ease;
+  z-index: 120;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.link1 {
+  @include text;
+  width: 100%;
+  margin: 0;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  color: $text-colour1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link1:hover {
+  background-color: $link-hover;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.globe{
+  background-image: url("globus_icon.png");
+  height:2rem;
+  width:100%
+}
+  
+
 
 
 footer {
@@ -304,6 +390,8 @@ footer {
       margin-top: -2.5rem;
       margin-right: 1.5rem!important;}
 
+.lang{
+display: none;}
 
     footer {
       .social_media1 {
@@ -386,6 +474,9 @@ footer {
   
   header {
     .nav_bar {
+      display: none;
+    }
+    .lang{
       display: none;
     }
 

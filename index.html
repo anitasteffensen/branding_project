@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,176 +11,208 @@
 
 <body>
 
-<header>
+    <header>
 
-    <div class="header_content">
-        <img class="header_logo" alt="a studios logo" src="Astudio1.png">
+        <div class="header_content">
+            <img class="header_logo" alt="a studios logo" src="Astudio1.png">
 
-   <!--Navigation for desktop-->
-   <div class="nav_bar" id="myTopnav">
-    <a href="index.html" class="active">Home</a>
-    <a href="about.html">About us</a>
-    <a href="cases.html">Portfolio</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html" class="right_top">Contact</a> 
-   </div>
-</div>
-  
-  <!--Navigation for smaller screens (hamburger)-->
-
-  <nav id="hamburger_menu" class="navigation" role="navigation">
-    <input id="toggle1" type="checkbox" />
-    <label class="hamburger1" for="toggle1">
-      <div class="top"></div>
-      <div class="meat"></div>
-      <div class="bottom"></div>
-    </label>
-  
-    <nav class="menu1">
-      <a class="link1" href="index.html">Home</a>
-      <a class="link1" href="about.html">About us</a>
-      <a class="link1" href="cases.html">Portfolio</a>
-      <a class="link1" href="services.html">Services</a>
-      <a class="link1" href="contact.html">Contact</a>
-    </nav>
-</nav>
+            <!--Navigation for desktop-->
+            <div class="nav_bar" id="myTopnav">
+                <a class="nav_bar-link" href="index.html" class="active">Home</a>
+                <a class="nav_bar-link" href="about.html">About us</a>
+                <a class="nav_bar-link" href="cases.html">Portfolio</a>
+                <a class="nav_bar-link" href="services.html">Services</a>
+                <a class="nav_bar-link nav_bar-link--contact" href="contact.html" class="right_top">Contact</a>
+                <!--Language switch found inspiration from: https://codepen.io/anitasteffensen/pen/rNbNGJN-->
+                <div class="lang" id="lang">
+                    <a href="#" id="lang-toggle" class="lang_option lang_option--current">
+                        en <span class="lang_chevron"></span>
+                    </a>
+                    <ul class="lang_list">
+                        <li>
+                            <a href="/index_dk.html" class="lang_option">da</a>
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+                
+            </div>
+       
 
 
-</header>
+        <!--Navigation for smaller screens (hamburger)-->
+
+        <nav id="hamburger_menu" class="navigation" role="navigation">
+            <div class="lang" id="lang">
+                <a href="#" id="lang-toggle" class="lang_option lang_option--current">
+                    en <span class="lang_chevron"></span>
+                </a>
+                <ul class="lang_list">
+                    <li>
+                        <a href="/index_dk.html" class="lang_option">da</a>
+                    </li>
+                </ul>
+            </div> 
+            <input id="toggle1" type="checkbox" />
+            
+            <label class="hamburger1" for="toggle1">
+                <div class="top"></div>
+                <div class="meat"></div>
+                <div class="bottom"></div>
+            </label>
+
+            <nav class="menu1">
+                <a class="link1" href="index.html">Home</a>
+                <a class="link1" href="about.html">About us</a>
+                <a class="link1" href="cases.html">Portfolio</a>
+                <a class="link1" href="services.html">Services</a>
+                <a class="link1" href="contact.html">Contact</a>
+            </nav>
+        </nav>
+
+
+    </header>
 
 
 
-<main>
-   <!--<video autoplay muted id="background-video">
-        <source src="a studio (1) 1.mp4" type="video/mp4">--> 
-    <section id="nav_buttons">
+    <main>
+        <!--<video autoplay muted id="background-video">
+        <source src="a studio (1) 1.mp4" type="video/mp4">-->
+        <section id="nav_buttons">
             <div class="nav_grid">
-                <div class="grid_image grid_button_coffee"> 
+                <div class="grid_image grid_button_coffee">
                     <a class="button" href="contact.html">Lets talk</a>
                 </div>
                 <div class="grid_image grid_button_water">
-                    <a class="button" href="cases.html">Get inspired</a></div>
-               <div class="grid_image grid_button_pen">
-                <a class="button"  href="services.html">Services</a>
-            </div>
+                    <a class="button" href="cases.html">Get inspired</a>
+                </div>
+                <div class="grid_image grid_button_pen">
+                    <a class="button" href="services.html">Services</a>
+                </div>
             </div>
         </section>
-        
-        
+
+
         <section id="portfolio">
             <div class="container">
-                <img class="portfolio_image" src="portfolio.png" alt="text saying portofolio with a black handbag beside it">
+                <img class="portfolio_image" src="portfolio.png"
+                    alt="text saying portofolio with a black handbag beside it">
                 <p class="text1">Read about some of our </p>
                 <p class="text2">collabs with other brands</p>
                 <p class="text_1">Read about some of our collabs with</p>
                 <p class="text_2">other brands</p>
             </div>
         </section>
-        
+
         <section id="break-line"></section>
-        
+
         <section id="about">
             <div class="main_grid">
                 <div class="column about_image"></div>
                 <!--img class="image column" src="trio.jpg" alt="3 women with their faces facing left in black and white"-->
-                <div class="column text"><h1>about a studio</h1>
-                <p>At A Studio we are not just a digital agency; we are creators of unique experiences. Founded with the mission to reshape branding in the ever-evolving digital landscape. We carefully craft, curate and embody the creativity that propels our agency forward.</p>
-                <p>We take pride in being a women-led powerhouse in an industry historically dominated by men. Our commitment is centered on inclusivity, diversity and excellence in the digital realm. </p>
+                <div class="column text">
+                    <h1>about a studio</h1>
+                    <p>At A Studio we are not just a digital agency; we are creators of unique experiences. Founded with
+                        the mission to reshape branding in the ever-evolving digital landscape. We carefully craft,
+                        curate and embody the creativity that propels our agency forward.</p>
+                    <p>We take pride in being a women-led powerhouse in an industry historically dominated by men. Our
+                        commitment is centered on inclusivity, diversity and excellence in the digital realm. </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="quality">
+            <div class="main_grid">
+                <div class="column quality_image"></div>
+                <!--img class="image column" src="arkitektur.jpg" alt="greek architectur corridor"-->
+                <div class="column text">
+                    <h2>quality</h2>
+                    <h3>is the best business plan</h3>
+                    <p>In a world characterized by constant change and competition, we believe that exceptional quality
+                        is the very foundation of sustainable success. Our dedication to quality is the cornerstone of
+                        everything we do and we prioritize it in every aspect of our business.</p>
+                    <p>Join us in redefining standards, building lasting relationships, and creating experiences that
+                        resonate with unmatched value.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <img class="logo" src="Astudio2.png" alt="a studio's logo">
+        <!--Desktop footer-->
+        <div class="footer-container-desk">
+            <div class="footer_info">
+                <div class="column">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="cases.html">Cases</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="column social_media1">
+                    <h3>Socials</h3>
+                    <ul>
+                        <li a href="">Instagram</li>
+                        <li a href="">LinkedIn</li>
+                        <li a href="">Facebook</li>
+                        <li a href="">TikTok</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li class="address1">Stormgade 55, 1555 København V</li>
+                        <li class="address2">Stormgade 55</li>
+                        <li class="address2">1555 København V</li>
+                        <li>contact@astudio.com</li>
+                        <li>+45 60 12 45 54</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_newsletter">
+                <h3>Stay in touch</h3>
+                <form class="newsletter_form">
+                    <input type="email" placeholder="Type your email">
+                    <button type="submit">Sign up</button>
+                </form>
             </div>
         </div>
-        </section>
-    
-    <section id="quality">
-        <div class="main_grid">
-            <div class="column quality_image"></div>
-        <!--img class="image column" src="arkitektur.jpg" alt="greek architectur corridor"-->
-        <div class="column text"><h2>quality</h2>
-        <h3>is the best business plan</h3>
-        <p>In a world characterized by constant change and competition, we believe that exceptional quality is the very foundation of sustainable success. Our dedication to quality is the cornerstone of everything we do and we prioritize it in every aspect of our business.</p>
-        <p>Join us in redefining standards, building lasting relationships, and creating experiences that resonate with unmatched value.</p>
-    </div>
-    </div>
-    </section>
-
-</main>   
-
-<footer>
-    <img class="logo" src="Astudio2.png" alt="a studio's logo">
-    <!--Desktop footer-->
-    <div class="footer-container-desk">
-        <div class="footer_info">
-        <div class="column">
-            <h3>Navigation</h3>
+        <!--Mobil footer-->
+        <nav class="footer_nav">
+            <p>Navigation</p>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="cases.html">Cases</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/cases.html">Cases</li>
+                <li><a href="/services.html">Services</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="contact_info">
+            <p>Contact</p>
+            <ul>
+                <li>Stormgade 55, 1555</li>
+                <li>Copenhagen</li>
+                <li class="email">contact@astudio.com</li>
+                <li>+45 64 46 64 54</li>
             </ul>
         </div>
-        <div class="column social_media1">
-            <h3>Socials</h3>
-            <ul>
-                <li a href="">Instagram</li>
-                <li a href="">LinkedIn</li>
-                <li a href="">Facebook</li>
-                <li a href="">TikTok</li>
-            </ul>
-        </div>
-        <div class="column">
-            <h3>Contact</h3>
-            <ul>
-                <li class="address1">Stormgade 55, 1555 København V</li>
-                <li class="address2">Stormgade 55</li>
-                <li class="address2">1555 København V</li>
-                <li>contact@astudio.com</li>
-                <li>+45 60 12 45 54</li>
-            </ul>
-        </div>
-    </div>
-        <div class="footer_newsletter">
-            <h3>Stay in touch</h3>
-            <form class="newsletter_form">
-                <input type="email" placeholder="Type your email">
-                <button type="submit">Sign up</button>
-            </form>
-        </div>
-    </div>
-    <!--Mobil footer-->
-    <nav class="footer_nav">
-        <p>Navigation</p>
-        <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/cases.html">Cases</li>
-            <li><a href="/services.html">Services</a></li>
-            <li><a href="/contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="contact_info">
-        <p>Contact</p>
-        <ul>
-            <li>Stormgade 55, 1555</li>
-            <li>Copenhagen</li>
-            <li class="email">contact@astudio.com</li>
-            <li>+45 64 46 64 54</li>
-        </ul>
-    </div>
 
-<div class="grid">
-    <img class="social_media2" src="fb.png" alt="facebook logo">
-    <img class="social_media2" src="insta.png" alt="instagram logo">
-    <img class="social_media2" src="tiktok.png" alt="tiktok logo">
-    <img class="social_media2" src="link.png" alt="linkedin logo">
-</div>
-</footer>
+        <div class="grid">
+            <img class="social_media2" src="fb.png" alt="facebook logo">
+            <img class="social_media2" src="insta.png" alt="instagram logo">
+            <img class="social_media2" src="tiktok.png" alt="tiktok logo">
+            <img class="social_media2" src="link.png" alt="linkedin logo">
+        </div>
+    </footer>
 
-
+<script src="javascript.js"></script>
 </body>
 
 
 </html>
-
-
-

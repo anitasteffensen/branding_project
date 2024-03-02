@@ -4,44 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="cases.css">
 </head>
 <body>
-
     <header>
+
         <div class="header_content">
             <img class="header_logo" alt="a studios logo" src="Astudio1.png">
-    
-       <!--Navigation for desktop-->
-       <div class="nav_bar" id="myTopnav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About us</a>
-        <a href="cases.html"class="active">Portfolio</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html" class="right_top">Contact</a>
-      </div>
-      </div> 
-      
-      <!--Navigation for smaller screens (hamburger)-->
-    
-      <nav id="hamburger_menu" class="navigation" role="navigation">
-        <input id="toggle1" type="checkbox" />
-        <label class="hamburger1" for="toggle1">
-          <div class="top"></div>
-          <div class="meat"></div>
-          <div class="bottom"></div>
-        </label>
-      
-        <nav class="menu1">
-          <a class="link1" href="index.html">Home</a>
-          <a class="link1" href="about.html">About us</a>
-          <a class="link1" href="cases.html">Portfolio</a>
-          <a class="link1" href="services.html">Services</a>
-          <a class="link1" href="contact.html">Contact</a>
+
+            <!--Navigation for desktop-->
+            <div class="nav_bar" id="myTopnav">
+                <a class="nav_bar-link" href="index.html">Home</a>
+                <a class="nav_bar-link" href="about.html">About us</a>
+                <a class="nav_bar-link active" href="cases.html">Portfolio</a>
+                <a class="nav_bar-link" href="services.html">Services</a>
+                <a class="nav_bar-link nav_bar-link--contact" href="contact.html" class="right_top">Contact</a>
+                <div class="lang" id="lang">
+                    <a href="#" id="lang-toggle" class="lang_option lang_option--current">
+                        en <span class="lang_chevron"></span>
+                    </a>
+                    <ul class="lang_list">
+                        <li>
+                            <a href="#" class="lang_option">da</a>
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+                
+            </div>
+       
+
+        <!--Navigation for smaller screens (hamburger)-->
+
+        <nav id="hamburger_menu" class="navigation" role="navigation">
+            <input id="toggle1" type="checkbox" />
+            <label class="hamburger1" for="toggle1">
+                <div class="top"></div>
+                <div class="meat"></div>
+                <div class="bottom"></div>
+            </label>
+
+            <nav class="menu1">
+                <a class="link1" href="index.html">Home</a>
+                <a class="link1" href="about.html">About us</a>
+                <a class="link1" href="cases.html">Portfolio</a>
+                <a class="link1" href="services.html">Services</a>
+                <a class="link1" href="contact.html">Contact</a>
+                <a class="link1 globe" href="#" class="lang_option">da</a>
+            </nav>
         </nav>
-    </nav>
-      </header>
+
+
+    </header>
+   
     <main>
         <section id="cases">
             <img class="cases_image" src="portfolio.mp4" alt="scrapbook video where our clients brand comes in">
@@ -184,5 +199,8 @@
     <img class="social_media2" src="link.png" alt="linkedin logo">
 </div>
     </footer>
+
+
+<script src="javascript.js"></script>
 </body>
 </html>
