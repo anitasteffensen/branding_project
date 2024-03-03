@@ -461,7 +461,7 @@ footer input[type=email]:focus {
   background-repeat: no-repeat;
   background-position-y: -10rem;
   background-size: contain;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-fill-mode: both;
   position: absolute;
   width: 100%;
@@ -624,7 +624,7 @@ footer a {
     padding-bottom: 6rem;
   }
   .animated {
-    background-position-x: right -10px;
+    background-position-x: right 1rem;
     height: 280px;
   }
   .contact-form-actual {
@@ -643,7 +643,7 @@ footer a {
     padding-bottom: 6rem;
   }
   .animated {
-    background-position-x: right 70px;
+    background-position-x: right 3rem;
     height: 420px;
   }
   #contact {
@@ -658,7 +658,7 @@ footer a {
 }
 @media only screen and (min-width: 800px) {
   .animated {
-    background-position-x: right 40px;
+    background-position-x: right 5rem;
     height: 400px;
   }
   #lets_talk {
