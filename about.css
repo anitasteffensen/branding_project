@@ -245,10 +245,23 @@ header .is-open .lang_chevron {
   transition: all 0.3s ease;
 }
 
-.globe {
-  background-image: url("globus_icon.png");
-  height: 2rem;
-  width: 100%;
+.lang_hamb {
+  text-transform: uppercase;
+  display: flex;
+  gap: 0.25rem;
+  cursor: default;
+  margin-bottom: 1rem;
+}
+.lang_hamb a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.lang_hamb a:hover {
+  color: rgba(254, 77, 73, 0.75);
+}
+.lang_hamb:hover {
+  background-color: unset;
 }
 
 footer {
@@ -680,5 +693,29 @@ footer a {
   }
   #the_studio .text, #our_skills .text {
     order: -1;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #the_team .desktop_team_image {
+    height: 70vh;
+  }
+  #the_studio {
+    padding-top: 0;
+  }
+  #the_studio .main_grid {
+    grid-template-columns: 5fr 5fr;
+  }
+  #the_studio .desktop_office_image {
+    height: 70vh;
+    width: 100%;
+    margin: 0 0;
+  }
+  #girl_code {
+    padding-top: 0;
+    margin: 4rem 0;
+  }
+  #girl_code .girl_code_image {
+    height: 70vh;
+    width: 100%;
   }
 }/*# sourceMappingURL=about.css.map */

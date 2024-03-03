@@ -245,10 +245,23 @@ header .is-open .lang_chevron {
   transition: all 0.3s ease;
 }
 
-.globe {
-  background-image: url("globus_icon.png");
-  height: 2rem;
-  width: 100%;
+.lang_hamb {
+  text-transform: uppercase;
+  display: flex;
+  gap: 0.25rem;
+  cursor: default;
+  margin-bottom: 1rem;
+}
+.lang_hamb a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.lang_hamb a:hover {
+  color: rgba(254, 77, 73, 0.75);
+}
+.lang_hamb:hover {
+  background-color: unset;
 }
 
 footer {

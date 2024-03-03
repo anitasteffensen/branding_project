@@ -289,3 +289,30 @@ footer{
     }
 }
 
+@media screen and (min-width:1000px){
+
+    #the_team{
+        .desktop_team_image {
+        height: 70vh;
+    }}
+    #the_studio{
+        padding-top: 0;
+        .main_grid{
+        grid-template-columns: 5fr 5fr;
+        }
+        .desktop_office_image{
+            height:70vh;
+            width:100%;
+            margin: 0 0;
+        }
+    }
+
+    #girl_code{
+        padding-top: 0;
+        margin: 4rem 0;
+        .girl_code_image{
+            height:70vh;
+            width: 100%;
+        }
+    }
+}

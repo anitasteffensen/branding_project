@@ -252,10 +252,23 @@ header {
   transition: all 0.3s ease;
 }
 
-.globe{
-  background-image: url("globus_icon.png");
-  height:2rem;
-  width:100%
+.lang_hamb{
+  text-transform: uppercase;
+  display: flex;
+  gap:0.25rem;
+  cursor: default;
+  margin-bottom: 1rem;
+  a {
+    text-decoration: none;
+    color:$text-colour1;
+    cursor: pointer;
+    &:hover{
+      color:$link-hover;
+    }
+  }
+  &:hover{
+    background-color: unset;
+  }
 }
   
 
