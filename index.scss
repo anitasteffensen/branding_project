@@ -13,10 +13,15 @@
 
 
 
-.video_banner{
-    max-width: 100%;
-    height:12rem;
+#video{
+    margin: 0 0;
+    padding: 0 0;
+    video{
+        width:100%;
+        height:50vh;
+    }
     
+
 }
 #nav_buttons{
     .nav_grid{
@@ -229,6 +234,7 @@ section{
 
 }
 
+
 .grid_image{
     height: 27vw!important;
 }
@@ -316,6 +322,11 @@ section{
     
 
 @media only screen and (min-width: 800px){
+    #video{
+        video{
+            height:100%;
+        }
+    }
     .text_1{
         font-size: $desktop-portfolio-image-text;
         padding-left: 2.25rem;

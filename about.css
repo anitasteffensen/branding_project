@@ -264,6 +264,22 @@ header .is-open .lang_chevron {
   background-color: unset;
 }
 
+.header_content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content_wrapper {
+  max-width: 1200px;
+  margin: 0 2rem;
+  width: 100%;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
 footer {
   padding: 0 1.5rem;
   padding-bottom: 4rem;
