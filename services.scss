@@ -72,7 +72,7 @@ h2{
     .consult_image{
         width:100%;
         height:70vh;
-        background-image:url("branding consult.jpg");
+        background-image:url("images/branding consult.jpg");
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -83,7 +83,7 @@ h2{
     .webdesign_image{
         width:100%;
         height:60vh;
-        background-image:url("webdesign.png");
+        background-image:url("images/webdesign.png");
         background-position: top;
         background-repeat: no-repeat;
         background-size: cover;
@@ -94,7 +94,7 @@ h2{
     .digital_image{
         width:100%;
         height:60vh;
-        background-image:url("digital design.png");
+        background-image:url("images/digital design.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -104,7 +104,7 @@ h2{
     .editing_image{
         width:100%;
         height:60vh;
-        background-image:url("video.jpeg");
+        background-image:url("images/video.jpeg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -165,6 +165,7 @@ footer{
         
     .image{
         width: 100%;
+        max-height: 500px;
     }
 
     .text{
@@ -195,7 +196,8 @@ footer{
     
 
     .consult_image, .webdesign_image, .digital_image, .editing_image{
-        height: 75vh!important;
+        height: 65vh!important;
+        max-height: 700px;
     }
 
     #webdesign, #editing{
@@ -215,15 +217,10 @@ footer{
             
         }
         
+
+
+
     
-
-
-
-    #editing{
-        .image{
-            height:100%;
-        }
-    }  
 }
 
 @media only screen and (min-width:800px){
@@ -232,9 +229,10 @@ footer{
     }
 
     .desktop_service_image{
-        width:calc(100% - 8rem);
+        margin: 0 4rem;
         height:50vh;
-        background-image:url("services.png");
+        max-height:500px;
+        background-image:url("images/services.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;

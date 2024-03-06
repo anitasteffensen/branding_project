@@ -18,7 +18,8 @@
     padding: 0 0;
     video{
         width:100%;
-        height:50vh;
+        height:50vw;
+        margin-bottom: $page-break
     }
     
 
@@ -34,21 +35,20 @@
         display: flex;
         flex-direction: column;
         justify-content: end;
-        height:12rem;
         padding: 1rem;
         background-size: cover;
         background-position: center;
     }
     .grid_button_coffee {
-        background-image: url("kaffe.jpg");
+        background-image: url("images/kaffe.jpg");
         
     }
 
     .grid_button_water{
-        background-image: url("water.jpg");
+        background-image: url("images/water.jpg");
     }
     .grid_button_pen{
-        background-image: url("pen.jpg");
+        background-image: url("images/pen.jpg");
     }
     
     .button{
@@ -82,7 +82,6 @@
     .portfolio_image{
         width: 100%;
         min-height: 15rem;
-        max-height: 40rem;
         }
             
            
@@ -141,7 +140,7 @@
     height: 55vh;
     width: calc(100%);
     margin: 0 auto;
-    background-image: url("trio.jpg");
+    background-image: url("images/trio.jpg");
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -170,7 +169,7 @@
         height: 60vh;
         width: calc(100%);
         margin: 0 auto;
-        background-image: url("arkitektur.jpg");
+        background-image: url("images/arkitektur.jpg");
         background-position: center bottom;
         background-repeat: no-repeat;
         background-size: cover;
@@ -217,6 +216,9 @@ section{
 }
     #nav_buttons{
     padding: 0 0;
+    .grid_image{
+        height: 30vh;
+    }
 }
 
 .text_1, .text_2{
@@ -236,7 +238,7 @@ section{
 
 
 .grid_image{
-    height: 27vw!important;
+    height: 35vh;
 }
 
 .button{
@@ -278,6 +280,7 @@ section{
     .about_image{
         height: 60vh;
         margin: 2rem 0;
+        max-height:500px;
         }
     }
 
@@ -293,6 +296,7 @@ section{
    .quality_image{
     height: 60vh;
     margin: 2rem 0;
+    max-height: 550px;
    }
 
    .quality_image {
@@ -327,6 +331,10 @@ section{
             height:100%;
         }
     }
+    .grid_image{
+        height: 35vh;
+        max-height:400px;
+    }
     .text_1{
         font-size: $desktop-portfolio-image-text;
         padding-left: 2.25rem;
@@ -341,17 +349,4 @@ section{
         }
 }
 
-@media screen and (min-width:1000px){
-    #about{
-        .about_image{
-            height:70vh;
-        }
-    }
 
-    #quality{
-        .quality_image{
-            height:70vh;
-            background-position: center;
-        }
-    }
-}

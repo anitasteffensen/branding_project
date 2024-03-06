@@ -23,6 +23,7 @@ section{
         width: 100%; 
         height:40vh; 
         margin: 0.5rem 0;
+        max-height:800px;
       
       }
 }
@@ -46,7 +47,8 @@ section{
     .mads_image{
         width:100%;
         height:60vh;
-        background-image:url("mads.png");
+        max-height:700px;
+        background-image:url("images/mads.png");
         background-position: top;
         background-repeat: no-repeat;
         background-size: cover;
@@ -62,7 +64,8 @@ section{
     .messy_image{
         width:100%;
         height:60vh;
-        background-image:url("messy.jpg");
+        max-height: 700px;
+        background-image:url("images/messy.jpg");
         background-position: bottom;
         background-repeat: no-repeat;
         background-size: cover;
@@ -81,7 +84,8 @@ section{
     .hay_image{ 
         width:100%;
         height:60vh;
-        background-image:url("hay.jpg");
+        max-height: 700px;
+        background-image:url("images/hay.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -98,7 +102,8 @@ section{
    .superdry_image{ 
     width:100%;
     height:65vh;
-    background-image:url("superdry.png");
+    max-height: 700px;
+    background-image:url("images/superdry.png");
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -116,7 +121,8 @@ section{
     .ganni_image{
         width:100%;
         height:60vh;
-        background-image:url("ganni.png");
+        max-height: 700px;
+        background-image:url("images/ganni.png");
         background-position: bottom;
         background-repeat: no-repeat;
         background-size: cover;
@@ -163,27 +169,27 @@ footer{
 
     #mads{
         .mads_image{
-            height: 80vh;
+            height: 70vh;
         }
     }
     #messy{
         .messy_image{
-            height: 80vh;
+            height: 70vh;
         }
     }
     #hay{
         .hay_image{
-            height:80vh;
+            height:70vh;
         }
     }
     #superdry{
         .superdry_image{
-            height:85vh;
+            height:75vh;
         }
     }
     #ganni{
         .ganni_image{
-            height:80vh;
+            height:70vh;
         }
     }
     #messy, #superdry{

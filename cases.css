@@ -264,14 +264,16 @@ header .is-open .lang_chevron {
   background-color: unset;
 }
 
+/*For anything else that comes over 1200px screen size there will be space at the sides, and content will be in the center*/
 .header_content {
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
 }
 
 .content_wrapper {
   max-width: 1200px;
-  margin: 0 2rem;
+  margin: 0 auto;
   width: 100%;
 }
 
@@ -418,6 +420,9 @@ footer input[type=email]:focus {
 }
 /*adding the dekstop-version and still having the hamburgermenu*/
 @media only screen and (min-width: 600px) {
+  .header_logo {
+    padding-left: 2rem;
+  }
   .hamburger1 {
     margin-right: 2rem !important;
   }
@@ -469,11 +474,13 @@ footer input[type=email]:focus {
   .footer_nav {
     display: none;
   }
-  .header_logo {
-    padding-left: 2rem !important;
-  }
   footer {
     padding: 0 2rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .header_logo {
+    padding-left: 0;
   }
 }
 section {
@@ -488,6 +495,7 @@ section {
   width: 100%;
   height: 40vh;
   margin: 0.5rem 0;
+  max-height: 800px;
 }
 
 .break-line {
@@ -509,7 +517,8 @@ section {
 #mads .mads_image {
   width: 100%;
   height: 60vh;
-  background-image: url("mads.png");
+  max-height: 700px;
+  background-image: url("images/mads.png");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -525,7 +534,8 @@ section {
 #messy .messy_image {
   width: 100%;
   height: 60vh;
-  background-image: url("messy.jpg");
+  max-height: 700px;
+  background-image: url("images/messy.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -541,7 +551,8 @@ section {
 #hay .hay_image {
   width: 100%;
   height: 60vh;
-  background-image: url("hay.jpg");
+  max-height: 700px;
+  background-image: url("images/hay.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -557,7 +568,8 @@ section {
 #superdry .superdry_image {
   width: 100%;
   height: 65vh;
-  background-image: url("superdry.png");
+  max-height: 700px;
+  background-image: url("images/superdry.png");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -573,7 +585,8 @@ section {
 #ganni .ganni_image {
   width: 100%;
   height: 60vh;
-  background-image: url("ganni.png");
+  max-height: 700px;
+  background-image: url("images/ganni.png");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -603,19 +616,19 @@ footer a {
     margin: 2rem 2rem;
   }
   #mads .mads_image {
-    height: 80vh;
+    height: 70vh;
   }
   #messy .messy_image {
-    height: 80vh;
+    height: 70vh;
   }
   #hay .hay_image {
-    height: 80vh;
+    height: 70vh;
   }
   #superdry .superdry_image {
-    height: 85vh;
+    height: 75vh;
   }
   #ganni .ganni_image {
-    height: 80vh;
+    height: 70vh;
   }
   #messy .messy_image, #messy .superdry_image, #superdry .messy_image, #superdry .superdry_image {
     order: 1;

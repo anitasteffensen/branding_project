@@ -264,14 +264,16 @@ header .is-open .lang_chevron {
   background-color: unset;
 }
 
+/*For anything else that comes over 1200px screen size there will be space at the sides, and content will be in the center*/
 .header_content {
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
 }
 
 .content_wrapper {
   max-width: 1200px;
-  margin: 0 2rem;
+  margin: 0 auto;
   width: 100%;
 }
 
@@ -418,6 +420,9 @@ footer input[type=email]:focus {
 }
 /*adding the dekstop-version and still having the hamburgermenu*/
 @media only screen and (min-width: 600px) {
+  .header_logo {
+    padding-left: 2rem;
+  }
   .hamburger1 {
     margin-right: 2rem !important;
   }
@@ -469,11 +474,13 @@ footer input[type=email]:focus {
   .footer_nav {
     display: none;
   }
-  .header_logo {
-    padding-left: 2rem !important;
-  }
   footer {
     padding: 0 2rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .header_logo {
+    padding-left: 0;
   }
 }
 section {
@@ -534,7 +541,7 @@ h2 {
 #consult .consult_image {
   width: 100%;
   height: 70vh;
-  background-image: url("branding consult.jpg");
+  background-image: url("images/branding consult.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -543,7 +550,7 @@ h2 {
 #webdesign .webdesign_image {
   width: 100%;
   height: 60vh;
-  background-image: url("webdesign.png");
+  background-image: url("images/webdesign.png");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -552,7 +559,7 @@ h2 {
 #digital .digital_image {
   width: 100%;
   height: 60vh;
-  background-image: url("digital design.png");
+  background-image: url("images/digital design.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -561,7 +568,7 @@ h2 {
 #editing .editing_image {
   width: 100%;
   height: 60vh;
-  background-image: url("video.jpeg");
+  background-image: url("images/video.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -608,6 +615,7 @@ footer a {
   }
   .image {
     width: 100%;
+    max-height: 500px;
   }
   .text {
     margin-top: 2rem;
@@ -630,7 +638,8 @@ footer a {
     margin: 0 4rem;
   }
   .consult_image, .webdesign_image, .digital_image, .editing_image {
-    height: 75vh !important;
+    height: 65vh !important;
+    max-height: 700px;
   }
   #webdesign .image, #editing .image {
     order: 1;
@@ -643,18 +652,16 @@ footer a {
     display: grid;
     grid-template-columns: 5.5fr 4.5fr;
   }
-  #editing .image {
-    height: 100%;
-  }
 }
 @media only screen and (min-width: 800px) {
   .service_image {
     display: none;
   }
   .desktop_service_image {
-    width: calc(100% - 8rem);
+    margin: 0 4rem;
     height: 50vh;
-    background-image: url("services.png");
+    max-height: 500px;
+    background-image: url("images/services.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

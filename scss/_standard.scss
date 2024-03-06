@@ -271,17 +271,16 @@ header {
   }
 }
   
-
+/*For anything else that comes over 1200px screen size there will be space at the sides, and content will be in the center*/
 .header_content{
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
 }
-
-
 
 .content_wrapper {
   max-width: 1200px;
-  margin: 0 2rem;
+  margin: 0 auto;
   width: 100%;
 }
 
@@ -467,6 +466,9 @@ display: none;}
 /*adding the dekstop-version and still having the hamburgermenu*/
 @media only screen and (min-width:600px) {
   
+  .header_logo{
+    padding-left: 2rem;
+  }
   
   .hamburger1 {
     margin-right: $desktop-section-sides !important;
@@ -541,9 +543,7 @@ display: none;}
     display: none;
   }
 
-  .header_logo{
-    padding-left:$desktop-section-sides!important;
-  }
+
 
   footer{
     padding: 0 2rem;
@@ -551,5 +551,10 @@ display: none;}
 
 }
 
+@media only screen and (min-width: 1200px){
+  .header_logo{
+    padding-left: 0;
+  }
+}
 
 

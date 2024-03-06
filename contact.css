@@ -264,14 +264,16 @@ header .is-open .lang_chevron {
   background-color: unset;
 }
 
+/*For anything else that comes over 1200px screen size there will be space at the sides, and content will be in the center*/
 .header_content {
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
 }
 
 .content_wrapper {
   max-width: 1200px;
-  margin: 0 2rem;
+  margin: 0 auto;
   width: 100%;
 }
 
@@ -418,6 +420,9 @@ footer input[type=email]:focus {
 }
 /*adding the dekstop-version and still having the hamburgermenu*/
 @media only screen and (min-width: 600px) {
+  .header_logo {
+    padding-left: 2rem;
+  }
   .hamburger1 {
     margin-right: 2rem !important;
   }
@@ -469,11 +474,13 @@ footer input[type=email]:focus {
   .footer_nav {
     display: none;
   }
-  .header_logo {
-    padding-left: 2rem !important;
-  }
   footer {
     padding: 0 2rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .header_logo {
+    padding-left: 0;
   }
 }
 #contact {
@@ -486,7 +493,7 @@ footer input[type=email]:focus {
 }
 
 .animated {
-  background-image: url(/telephone.png);
+  background-image: url(images/telephone.png);
   background-repeat: no-repeat;
   background-position-y: -10rem;
   background-size: contain;
@@ -551,7 +558,6 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   max-width: 100%;
   z-index: 1;
 }
@@ -567,6 +573,7 @@ section {
   justify-content: space-between;
   padding-top: 2rem;
   z-index: 1;
+  width: 100%;
 }
 
 .contact-form img {
@@ -633,7 +640,7 @@ input[type=submit] {
   border: none;
   border-radius: 3px;
   padding: 10px 20px;
-  font-family: white;
+  font-family: "open sans";
   font-size: 16px;
   font-weight: 600;
   margin-top: 2em;
@@ -683,6 +690,12 @@ footer a {
     margin: 2rem 2rem;
     margin-top: 60px;
     max-width: 100%;
+  }
+  .contact-form img {
+    max-height: 50vw;
+    max-height: 700px;
+    width: 100%;
+    height: 100%;
   }
 }
 @media only screen and (min-width: 800px) {

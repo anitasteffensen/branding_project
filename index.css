@@ -264,14 +264,16 @@ header .is-open .lang_chevron {
   background-color: unset;
 }
 
+/*For anything else that comes over 1200px screen size there will be space at the sides, and content will be in the center*/
 .header_content {
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
 }
 
 .content_wrapper {
   max-width: 1200px;
-  margin: 0 2rem;
+  margin: 0 auto;
   width: 100%;
 }
 
@@ -418,6 +420,9 @@ footer input[type=email]:focus {
 }
 /*adding the dekstop-version and still having the hamburgermenu*/
 @media only screen and (min-width: 600px) {
+  .header_logo {
+    padding-left: 2rem;
+  }
   .hamburger1 {
     margin-right: 2rem !important;
   }
@@ -469,11 +474,13 @@ footer input[type=email]:focus {
   .footer_nav {
     display: none;
   }
-  .header_logo {
-    padding-left: 2rem !important;
-  }
   footer {
     padding: 0 2rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .header_logo {
+    padding-left: 0;
   }
 }
 #video {
@@ -482,7 +489,8 @@ footer input[type=email]:focus {
 }
 #video video {
   width: 100%;
-  height: 50vh;
+  height: 50vw;
+  margin-bottom: 1rem;
 }
 
 #nav_buttons .nav_grid {
@@ -493,19 +501,18 @@ footer input[type=email]:focus {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  height: 12rem;
   padding: 1rem;
   background-size: cover;
   background-position: center;
 }
 #nav_buttons .grid_button_coffee {
-  background-image: url("kaffe.jpg");
+  background-image: url("images/kaffe.jpg");
 }
 #nav_buttons .grid_button_water {
-  background-image: url("water.jpg");
+  background-image: url("images/water.jpg");
 }
 #nav_buttons .grid_button_pen {
-  background-image: url("pen.jpg");
+  background-image: url("images/pen.jpg");
 }
 #nav_buttons .button {
   background-color: #FE4D49;
@@ -534,7 +541,6 @@ footer input[type=email]:focus {
 #portfolio .portfolio_image {
   width: 100%;
   min-height: 15rem;
-  max-height: 40rem;
 }
 #portfolio .text1 {
   font-size: 13px;
@@ -579,7 +585,7 @@ footer input[type=email]:focus {
   height: 55vh;
   width: 100%;
   margin: 0 auto;
-  background-image: url("trio.jpg");
+  background-image: url("images/trio.jpg");
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -607,7 +613,7 @@ footer input[type=email]:focus {
   height: 60vh;
   width: 100%;
   margin: 0 auto;
-  background-image: url("arkitektur.jpg");
+  background-image: url("images/arkitektur.jpg");
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -649,6 +655,9 @@ footer a {
   #nav_buttons {
     padding: 0 0;
   }
+  #nav_buttons .grid_image {
+    height: 30vh;
+  }
   .text_1, .text_2 {
     display: none;
   }
@@ -660,7 +669,7 @@ footer a {
     padding: 0 0 !important;
   }
   .grid_image {
-    height: 27vw !important;
+    height: 35vh;
   }
   .button {
     font-size: 14px;
@@ -686,6 +695,7 @@ footer a {
   #about .about_image {
     height: 60vh;
     margin: 2rem 0;
+    max-height: 500px;
   }
   #quality h2 {
     margin: auto 2rem;
@@ -697,6 +707,7 @@ footer a {
   #quality .quality_image {
     height: 60vh;
     margin: 2rem 0;
+    max-height: 550px;
   }
   #quality .quality_image {
     order: 1;
@@ -719,6 +730,10 @@ footer a {
   #video video {
     height: 100%;
   }
+  .grid_image {
+    height: 35vh;
+    max-height: 400px;
+  }
   .text_1 {
     font-size: 15px;
     padding-left: 2.25rem;
@@ -730,14 +745,5 @@ footer a {
     padding-left: 2.25rem;
     position: absolute;
     bottom: 5.5rem;
-  }
-}
-@media screen and (min-width: 1000px) {
-  #about .about_image {
-    height: 70vh;
-  }
-  #quality .quality_image {
-    height: 70vh;
-    background-position: center;
   }
 }/*# sourceMappingURL=index.css.map */
