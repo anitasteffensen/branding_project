@@ -1,12 +1,12 @@
-/*content
+/*content for contact-site
 
-1. navigation / #nav_buttons
-    1.1 portfolio / #portfolio
-2. about a studio / #about
-    2.1 quality / #quality
-3. footer
-4. Mobil styling
-5. Dekstop  styling
+1. contact-section / #contact
+2. animination / .animated
+3. section 
+3. contact-form / .contact-wrapper
+4. footer / light footer
+5. mobil version / max 700px
+6. desktop version / min 700 and min 800px
 */
 
 @import 'scss/variables';
@@ -217,7 +217,6 @@ input[type="text"] {
     }
 
 
-/*washed out white footer*/
 footer{
 
     a{

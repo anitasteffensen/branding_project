@@ -1,12 +1,19 @@
-/*content
+@charset "UTF-8";
+/*content for cases-site
 
-1. navigation / #nav_buttons
-    1.1 portfolio / #portfolio
-2. about a studio / #about
-    2.1 quality / #quality
-3. footer
-4. Mobil styling
-5. Dekstop  styling
+1. section
+    1.1 cases / #cases
+    1.2 breakline /.breakline
+    1.3 logo / .logo1
+2. portfolio
+    2.1 mads nørgaard / #mads
+    2.2 messyweekend / #messy
+    2.3 Hay /#hay
+    2.4 superdry / #superdry
+    2.5 ganni / #ganni
+3. footer / light footer
+4. Desktop version / min 700px
+
 */
 @font-face {
   font-family: nimbus;
@@ -16,6 +23,15 @@
   font-family: open sans;
   src: url("font/OpenSans-VariableFont_wdth,wght.ttf");
 }
+/*overview of variables
+1. Variables / Colour, font-family and size. 
+2. Mixin / Pages with different colour and footer too.
+3. Page-break.
+4. Mixin / H1, h2 and h3 and normal text.
+5. Section bottom.
+6. Mobil version / Section-sides, button-size etc.
+7. Desktop version / Section-sides, button-size etc.
+*/
 /*Variables*/
 /*mobile variables*/
 /*desktop variables*/

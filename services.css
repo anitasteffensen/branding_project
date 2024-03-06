@@ -1,12 +1,18 @@
 /*content
 
-1. navigation / #nav_buttons
-    1.1 portfolio / #portfolio
-2. about a studio / #about
-    2.1 quality / #quality
-3. footer
-4. Mobil styling
-5. Dekstop  styling
+1. service
+    1.1 image / .service_image
+    1.2 section / .service_section
+    1.3 a href button / .button
+2. section
+    2.1 services / #services
+    2.2 consult / #consult
+    2.3 webdesign / #webdesign
+    2.4 digital / #digital
+    2.5 editing / #editing
+3. footer / dark footer
+4. mobil version / max width 600px
+5. desktop version / min width 600px and 800px
 */
 @font-face {
   font-family: nimbus;
@@ -16,6 +22,15 @@
   font-family: open sans;
   src: url("font/OpenSans-VariableFont_wdth,wght.ttf");
 }
+/*overview of variables
+1. Variables / Colour, font-family and size. 
+2. Mixin / Pages with different colour and footer too.
+3. Page-break.
+4. Mixin / H1, h2 and h3 and normal text.
+5. Section bottom.
+6. Mobil version / Section-sides, button-size etc.
+7. Desktop version / Section-sides, button-size etc.
+*/
 /*Variables*/
 /*mobile variables*/
 /*desktop variables*/
@@ -483,11 +498,6 @@ footer input[type=email]:focus {
     padding-left: 0;
   }
 }
-section {
-  padding: 0 1.5rem;
-  padding-bottom: 6rem;
-}
-
 .service_image {
   width: 100%;
   padding: 0 0;
@@ -524,6 +534,11 @@ h2 {
   display: flex;
   margin: 0 5rem;
   margin-top: 2.5rem;
+}
+
+section {
+  padding: 0 1.5rem;
+  padding-bottom: 6rem;
 }
 
 #services h1 {

@@ -1,12 +1,17 @@
-/*content
+/*content for index/home
 
-1. navigation / #nav_buttons
-    1.1 portfolio / #portfolio
-2. about a studio / #about
-    2.1 quality / #quality
-3. footer
-4. Mobil styling
-5. Dekstop  styling
+1. Video / #video
+2. sections
+    2.1 navigation / #nav_buttons
+    2.2 porfolio / #portfolio
+    2.3 breakline / #breakline
+    2.4 grid for about and quality / .main_grid
+        2.4.1 about / #about
+        2.4.1 quality / #quality
+3. footer / light footer
+4. mobil version / max width 600px
+5. desktop version / min width 600px and min width 800px
+
 */
 @font-face {
   font-family: nimbus;
@@ -16,6 +21,15 @@
   font-family: open sans;
   src: url("font/OpenSans-VariableFont_wdth,wght.ttf");
 }
+/*overview of variables
+1. Variables / Colour, font-family and size. 
+2. Mixin / Pages with different colour and footer too.
+3. Page-break.
+4. Mixin / H1, h2 and h3 and normal text.
+5. Section bottom.
+6. Mobil version / Section-sides, button-size etc.
+7. Desktop version / Section-sides, button-size etc.
+*/
 /*Variables*/
 /*mobile variables*/
 /*desktop variables*/

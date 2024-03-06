@@ -1,12 +1,12 @@
-/*content
+/*content for contact-site
 
-1. navigation / #nav_buttons
-    1.1 portfolio / #portfolio
-2. about a studio / #about
-    2.1 quality / #quality
-3. footer
-4. Mobil styling
-5. Dekstop  styling
+1. contact-section / #contact
+2. animination / .animated
+3. section 
+3. contact-form / .contact-wrapper
+4. footer / light footer
+5. mobil version / max 700px
+6. desktop version / min 700 and min 800px
 */
 @font-face {
   font-family: nimbus;
@@ -16,6 +16,15 @@
   font-family: open sans;
   src: url("font/OpenSans-VariableFont_wdth,wght.ttf");
 }
+/*overview of variables
+1. Variables / Colour, font-family and size. 
+2. Mixin / Pages with different colour and footer too.
+3. Page-break.
+4. Mixin / H1, h2 and h3 and normal text.
+5. Section bottom.
+6. Mobil version / Section-sides, button-size etc.
+7. Desktop version / Section-sides, button-size etc.
+*/
 /*Variables*/
 /*mobile variables*/
 /*desktop variables*/
@@ -648,7 +657,6 @@ input[type=submit] {
   align-self: flex-end;
 }
 
-/*washed out white footer*/
 footer a {
   text-decoration: none;
   color: black;

@@ -1,21 +1,24 @@
 /*content
 
-1. navigation / #nav_buttons
-    1.1 portfolio / #portfolio
-2. about a studio / #about
-    2.1 quality / #quality
-3. footer
-4. Mobil styling
-5. Dekstop  styling
+1. service
+    1.1 image / .service_image
+    1.2 section / .service_section
+    1.3 a href button / .button
+2. section
+    2.1 services / #services
+    2.2 consult / #consult
+    2.3 webdesign / #webdesign
+    2.4 digital / #digital
+    2.5 editing / #editing
+3. footer / dark footer
+4. mobil version / max width 600px
+5. desktop version / min width 600px and 800px
 */
 
 @import 'scss/variables';
 @import 'scss/standard';
 
-section{
-    padding: 0 $section-sides;
-    padding-bottom: $section-bottom;
-}
+
 .service_image{
     width: 100%;
     padding: 0 0;
@@ -54,7 +57,10 @@ h2{
 
 }
 
-
+section{
+    padding: 0 $section-sides;
+    padding-bottom: $section-bottom;
+}
 
 #services{
     h1 {
