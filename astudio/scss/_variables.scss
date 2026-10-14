@@ -1,0 +1,110 @@
+
+@font-face{
+    font-family:nimbus;
+    src: url("font/TAN-NIMBUS.ttf");
+}
+@font-face{
+    font-family:open sans;
+    src: url("font/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+
+/*overview of variables
+1. Variables / Colour, font-family and size. 
+2. Mixin / Pages with different colour and footer too.
+3. Page-break.
+4. Mixin / H1, h2 and h3 and normal text.
+5. Section bottom.
+6. Mobil version / Section-sides, button-size etc.
+7. Desktop version / Section-sides, button-size etc.
+*/
+
+
+/*Variables*/
+
+$background: #EDEBE4;
+
+$contast-colour: #FE4D49;
+
+$washed_out: #222121;
+
+$hamburger: black;
+
+$text-colour1: black;
+
+$text-colour2: white;
+
+$text-font: "open sans";
+
+$text-size: 16px;
+
+$link-hover:  rgba(254, 77, 73, 0.75);
+
+$rectangle:rgba(254, 77, 73, 0.85);
+
+
+@mixin light-page{
+    background-color: #EDEBE4;
+    color:black;
+    
+}
+@mixin dark-page{
+    background-color: #222121;
+    color:white;
+}
+@mixin light-footer{
+    background-color: #EDEBE4;
+    color: black;
+    font-size: 15px;
+}
+@mixin dark-footer{
+    background-color: #222121;
+    color: white;
+    font-size: 15px;
+}
+
+
+$page-break:1rem;
+
+
+@mixin header1{
+    font-family: "nimbus";
+    font-size: 28px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+@mixin header2{
+    font-family: "nimbus";
+    font-size: 24.3px;
+    /*golden ratio p * 1.618*/
+
+}
+
+@mixin text{
+    font-family: "open sans";
+    font-size: 15px;
+}
+
+$section-bottom:6rem;
+
+/*mobile variables*/
+$section-sides:1.5rem;
+
+$portfolio-image-text:13px;
+
+$button-size:13px;
+
+/*desktop variables*/
+$desktop-section-sides: 2rem;
+
+$desktop-portfolio-image-text: 15px;
+
+$desktop-button-size: 14px;
+
+
+
+
+
+
+
+

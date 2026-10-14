@@ -1,0 +1,385 @@
+/*
+
+1. repeated styling thats used for all pages
+    1.1 font / tan-nimbus and open sans
+    1.2 body, background color
+    1.3 headline / h1
+    1.4 text / p
+2. header 
+    2.1 header image /
+    2.2 logo / .logo_image
+3. footer 
+    3.1 logo / .logo
+    3.2 navigation / .footer_nav
+
+4. Mobil/smaller screen styling
+5. desktop styling
+*/
+
+
+@font-face{
+    font-family:nimbus;
+    src: url("TAN-NIMBUS.ttf");
+}
+@font-face{
+    font-family:open sans;
+    src: url("OpenSans-VariableFont_wdth\,wght.ttf");
+}
+
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+/*standard styling for pages*/
+body{
+    background-color: #EDEBE4;
+    text-align: left;
+    
+}
+
+h1 {
+  color:#FE4D49;
+  font-size: 1.875em;
+  font-family: nimbus;
+}
+
+h2{
+  font-size:1.625em; /*golden ratio p * 1.618*/
+}
+p{
+    font-family: open sans;
+    font-size: 1em;
+    text-wrap: break-word;
+    margin-top:0.5em;
+    margin-bottom: 0.5em;
+}
+
+header{
+    
+    .header_content{
+      display: flex;
+      justify-content: space-between;
+      align-items:start;
+    }
+
+    .header_logo{
+      max-height: 3em;
+      padding-top: 0.5em;
+      padding-left:1em;
+      margin-top:0.5em;  
+    }
+
+    .nav_bar {
+      font-family: open sans;
+      overflow: hidden;
+      
+      }
+      
+    .nav_bar a {
+      float: left;
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 1.5em 1em;
+      text-decoration: underline;
+      font-size: 1em;
+      text-underline-offset: 0.5em;
+      text-decoration-thickness: 0.25em;
+    }
+      
+    .nav_bar a.active {
+      color: #FE4D49;
+    }
+
+    .nav_bar .right_top{
+      margin-left: 4em;
+      padding-right:2em
+    }
+
+    .hamburger1 {
+      margin-top: -2.5em;
+      margin-right:2em;
+      margin-bottom:1em;
+      display: -ms-grid;
+      display: grid;
+      justify-items: right;
+      z-index: 120;
+    }
+    
+    .hamburger1 div {
+      background-color: black;
+      position: relative;
+      width: 2.75em;
+      height: 0.25em;
+      margin-top: 0.5em;
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+    }
+    
+    #toggle1 {
+      display: none;
+    }
+    
+    #toggle1:checked + .hamburger1 .top {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      margin-top: 22.5px;
+    }
+    
+    #toggle1:checked + .hamburger1 .meat {
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+      margin-top: -5px;
+    }
+    
+    #toggle1:checked + .hamburger1 .bottom {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+    
+    #toggle1:checked ~ .menu1 {
+      height: 17em;
+    }
+    
+    
+    /* drop-down menu */
+    .menu1 {
+      width: 100%;
+      margin: auto 0;
+      display: -ms-grid;
+      display: grid;
+      grid-template-rows: repeat(5, 0.5fr);
+      grid-row-gap: 0.25em;
+      padding: 0;
+      list-style: none;
+      clear: both;
+      width: auto;
+      text-align: center;
+      height: 0px;
+      overflow: hidden;
+      transition: height .4s ease;
+      z-index: 120;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+    
+    .link1 {
+      width: 100%;
+      margin: 0;
+      padding: 0.5em 0;
+      font-size: 1.25em;
+      font-family: open sans;
+      text-decoration: none;
+      color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;        
+    }
+    
+    .link1:hover {
+      background-color: rgba(254, 77, 73, 0.75);
+      text-decoration: none;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+  }
+
+
+footer{
+    padding-left: 2em;
+    padding-right:2em;
+    padding-bottom: 4em;
+
+    .logo{
+      margin-top:2em;
+      margin-bottom:2em;
+      max-width: 7.5em; 
+    }
+    .footer_nav{
+      p{
+        font-weight: 600;
+      }
+       
+      li{
+        margin-top:0.5em;
+       
+      }
+    }
+    
+    .footer_info{
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+    .column {
+      max-width: 10em;
+      margin-bottom: 20px; 
+      margin-right: 40px;
+    }
+    
+    
+    .column h3 {
+      margin-bottom: 10px;
+      margin-top: 15px;
+      font-family: Open sans;
+      font-weight: 600;
+      font-size: 16px;
+    
+    }
+    
+    ul li {
+      list-style: none;
+      margin-bottom: 8px;
+    }
+    ul{
+      padding: 0;
+    }
+    a{
+      text-decoration: none;
+      }
+    a:visited{
+      text-decoration: none;
+    }
+  
+    .footer-container-desk {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .footer_newsletter {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      margin-right:1em;
+    }
+
+    .newsletter_form {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+    }
+    .footer_newsletter {
+      font-family: Open sans;
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .newsletter_form button {
+      width: 100px;
+     background-color:#FE4D49;
+     color: white; 
+      padding: 5px; 
+     border: none; 
+      border-radius: 3px;
+      cursor: pointer; 
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+    .newsletter_form input[type=email] {
+      padding: 8px 0; 
+      border-bottom: 1px solid black; 
+      border-top: none; 
+      border-left: none;
+      border-right: none;
+      background-color: transparent;}
+      
+      input[type="email"]:focus {
+        outline: 2px solid black;}
+    
+  }
+       
+    
+
+
+
+/*Mobile version - made on behalf of recommendation on smaller screens such as phones and smaller tablets*/
+@media only screen and (max-width:600px){
+  
+  footer{
+    .social_media1{
+      display: none;
+    }
+    .footer_newsletter{
+      display: none;
+    }
+
+    .column{
+      display: none;
+    }
+
+  .contact_info{
+    margin-top: 1em;
+    margin-bottom:1em;
+      p{
+        font-weight: 600;
+      }
+      li{
+        margin-top:0.5em;
+      }
+      .email{
+        margin-top: 1.5em;
+      }
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: 5% 5% 5% 5% 80%;
+      gap:2em; 
+      margin-top: 4em;
+      }
+       
+    .social_media2{
+      max-height:2em;
+    }
+  }
+}
+
+/*adding the dekstop-version and still having the hamburgermenu*/
+@media only screen and (min-width:600px){
+
+  .footer_nav{
+    display: none;
+  }
+  .social_media2{
+    display: none;
+  }
+
+  .contact_info{
+    display: none;
+  }
+
+  .address2{
+    display: none;
+  }
+  
+  
+
+
+  
+}
+/*having the hamburgermenu but  having the layout of desktop version*/
+@media only screen and (max-width: 800px){
+
+  header{
+    .nav_bar{
+      display:none;
+  }
+
+  }
+  .footer_newsletter{
+    display: none !important;
+  }
+
+}
+
+/*Desktop version with its navigationbar in the top*/
+@media only screen and (min-width: 800px){
+    #hamburger_menu{
+        display: none;
+    }
+  
+}

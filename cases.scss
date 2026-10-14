@@ -25,9 +25,9 @@ section{
 
 #cases{
     padding:0 0;
-    .cases_image{
-        width: 100%; 
-        height:40vh; 
+    video{
+        width: 100%;
+        height:100%;
         margin: 0.5rem 0;
         max-height:800px;
       
@@ -160,10 +160,6 @@ footer{
 @media only screen and (min-width: 700px){
     section{
         padding: 0 0}
-    
-    .cases_image{
-        height:60vh!important;
-    }
     .main_grid{
         display: grid;
         grid-template-columns: 5fr 5fr;

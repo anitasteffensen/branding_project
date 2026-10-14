@@ -1,0 +1,718 @@
+/*content for contact-site
+
+1. contact-section / #contact
+2. animination / .animated
+3. section 
+3. contact-form / .contact-wrapper
+4. footer / light footer
+5. mobil version / max 700px
+6. desktop version / min 700 and min 800px
+*/
+@font-face {
+  font-family: nimbus;
+  src: url("font/TAN-NIMBUS.ttf");
+}
+@font-face {
+  font-family: open sans;
+  src: url("font/OpenSans-VariableFont_wdth,wght.ttf");
+}
+/*overview of variables
+1. Variables / Colour, font-family and size. 
+2. Mixin / Pages with different colour and footer too.
+3. Page-break.
+4. Mixin / H1, h2 and h3 and normal text.
+5. Section bottom.
+6. Mobil version / Section-sides, button-size etc.
+7. Desktop version / Section-sides, button-size etc.
+*/
+/*Variables*/
+/*mobile variables*/
+/*desktop variables*/
+/*Styling thats repeated on all sites
+
+1. body
+    1.1 background colour
+    1.2 font-size and font
+2. header and content
+    2.1 logo / .header_logo
+3. footer
+    3.1 logo / .logo
+    3.2 navigation in footer / .footer_nav 
+        3.2.1 navigation for desktop
+        3.2.2 navigation for mobile
+*/
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EDEBE4;
+  color: black;
+  text-align: left;
+  font-family: "open sans";
+}
+
+h1 {
+  font-family: "nimbus";
+  font-size: 28px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #FE4D49;
+}
+
+h2 {
+  font-family: "nimbus";
+  font-size: 24.3px;
+  /*golden ratio p * 1.618*/
+}
+
+p {
+  font-family: "open sans";
+  font-size: 15px;
+  text-wrap: balance;
+  margin: 0.5rem 0;
+  line-height: 1.8rem;
+}
+
+header {
+  /*language button 
+  Language switch found inspiration from: https://codepen.io/anitasteffensen/pen/rNbNGJN*/
+}
+header .header_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+header .header_logo {
+  max-height: 2.5rem;
+  padding-top: 0.5rem;
+  margin-top: 0.5rem;
+}
+header .nav_bar {
+  font-family: "open sans";
+  overflow: hidden;
+}
+header .nav_bar-link {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 1.75rem 1rem;
+  text-decoration: underline;
+  font-size: 16px;
+  text-underline-offset: 0.5rem;
+  text-decoration-thickness: 0.25rem;
+}
+header .nav_bar-link--contact {
+  margin-left: 4rem;
+}
+header .active {
+  color: #FE4D49;
+}
+header .nav_bar .right_top {
+  margin-left: 4rem;
+  padding-right: 1rem;
+}
+header .lang {
+  margin-left: 1rem;
+  margin-top: 1.5rem;
+  display: inline-block;
+  text-align: left;
+}
+header .lang a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+header .lang_list,
+header .lang_option {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+header .lang_chevron {
+  display: none;
+}
+header .lang {
+  border: none;
+  min-width: 2.5rem;
+  position: relative;
+  z-index: 10;
+}
+header .lang_list,
+header .lang_option {
+  display: block;
+}
+header .lang_chevron {
+  display: inline-flex;
+  float: right;
+  transform: rotate(90deg);
+}
+header .lang_option {
+  padding: 0.25rem;
+  background-color: #EDEBE4;
+}
+header .lang_option:hover, header .lang_option:focus {
+  background-color: white;
+}
+header .lang_list {
+  display: none;
+  list-style-type: none;
+}
+header .is-open {
+  border-bottom: none;
+}
+header .is-open .lang_list {
+  border: none;
+  border-top: none;
+  display: block;
+  position: absolute;
+  left: -1px;
+  width: 100%;
+}
+header .is-open .lang_chevron {
+  transform: rotate(270deg);
+}
+
+/*Inspiration for hamburger menu found on: https://codepen.io/ngochuynh/pen/yKrvVZ*/
+.hamburger1 {
+  margin-top: -2.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 1rem;
+  display: grid;
+  justify-items: right;
+  z-index: 120;
+}
+
+.hamburger1 div {
+  background-color: black;
+  position: relative;
+  width: 2.75rem;
+  height: 0.25rem;
+  margin-top: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+#toggle1 {
+  display: none;
+}
+
+#toggle1:checked + .hamburger1 .top {
+  transform: rotate(-45deg);
+  margin-top: 22.5px;
+}
+
+#toggle1:checked + .hamburger1 .meat {
+  transform: rotate(45deg);
+  margin-top: -5px;
+}
+
+#toggle1:checked + .hamburger1 .bottom {
+  transform: scale(0);
+}
+
+#toggle1:checked ~ .menu1 {
+  height: 17rem;
+}
+
+/* drop-down menu */
+.menu1 {
+  width: 100%;
+  margin: auto 0;
+  display: grid;
+  grid-template-rows: repeat(5, 0.5fr);
+  grid-row-gap: 0.25rem;
+  padding: 0;
+  list-style: none;
+  clear: both;
+  width: auto;
+  text-align: center;
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.4s ease;
+  z-index: 120;
+  transition: all 0.3s ease;
+}
+
+.link1 {
+  font-family: "open sans";
+  font-size: 15px;
+  width: 100%;
+  margin: 0;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link1:hover {
+  background-color: rgba(254, 77, 73, 0.75);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.lang_hamb {
+  text-transform: uppercase;
+  display: flex;
+  gap: 0.25rem;
+  cursor: default;
+  margin-bottom: 1rem;
+}
+.lang_hamb a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.lang_hamb a:hover {
+  color: rgba(254, 77, 73, 0.75);
+}
+.lang_hamb:hover {
+  background-color: unset;
+}
+
+/*For anything else that comes over 1200px screen size there will be space at the sides, and content will be in the center*/
+.header_content {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.content_wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  padding: 0 1.5rem;
+  padding-bottom: 4rem;
+}
+footer .logo {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  max-width: 8rem;
+}
+footer .footer_nav p {
+  font-weight: 600;
+}
+footer .footer_nav li {
+  margin-top: 0.5rem;
+}
+footer .footer_info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+footer .column {
+  max-width: 10rem;
+  margin-bottom: 20px;
+  margin-right: 40px;
+}
+footer .column h3 {
+  margin-bottom: 10px;
+  margin-top: 15px;
+  font-family: "open sans";
+  font-weight: 600;
+  font-size: 16px;
+}
+footer ul li {
+  list-style: none;
+  margin-bottom: 8px;
+}
+footer ul {
+  padding: 0;
+}
+footer a {
+  text-decoration: none;
+}
+footer a:visited {
+  text-decoration: none;
+}
+footer .footer-container-desk {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .footer_newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-right: 1rem;
+}
+footer .newsletter_form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+footer .footer_newsletter {
+  font-family: "open sans";
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+footer .newsletter_form button {
+  width: 100px;
+  background-color: #FE4D49;
+  color: white;
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 10px;
+}
+footer .newsletter_form input[type=email] {
+  padding: 8px 0;
+  border-bottom: 1px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+}
+footer input[type=email]:focus {
+  outline: 2px solid black;
+}
+
+/*Mobile version - made on behalf of recommendation on smaller screens such as phones and smaller tablets*/
+@media only screen and (max-width: 600px) {
+  .header_logo {
+    padding-left: 1.5rem !important;
+  }
+  .hamburger1 {
+    margin-top: -2.5rem;
+    margin-right: 1.5rem !important;
+  }
+  .lang {
+    display: none;
+  }
+  footer .social_media1 {
+    display: none;
+  }
+  footer .footer_newsletter {
+    display: none;
+  }
+  footer .column {
+    display: none;
+  }
+  footer .contact_info {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  footer p {
+    font-weight: 600;
+  }
+  footer li {
+    margin-top: 0.5rem;
+  }
+  footer .email {
+    margin-top: 1.5rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 5% 5% 5% 5% 80%;
+    gap: 2rem;
+    margin-top: 4rem;
+  }
+  .social_media2 {
+    max-height: 2rem;
+  }
+}
+/*adding the dekstop-version and still having the hamburgermenu*/
+@media only screen and (min-width: 600px) {
+  .header_logo {
+    padding-left: 2rem;
+  }
+  .hamburger1 {
+    margin-right: 2rem !important;
+  }
+  .footer_info {
+    display: none;
+  }
+  .social_media2 {
+    display: none;
+  }
+  .contact_info {
+    display: none;
+  }
+  .address2 {
+    display: none;
+  }
+  .footer_nav {
+    display: none;
+  }
+}
+/*having the hamburgermenu but  having the layout of desktop version*/
+@media only screen and (max-width: 800px) {
+  header .nav_bar {
+    display: none;
+  }
+  header .lang {
+    display: none;
+  }
+  header .header_logo {
+    padding-left: 2rem;
+  }
+  header .hamburger1 {
+    margin-right: 2rem;
+  }
+  .footer_newsletter {
+    display: none !important;
+  }
+}
+/*Desktop version with its navigationbar in the top*/
+@media only screen and (min-width: 800px) {
+  section {
+    padding: 0 2rem;
+  }
+  .header_logo {
+    max-height: 3rem !important;
+  }
+  #hamburger_menu {
+    display: none;
+  }
+  .footer_nav {
+    display: none;
+  }
+  footer {
+    padding: 0 2rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .header_logo {
+    padding-left: 0;
+  }
+}
+#contact {
+  background-color: #222121;
+}
+
+.no-style-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.animated {
+  background-image: url(images/telephone.png);
+  background-repeat: no-repeat;
+  background-position-y: -10rem;
+  background-size: contain;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  position: absolute;
+  width: 100%;
+  animation-timing-function: ease;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    background-position-y: -10rem;
+  }
+  25% {
+    opacity: 1;
+    background-position-y: -2rem;
+  }
+  50% {
+    background-position-y: 0;
+  }
+  70% {
+    background-position-y: -2rem;
+  }
+  90% {
+    background-position-y: 0;
+  }
+  100% {
+    background-position-y: -2rem;
+  }
+}
+.bounceIn {
+  animation-name: bounceIn;
+}
+
+section {
+  padding: 0 1.5rem;
+  padding-bottom: 6rem;
+}
+
+.overskrift-kontakt {
+  margin-top: 4rem;
+}
+
+.overskrift-kontakt h1 {
+  font-size: 35px;
+}
+
+.overskrift-kontakt p {
+  font-size: 16px;
+}
+
+.space_p {
+  padding-top: 1rem;
+}
+
+/*Styling for kontaktformular*/
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  z-index: 1;
+}
+
+.contact-form {
+  background-color: #222121;
+  color: white;
+  flex: 1;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem;
+  z-index: 1;
+  width: 100%;
+}
+
+.contact-form img {
+  max-width: 35vw;
+  width: 100%;
+  height: auto;
+  padding-bottom: 2rem;
+}
+
+/*Styling for inputfelter*/
+.contact-form-actual {
+  width: 85vw;
+  margin: 0 0;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-family: "open sans";
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 2px;
+  border-bottom: 3px solid white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+  margin-bottom: 16px;
+  color: white;
+  font-family: "open sans";
+}
+
+input[type=text]:focus {
+  outline: 3px solid white;
+}
+
+#how_help {
+  width: 100%;
+  padding: 10px;
+  border-bottom: 3px solid white;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  background-color: transparent;
+  color: white;
+  font-family: "open sans";
+  resize: none;
+  margin-bottom: 16px;
+}
+
+#how_help:focus {
+  outline: 3px solid white;
+}
+
+input[type=submit] {
+  background-color: #FE4D49;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-family: "open sans";
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 2em;
+  text-transform: uppercase;
+  align-self: flex-end;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+@media only screen and (max-width: 700px) {
+  section {
+    padding: 0 2rem;
+    padding-bottom: 6rem;
+  }
+  .animated {
+    background-position-x: right 1rem;
+    height: 280px;
+  }
+  .contact-form-actual {
+    margin-top: 60px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .contact-form img {
+    display: none;
+  }
+}
+/*Desktop version*/
+@media only screen and (min-width: 700px) {
+  #lets_talk {
+    padding: 0 2rem;
+    padding-bottom: 6rem;
+  }
+  .animated {
+    background-position-x: right 3rem;
+    height: 420px;
+  }
+  #contact {
+    padding: 0 0;
+  }
+  .contact-form-actual {
+    width: 60vw !important;
+    margin: 2rem 2rem;
+    margin-top: 60px;
+    max-width: 100%;
+  }
+  .contact-form img {
+    max-height: 50vw;
+    max-height: 700px;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .animated {
+    background-position-x: right 5rem;
+    height: 400px;
+  }
+  #lets_talk {
+    padding: 0 2rem;
+    padding-bottom: 6rem;
+  }
+}/*# sourceMappingURL=contact.css.map */

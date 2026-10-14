@@ -1,0 +1,211 @@
+/*content for cases-site
+
+1. section
+    1.1 cases / #cases
+    1.2 breakline /.breakline
+    1.3 logo / .logo1
+2. portfolio
+    2.1 mads nørgaard / #mads
+    2.2 messyweekend / #messy
+    2.3 Hay /#hay
+    2.4 superdry / #superdry
+    2.5 ganni / #ganni
+3. footer / light footer
+4. Desktop version / min 700px
+
+*/
+
+@import 'scss/variables';
+@import 'scss/standard';
+
+section{
+    padding: 1.5rem $section-sides;
+    padding-bottom: $section-bottom
+    ;}
+
+#cases{
+    padding:0 0;
+    .cases_image{
+        width: 100%; 
+        height:40vh; 
+        margin: 0.5rem 0;
+        max-height:800px;
+      
+      }
+}
+
+.break-line{
+    background-color: $background;
+    height: $page-break;
+}
+
+.logo1{
+    margin: 2rem 0 ;
+    margin-left:auto;
+    margin-right:auto;
+    display: block;
+}
+
+
+
+#mads{
+    @include dark-page;
+    .mads_image{
+        width:100%;
+        height:60vh;
+        max-height:700px;
+        background-image:url("images/mads.png");
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+    
+    .mads_logo{
+        width: 40%;
+    }}
+
+#messy{
+    @include dark-page;
+
+    .messy_image{
+        width:100%;
+        height:60vh;
+        max-height: 700px;
+        background-image:url("images/messy.jpg");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+   
+    .messyw_logo{
+        width: 60%;
+
+    }
+}
+
+#hay{
+    @include dark-page;
+
+    .hay_image{ 
+        width:100%;
+        height:60vh;
+        max-height: 700px;
+        background-image:url("images/hay.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+    .hay_logo{
+        width: 25%;
+      
+    }
+}
+
+#superdry{
+    @include dark-page;
+
+   .superdry_image{ 
+    width:100%;
+    height:65vh;
+    max-height: 700px;
+    background-image:url("images/superdry.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    .superdry_logo{
+        width: 50%;
+       
+    }
+}
+
+#ganni{
+    @include dark-page;
+
+    .ganni_image{
+        width:100%;
+        height:60vh;
+        max-height: 700px;
+        background-image:url("images/ganni.png");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    
+    .ganni_logo{
+        width: 30%;
+    }
+
+}
+  
+
+
+footer{
+    a{
+        text-decoration: none;
+        color: $text-colour1;
+    }
+
+}
+
+
+
+    
+
+
+/*Desktop version need to be larger than the other sides because of the grid and pictures*/
+@media only screen and (min-width: 700px){
+    section{
+        padding: 0 0}
+    
+    .cases_image{
+        height:60vh!important;
+    }
+    .main_grid{
+        display: grid;
+        grid-template-columns: 5fr 5fr;
+        }
+
+    .text{
+        margin:2rem $desktop-section-sides;
+    }
+
+    #mads{
+        .mads_image{
+            height: 70vh;
+        }
+    }
+    #messy{
+        .messy_image{
+            height: 70vh;
+        }
+    }
+    #hay{
+        .hay_image{
+            height:70vh;
+        }
+    }
+    #superdry{
+        .superdry_image{
+            height:75vh;
+        }
+    }
+    #ganni{
+        .ganni_image{
+            height:70vh;
+        }
+    }
+    #messy, #superdry{
+        .messy_image, .superdry_image {
+            order: 1;
+           }
+        
+        .text {
+            order: -1;
+            padding: 0 0;
+           }
+    }
+}

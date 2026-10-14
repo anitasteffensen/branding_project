@@ -1,0 +1,355 @@
+/*content for index/home
+
+1. Video / #video
+2. sections
+    2.1 navigation / #nav_buttons
+    2.2 porfolio / #portfolio
+    2.3 breakline / #breakline
+    2.4 grid for about and quality / .main_grid
+        2.4.1 about / #about
+        2.4.1 quality / #quality
+3. footer / light footer
+4. mobil version / max width 600px
+5. desktop version / min width 600px and min width 800px
+
+*/
+
+
+@import 'scss/variables';
+@import 'scss/standard';
+
+
+
+#video{
+    margin: 0 0;
+    padding: 0 0;
+    video{
+        width:100%;
+        height:50vw;
+        margin-bottom: $page-break
+    }
+    
+
+}
+#nav_buttons{
+    .nav_grid{
+        display:grid;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+    }
+    
+
+    .grid_image{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding: 1rem;
+        background-size: cover;
+        background-position: center;
+    }
+    .grid_button_coffee {
+        background-image: url("images/kaffe.jpg");
+        
+    }
+
+    .grid_button_water{
+        background-image: url("images/water.jpg");
+    }
+    .grid_button_pen{
+        background-image: url("images/pen.jpg");
+    }
+    
+    .button{
+        background-color: $contast-colour;
+        box-shadow: none;
+        border:none; 
+        color: $text-colour2;
+        width: auto;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        font-size: $button-size;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        text-decoration: none;
+
+    }
+
+
+}
+
+#portfolio{
+    margin:0 0;
+    .container{
+        position:relative;
+        text-align: center;
+    }
+
+
+ /*For mobil solution*/
+    .portfolio_image{
+        width: 100%;
+        min-height: 15rem;
+        }
+            
+           
+    .text1{
+        font-size: $portfolio-image-text;
+        padding-left: .25rem;
+        position:absolute;
+        bottom: 3rem;
+        }
+                
+    .text2{
+        font-size: $portfolio-image-text;
+        padding-left: .25rem;
+        position: absolute;
+        bottom: 1.5rem; }
+
+    
+
+/*Dekstop solution*/
+    .text_1{
+        font-size:$desktop-portfolio-image-text;
+        padding-left: 2.25rem;
+        position:absolute;
+        bottom: 5rem;
+        }
+    .text_2{
+        font-size: $desktop-portfolio-image-text;
+        padding-left: 2.25rem;
+        position: absolute;
+        bottom: 3.5rem;
+        }
+    
+    }
+
+
+#break-line{
+    background-color: $washed_out;
+    height: $page-break;
+
+}
+
+.main_grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    }
+
+#about{
+    padding-top:1.5rem;
+    padding-bottom:$section-bottom;
+    
+  .about_image{
+    height: 55vh;
+    width: calc(100%);
+    margin: 0 auto;
+    background-image: url("images/trio.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+    h1{
+        @include header1;
+        text-align: center;
+    }
+
+    p{
+        @include text;
+        text-align: left;
+    }
+
+   
+   
+}
+
+
+#quality{
+    @include dark-page;
+    padding-top: 1.5rem;
+    padding-bottom:$section-bottom;
+
+    .quality_image{
+        height: 60vh;
+        width: calc(100%);
+        margin: 0 auto;
+        background-image: url("images/arkitektur.jpg");
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    
+
+    h2{
+        @include header2;
+        text-align: right;
+        margin-top: 2rem !important;
+
+
+
+    }
+    h3{
+        @include header2;
+        font-size: 20px;
+        text-align: right;
+        margin-bottom: 1rem;    }
+        
+    p{
+        text-align: left;
+    }
+
+    
+}
+
+footer{
+    @include light-footer;
+
+    a{
+        text-decoration: none;
+        color: $text-colour1;
+    }
+}
+
+
+
+/*Mobile version - made on behalf of recommendation on smaller screens such as phones and smaller tablets*/
+@media only screen and (max-width: 600px){
+section{
+    padding: 0 $section-sides;
+    
+}
+    #nav_buttons{
+    padding: 0 0;
+    .grid_image{
+        height: 30vh;
+    }
+}
+
+.text_1, .text_2{
+    display: none;
+}
+}
+
+ 
+
+/*Desktop version*/
+@media only screen and (min-width: 600px) {
+section{
+    margin: 0 0 !important;
+    padding: 0 0 !important;
+
+}
+
+
+.grid_image{
+    height: 35vh;
+}
+
+.button{
+    font-size: $desktop-button-size;
+}
+#portfolio{
+
+    .portfolio_image{
+        padding-left: $desktop-section-sides;
+    
+    }
+   
+    .text1, .text2{
+        display: none;
+    }
+
+    .text_1, .text_2{
+        display: flex;
+    }
+}
+
+
+
+.text{
+    align-items: center;
+    justify-content: center;
+    margin: auto 0;
+    
+}
+
+.main_grid{
+    display: grid;
+    grid-template-columns: 4.8fr 5.2fr;
+    }
+
+
+
+#about{
+    .about_image{
+        height: 60vh;
+        margin: 2rem 0;
+        max-height:500px;
+        }
+    }
+
+#quality{
+   h2{
+    margin: auto $desktop-section-sides;
+   }
+   h3{ 
+    margin: auto $desktop-section-sides;
+    margin-bottom: 1rem;
+   }
+
+   .quality_image{
+    height: 60vh;
+    margin: 2rem 0;
+    max-height: 550px;
+   }
+
+   .quality_image {
+    order: 1;
+   }
+
+   .text {
+    order: -1;
+    
+   }
+
+   .main_grid {
+    grid-template-columns: 5.2fr 4.8fr;}
+
+    .break {
+        padding-bottom: 0;
+    }
+}
+
+#about, #quality{
+    p{
+        text-align: left;
+        margin:0.5rem $desktop-section-sides;
+    }
+}
+}
+    
+
+@media only screen and (min-width: 800px){
+    #video{
+        video{
+            height:100%;
+        }
+    }
+    .grid_image{
+        height: 35vh;
+        max-height:400px;
+    }
+    .text_1{
+        font-size: $desktop-portfolio-image-text;
+        padding-left: 2.25rem;
+        position:absolute;
+        bottom: 8rem;
+        }
+    .text_2{
+        font-size: $desktop-portfolio-image-text;
+        padding-left: 2.25rem;
+        position: absolute;
+        bottom: 5.5rem;
+        }
+}
+
+
